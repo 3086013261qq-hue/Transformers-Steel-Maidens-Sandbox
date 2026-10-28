@@ -1,0 +1,29 @@
+{
+  "schema": "transformers-steel-maidens.character-production-batch.v1",
+  "status": "approved",
+  "batch": "CHARACTER_BATCH02_A18_A24_B01_B08",
+  "production_spec": "docs/002_变形钢姬_咩咩全栈人物条目与能力条目生产规范_v1.3.md",
+  "roster": "docs/001_变形钢姬_人物总名册_v0.3.md",
+  "count": 15,
+  "ids": ["A18","A19","A20","A21","A22","A23","A24","B01","B02","B03","B04","B05","B06","B07","B08"],
+  "names": ["星啸娅","芭莉凯","桑德薇","朔珂薇","梅格萝娜","洛黛恩","昆塔莎","克罗米娅","艾丽塔-1","乔缇","斯琪","玛芙","薇莉","布蕾茵","莉德芙"],
+  "artifacts_per_character": ["character","ability"],
+  "roster_inherited_fields": ["阵营","定位","变形载具","外貌锚点","性征武装模块"],
+  "appearance_anchor_verbatim": true,
+  "psychology_model": ["Trauma","Defense","Trigger","Need"],
+  "preview_readable_source_format": true,
+  "qa": "qa/CHARACTER_BATCH02_A18-A24_B01-B08_人物能力生产QA_v1.0.md",
+  "known_upstream_wording_debt": [
+    {
+      "id": "A21",
+      "field": "变形载具",
+      "source": "docs/001_变形钢姬_人物总名册_v0.3.md",
+      "action": "normalize_in_next_roster_revision_then_sync_downstream"
+    }
+  ],
+  "batch_status": "CHARACTER_BATCH02_APPROVED",
+  "next_batch": {
+    "count": 15,
+    "ids": ["B09","B10","B11","B12","B13","B14","B15","B16","B17","B18","B19","B20","B21","B22","B23"]
+  }
+}
