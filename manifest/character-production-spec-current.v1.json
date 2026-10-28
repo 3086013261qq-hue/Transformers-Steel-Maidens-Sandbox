@@ -1,0 +1,25 @@
+{
+  "schema": "transformers-steel-maidens.character-production-spec.v1",
+  "status": "active",
+  "character_schema": "chara-v1",
+  "character_spec": "docs/002_变形钢姬_咩咩全栈人物条目与能力条目生产规范_v1.0.md",
+  "qa": "qa/人物能力生产规范_v1.0_QA.md",
+  "roster": "docs/001_变形钢姬_人物总名册_v0.3.md",
+  "name_replacements": "manifest/character-name-replacements.v1.json",
+  "character_paths": {
+    "main": "worldbook/characters/main/",
+    "other": "worldbook/characters/other/"
+  },
+  "ability_path": "worldbook/abilities/",
+  "psychology_model": ["Trauma", "Defense", "Trigger", "Need"],
+  "dialogue_examples": 3,
+  "ability_tag": "<核心设定:角色名·能力>",
+  "hard_rules": {
+    "preserve_chara_v1_fields_and_order": true,
+    "no_custom_personality_fields": true,
+    "abilities_split_from_character_entry": true,
+    "cybertronian_semantic_adaptation_only": true,
+    "formal_timeline_uses_au_names": true
+  },
+  "production_status": "FORMAT_LOCKED"
+}
