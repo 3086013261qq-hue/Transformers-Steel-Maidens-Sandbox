@@ -1,0 +1,54 @@
+{
+  "schema": "transformers-steel-maidens.worldbook-lights.v0.4",
+  "status": "blue_layer_drafting",
+  "policy": {
+    "blue": "always_on",
+    "green": "keyword_triggered",
+    "precedence": "blue_over_green",
+    "notes": [
+      "蓝灯逐条精修、独立文件管理；不得恢复旧式汇总蓝灯。",
+      "BLUE 条目只定义全世界持续成立的上位事实，不承担机制细节、分类、案例、流程或具体人物展开。",
+      "GREEN 条目必须从已封版 BLUE 条目向下展开，不得覆盖、改写或与上位蓝灯冲突。",
+      "BLUE01 已锁定世界基调；BLUE02 已锁定赛博坦机械生命、火种、机体、损伤、维修、重构与死亡的上位关系。",
+      "BLUE03 已锁定赛博坦文明全员女性、双重性征为天然种族事实，并锁定额外外生殖结构与个体专属武装系统同源且同属身体。",
+      "BLUE04 已锁定火种供能、机体能源循环、个体专属武装、拆离控制、武装负荷与过载代价的上位关系。",
+      "专属武装不是无限能源或通用外挂；过载必须产生真实能耗与结构代价，缴获或复制武器也不能自动复制原主人的完整战斗能力。",
+      "当前 BLUE01-BLUE04 为正式现行蓝灯；其余蓝灯仍待逐条生成、精修与入库。"
+    ]
+  },
+  "blue_entries": [
+    {
+      "id": "BLUE01",
+      "path": "worldbook/settings/BLUE01_世界基调.md",
+      "enabled": true,
+      "constant": true,
+      "priority": 1000,
+      "keywords": []
+    },
+    {
+      "id": "BLUE02",
+      "path": "worldbook/settings/BLUE02_赛博坦机械生命本质.md",
+      "enabled": true,
+      "constant": true,
+      "priority": 990,
+      "keywords": []
+    },
+    {
+      "id": "BLUE03",
+      "path": "worldbook/settings/BLUE03_全女性赛博坦文明与双重性征.md",
+      "enabled": true,
+      "constant": true,
+      "priority": 980,
+      "keywords": []
+    },
+    {
+      "id": "BLUE04",
+      "path": "worldbook/settings/BLUE04_火种能量与专属武装系统.md",
+      "enabled": true,
+      "constant": true,
+      "priority": 970,
+      "keywords": []
+    }
+  ],
+  "active_green_entries": []
+}
