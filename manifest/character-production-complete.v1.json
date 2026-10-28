@@ -1,0 +1,27 @@
+{
+  "schema": "transformers-steel-maidens.character-production-complete.v1",
+  "status": "complete",
+  "production_spec": "docs/002_变形钢姬_咩咩全栈人物条目与能力条目生产规范_v1.3.md",
+  "roster": "docs/001_变形钢姬_人物总名册_v0.3.md",
+  "name_replacements": "manifest/character-name-replacements.v1.json",
+  "total_characters": 69,
+  "character_entries": 69,
+  "ability_entries": 69,
+  "total_formal_artifacts": 138,
+  "batches": [
+    "sample_pair_A01_A17",
+    "A02_A16",
+    "A18_A24_B01_B08",
+    "B09_B23",
+    "B24_B31_C01_C07",
+    "C08_C14"
+  ],
+  "formal_names_are_au_feminized_names": true,
+  "original_names_engineering_only": true,
+  "roster_inherited_fields": ["阵营","定位","变形载具","外貌锚点","性征武装模块"],
+  "psychology_model": ["Trauma","Defense","Trigger","Need"],
+  "overall_qa": "qa/CHARACTER_LAYER_69_人物能力总生产验收_v1.0.md",
+  "known_upstream_wording_debt": ["A21","B12","B13"],
+  "production_status": "CHARACTER_LAYER_PRODUCTION_COMPLETE",
+  "next_phase": "CHARACTER_LAYER_CROSS_AUDIT_AND_ROSTER_WORDING_NORMALIZATION"
+}

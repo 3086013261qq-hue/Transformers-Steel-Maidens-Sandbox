@@ -1,0 +1,24 @@
+{
+  "schema": "transformers-steel-maidens.character-production-batch.v1",
+  "status": "approved",
+  "batch": "CHARACTER_BATCH05_C08_C14",
+  "production_spec": "docs/002_变形钢姬_咩咩全栈人物条目与能力条目生产规范_v1.3.md",
+  "roster": "docs/001_变形钢姬_人物总名册_v0.3.md",
+  "count": 7,
+  "ids": ["C08","C09","C10","C11","C12","C13","C14"],
+  "names": ["斯汀嘉","琼希普","莫霍卡","德蕾德","妮特萝·宙丝","昂斯萝特","贝瑟琪"],
+  "formal_names_are_au_feminized_names": true,
+  "original_names_engineering_only": true,
+  "artifacts_per_character": ["character","ability"],
+  "roster_inherited_fields": ["阵营","定位","变形载具","外貌锚点","性征武装模块"],
+  "appearance_anchor_verbatim": true,
+  "psychology_model": ["Trauma","Defense","Trigger","Need"],
+  "preview_readable_source_format": true,
+  "qa": "qa/CHARACTER_BATCH05_C08-C14_人物能力生产QA_v1.0.md",
+  "batch_status": "CHARACTER_BATCH05_APPROVED",
+  "production_progress": {
+    "completed": 69,
+    "total": 69,
+    "remaining": 0
+  }
+}
