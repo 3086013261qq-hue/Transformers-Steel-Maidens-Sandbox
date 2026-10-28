@@ -1,0 +1,27 @@
+{
+  "toolkit": "咩咩制卡·全栈_v1.0.0.zip",
+  "zip_sha256": "023f2938a6da457ce11061ed2e1bf169d18347986a5105c684d6e195135104bc",
+  "library_file_id": "libfile_4211ff26bc9881919995281a1206eb9d",
+  "files": [
+    {
+      "source": "MVU/骨架/MVU.js",
+      "reference": "reference/MVU.js",
+      "sha256": "16e4dc809f2c904aae4ab2e5251a1942e2b33b842ffa9171fb54fc6fa25bf87b"
+    },
+    {
+      "source": "MVU/骨架/MVU_ZOD.js",
+      "reference": "reference/MVU_ZOD.js",
+      "sha256": "ca45d5fea288c7cbf7a3d8e28d8e943cd6a516d4b714b1febeb660075e55214d"
+    },
+    {
+      "source": "MVU/骨架/状态栏脚本.js",
+      "reference": "reference/状态栏脚本.js",
+      "sha256": "6d1c91189d560ab6259cced4c9046e61d84f52b9b3ced85f6fe5e7b840bc7478"
+    },
+    {
+      "source": "MVU/MVU空卡/MVU变量卡_空模板.json",
+      "reference": "reference/MVU变量卡_空模板.json",
+      "sha256": "0de2ccd1e2684f0a61f22c84c470da77e479ddcd724673752620ac898cad79a5"
+    }
+  ]
+}

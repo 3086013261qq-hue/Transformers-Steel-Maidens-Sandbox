@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "default_track_id": "crystal-heart",
+  "tracks": [
+    {
+      "id": "crystal-heart",
+      "order": 1,
+      "title": "Crystal Heart（水晶心）",
+      "artist": "啃书",
+      "file": "media/music/啃书 - Crystal Heart（水晶心）.mp3",
+      "url": "https://raw.githubusercontent.com/3086013261qq-hue/Transformers-Steel-Maidens-Sandbox/e5c9d07b12e8429f3a221e9f7eee12d899b12a40/media/music/%E5%95%83%E4%B9%A6%20-%20Crystal%20Heart%EF%BC%88%E6%B0%B4%E6%99%B6%E5%BF%83%EF%BC%89.mp3",
+      "theme": true
+    },
+    {
+      "id": "soft-universe",
+      "order": 2,
+      "title": "Soft Universe",
+      "artist": "AURORA",
+      "file": "media/music/AURORA - Soft Universe.mp3",
+      "url": "https://raw.githubusercontent.com/3086013261qq-hue/Transformers-Steel-Maidens-Sandbox/e5c9d07b12e8429f3a221e9f7eee12d899b12a40/media/music/AURORA%20-%20Soft%20Universe.mp3",
+      "theme": false
+    },
+    {
+      "id": "new-divide",
+      "order": 3,
+      "title": "New Divide",
+      "artist": "Linkin Park",
+      "file": "media/music/Linkin Park - New Divide.mp3",
+      "url": "https://raw.githubusercontent.com/3086013261qq-hue/Transformers-Steel-Maidens-Sandbox/e5c9d07b12e8429f3a221e9f7eee12d899b12a40/media/music/Linkin%20Park%20-%20New%20Divide.mp3",
+      "theme": false
+    },
+    {
+      "id": "what-ive-done",
+      "order": 4,
+      "title": "What I've Done",
+      "artist": "Linkin Park",
+      "file": "media/music/Linkin Park - What I've Done.mp3",
+      "url": "https://raw.githubusercontent.com/3086013261qq-hue/Transformers-Steel-Maidens-Sandbox/e5c9d07b12e8429f3a221e9f7eee12d899b12a40/media/music/Linkin%20Park%20-%20What%20I've%20Done.mp3",
+      "theme": false
+    },
+    {
+      "id": "villain",
+      "order": 5,
+      "title": "빌런 (Villain)",
+      "artist": "Stella Jang",
+      "file": "media/music/Stella Jang - 빌런 (Villain).mp3",
+      "url": "https://raw.githubusercontent.com/3086013261qq-hue/Transformers-Steel-Maidens-Sandbox/e5c9d07b12e8429f3a221e9f7eee12d899b12a40/media/music/Stella%20Jang%20-%20%EB%B9%8C%EB%9F%B0%20(Villain).mp3",
+      "theme": false
+    },
+    {
+      "id": "vem-meu-amor-slowed",
+      "order": 6,
+      "title": "VEM MEU AMOR (Slowed)",
+      "artist": "SXYGX",
+      "file": "media/music/SXYGX - VEM MEU AMOR (Slowed).mp3",
+      "url": "https://raw.githubusercontent.com/3086013261qq-hue/Transformers-Steel-Maidens-Sandbox/e5c9d07b12e8429f3a221e9f7eee12d899b12a40/media/music/SXYGX%20-%20VEM%20MEU%20AMOR%20(Slowed).mp3",
+      "theme": false
+    }
+  ]
+}

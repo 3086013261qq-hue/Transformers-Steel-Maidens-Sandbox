@@ -1,0 +1,109 @@
+{
+  "name": "变形钢姬 · 独立MVU技术片段",
+  "entries": [
+    {
+      "id": 0,
+      "keys": [],
+      "secondary_keys": [],
+      "comment": "[mvu_update]变量更新规则",
+      "content": "---\n变量更新规则:\n  首轮定值:\n    - 本模块不建立可写业务变量，无待定 stat_data 字段需要补全\n    - 不确定的保持待确定，不编造，不修改其他原生变量\n  隔离:\n    - 汽车人与霸天虎阵营好感只读取最近合法完整的 <causality>，禁止写入 stat_data 或 JSONPatch\n    - 人物关系继续由咩咩原生 <affinity> 管理，本模块不建立人物好感表\n    - 音乐与界面状态只保存在客户端，不进入变量或业务世界书\n    - 若环境要求 <UpdateVariable>，JSONPatch 必须为 []\n",
+      "constant": true,
+      "selective": false,
+      "insertion_order": 1000002,
+      "enabled": true,
+      "position": "at_depth",
+      "use_regex": true,
+      "extensions": {
+        "position": 4,
+        "depth": 0,
+        "role": 0,
+        "probability": 100,
+        "useProbability": true,
+        "scan_depth": null,
+        "prevent_recursion": true,
+        "exclude_recursion": true,
+        "group": "",
+        "group_override": false,
+        "group_weight": 100
+      }
+    },
+    {
+      "id": 1,
+      "keys": [],
+      "secondary_keys": [],
+      "comment": "[mvu_update]变量输出格式",
+      "content": "---\n变量输出格式:\n  rule:\n    - 若运行环境要求 <UpdateVariable>，只输出一个完整块，先 Analysis 后 JSONPatch\n    - 本模块没有可写变量，JSONPatch 必须保持空数组 []\n    - 不写入汽车人或霸天虎好感，不修改咩咩原生变量\n    - <causality> 独立于 UpdateVariable；不把它嵌入任何其他标签\n  format: |-\n    <UpdateVariable>\n    <Analysis>No writable variables in this module.</Analysis>\n    <JSONPatch>[]</JSONPatch>\n    </UpdateVariable>\n",
+      "constant": true,
+      "selective": false,
+      "insertion_order": 1000001,
+      "enabled": true,
+      "position": "at_depth",
+      "use_regex": true,
+      "extensions": {
+        "position": 4,
+        "depth": 0,
+        "role": 0,
+        "probability": 100,
+        "useProbability": true,
+        "scan_depth": null,
+        "prevent_recursion": true,
+        "exclude_recursion": true,
+        "group": "",
+        "group_override": false,
+        "group_weight": 100
+      }
+    },
+    {
+      "id": 2,
+      "keys": [],
+      "secondary_keys": [],
+      "comment": "变量列表",
+      "content": "---\n<status_current_variable>\n{{format_message_variable::stat_data}}\n</status_current_variable>\n\n- 不在正文里输出 <status_current_variable>，它只用来读当前变量。\n",
+      "constant": true,
+      "selective": false,
+      "insertion_order": 1000000,
+      "enabled": true,
+      "position": "at_depth",
+      "use_regex": true,
+      "extensions": {
+        "position": 4,
+        "depth": 0,
+        "role": 0,
+        "probability": 100,
+        "useProbability": true,
+        "scan_depth": null,
+        "prevent_recursion": true,
+        "exclude_recursion": true,
+        "group": "",
+        "group_override": false,
+        "group_weight": 100
+      }
+    },
+    {
+      "id": 3,
+      "keys": [],
+      "secondary_keys": [],
+      "comment": "[initvar]变量初始化勿开",
+      "content": "{}\n",
+      "constant": true,
+      "selective": false,
+      "insertion_order": 899,
+      "enabled": false,
+      "position": "after_char",
+      "use_regex": true,
+      "extensions": {
+        "position": 1,
+        "depth": 4,
+        "role": 0,
+        "probability": 100,
+        "useProbability": true,
+        "scan_depth": null,
+        "prevent_recursion": true,
+        "exclude_recursion": true,
+        "group": "",
+        "group_override": false,
+        "group_weight": 100
+      }
+    }
+  ]
+}

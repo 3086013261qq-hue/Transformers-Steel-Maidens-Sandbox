@@ -1,0 +1,227 @@
+{
+ "spec": "chara_card_v3",
+ "spec_version": "3.0",
+ "data": {
+  "name": "MVU变量卡_空模板",
+  "description": "只有 MVU 变量系统的空模板，没有角色内容。照 咩咩制卡·全栈 的 MVU 规范组装。",
+  "personality": "",
+  "scenario": "",
+  "first_mes": "【MVU变量卡_空模板】\n\n这里是开场白。状态栏不挂在开场白下面，从第一条 AI 回复开始挂在每条回复的正文底部，变量一更新就重画。",
+  "mes_example": "",
+  "creator_notes": "咩咩制卡·全栈 MVU 空模板：改 MVU ZOD 脚本里的 Schema、[initvar] 初始值、变量更新规则和状态栏脚本里的面板即可。",
+  "system_prompt": "",
+  "post_history_instructions": "",
+  "alternate_greetings": [],
+  "tags": [
+   "咩咩制卡",
+   "MVU"
+  ],
+  "creator": "咩咩制卡·全栈",
+  "character_version": "1.0.0",
+  "extensions": {
+   "world": "MVU变量卡_空模板世界书",
+   "tavern_helper": {
+    "scripts": [
+     {
+      "type": "script",
+      "enabled": true,
+      "name": "MVU",
+      "id": "mvu-core",
+      "content": "import 'https://testingcf.jsdelivr.net/gh/MagicalAstrogy/MagVarUpdate/artifact/bundle.js';",
+      "info": "MagVarUpdate 变量表（变量系统的底座，勿删）",
+      "button": {
+       "enabled": false,
+       "buttons": []
+      },
+      "data": {},
+      "export_with": {
+       "data": true,
+       "button": false
+      }
+     },
+     {
+      "type": "script",
+      "enabled": true,
+      "name": "MVU ZOD",
+      "id": "mvu-zod-schema",
+      "content": "// 角色脚本「MVU ZOD」：变量结构。z（zod）和 _（lodash）由酒馆助手提供，不要 import。\n// 只允许下面这一条 import；末尾的 registerMvuSchema 不能少，少了 Schema 不生效。\nimport { registerMvuSchema } from 'https://testingcf.jsdelivr.net/gh/StageDog/tavern_resource/dist/util/mvu_zod.js';\n\n// -1 表示「待确定」：开局时还不知道的数值先放 -1，第一次更新时再定。钳制时只放过正好是 -1 的值，别的负数照常钳到下限。\nconst 待定 = -1;\nconst 范围 = (v, 下限, 上限) => (Number(v) === 待定 ? 待定 : _.clamp(Number(v) || 0, 下限, 上限));\n\nexport const Schema = z.object({\n  // 数值：越界修正，不报错\n  好感度: z.coerce.number().transform(v => 范围(v, 0, 100)).prefault(待定),\n  所持金: z.coerce.number().transform(v => 范围(v, 0, 9999999)).prefault(待定),\n\n  // 字符串：空串表示待确定\n  心情: z.string().prefault(''),\n\n  // 动态键集合：键名 → 对象。用 record，不用数组\n  物品栏: z.record(\n    z.string().describe('物品名'),\n    z.object({\n      描述: z.string().prefault(''),\n      数量: z.coerce.number().transform(v => _.clamp(v, 0, 999)).prefault(1),\n    }),\n  ).prefault({}),\n});\n\n$(() => {\n  registerMvuSchema(Schema);\n});\n",
+      "info": "变量结构：在这里定义变量",
+      "button": {
+       "enabled": false,
+       "buttons": []
+      },
+      "data": {},
+      "export_with": {
+       "data": true,
+       "button": false
+      }
+     },
+     {
+      "type": "script",
+      "enabled": true,
+      "name": "变量状态栏",
+      "id": "mvu-statusbar",
+      "content": "// 角色脚本「变量状态栏」：把面板挂到每条 AI 回复的正文底部（楼层 .mes_text 的最后一个子元素），随楼层滚动。\n// 开场白（0 楼和它的备选开场）、用户楼层、系统楼层不挂；变量还没有时面板藏着。\n// 换成自己的面板：改 PANEL_HTML 里的结构和字段；把全文的 xx 换成自己的前缀（字母、数字、连字符）。其余照抄。\n// 面板里 script 的结束标签必须写成「<\\/script>」：酒馆助手把整段脚本塞进页面时，源码里出现原样的结束标签会把外面的标签提前关掉，整个脚本报语法错。这一行注释里也不能出现原样的。\n\nconst PANEL_HTML = `\n<div class=\"xx-status\" hidden>\n  <div class=\"xx-status-row\"><span>好感度：</span><b data-f=\"好感度\"></b></div>\n  <div class=\"xx-status-row\"><span>心情：</span><b data-f=\"心情\"></b></div>\n  <div class=\"xx-status-row\"><span>所持金：</span><b data-f=\"所持金\"></b></div>\n  <div class=\"xx-status-list\" data-list=\"物品栏\"><span>物品栏：</span><ul></ul></div>\n  <script>\n  (function () {\n    var me = document.currentScript;\n    var host = me && me.closest('.xx-status-host');\n    var panel = host && host.querySelector('.xx-status');\n    if (!panel) return;\n    var id = Number(host.getAttribute('data-message-id'));\n    // 旧版 MVU 的值可能是 [值, 说明]：只在第二项是字符串时剥一层\n    var unwrap = function (v) { return Array.isArray(v) && v.length === 2 && typeof v[1] === 'string' ? v[0] : v; };\n    var pick = function (o, path) { return String(path).split('.').reduce(function (c, k) { return c == null ? c : unwrap(c[k]); }, o); };\n    var show = function (v) { return v === -1 || v === '' || v == null ? '待确定' : String(v); };\n    function render() {\n      if (!panel.isConnected) {\n        if (window.__mvuStatusTicks && window.__mvuStatusTicks[id] === render) delete window.__mvuStatusTicks[id];\n        return;\n      }\n      var d = {};\n      try { d = (window.__mvuStatusRead && window.__mvuStatusRead(id)) || {}; } catch (e) {}\n      var ready = d && typeof d === 'object' && Object.keys(d).length > 0;\n      panel.hidden = !ready;\n      if (!ready) return;\n      panel.querySelectorAll('[data-f]').forEach(function (el) { el.textContent = show(pick(d, el.getAttribute('data-f'))); });\n      panel.querySelectorAll('[data-list]').forEach(function (box) {\n        var obj = pick(d, box.getAttribute('data-list')) || {}, keys = Object.keys(obj), ul = box.querySelector('ul');\n        box.hidden = keys.length === 0;\n        ul.textContent = '';\n        keys.forEach(function (k) {\n          var it = unwrap(obj[k]) || {}, li = document.createElement('li');\n          li.textContent = k + (it.数量 != null ? ' ×' + it.数量 : '');\n          ul.appendChild(li);\n        });\n      });\n    }\n    window.__mvuStatusTicks = window.__mvuStatusTicks || {};\n    window.__mvuStatusTicks[id] = render;\n    render();\n  })();\n  <\\/script>\n</div>`;\n\nconst HOST = 'xx-status-host';\n\nfunction doc() { try { return window.parent.document; } catch (e) { return document; } }\nfunction textBox(id) { try { return doc().querySelector('#chat > .mes[mesid=\"' + id + '\"] .mes_text'); } catch (e) { return null; } }\nfunction chatMessage(id) { try { const list = getChatMessages(id); return list && list[0] ? list[0] : null; } catch (e) { return null; } }\n// 只挂 AI 回复。getChatMessages 给的是 role（assistant / user / system），没有 is_user\nfunction shouldMount(id) {\n  const m = chatMessage(id);\n  if (!m || m.role !== 'assistant') return false;\n  if (id === 0) return false;                                                        // 0 楼是开场白，备选开场是它的 swipe\n  if (/<\\/?opening>|\\[(?:[A-Z_]+_)?OPENING_FLOW\\]/i.test(String(m.message || ''))) return false;   // 自定义开场标记\n  return true;\n}\nfunction hostOf(id) { try { return doc().querySelector('.' + HOST + '[data-message-id=\"' + id + '\"]'); } catch (e) { return null; } }\nfunction tickOne(id) { try { const f = (window.parent.__mvuStatusTicks || {})[id]; if (f) f(); } catch (e) {} }\nfunction tickAll() { try { Object.values(window.parent.__mvuStatusTicks || {}).forEach(f => { try { f(); } catch (e) {} }); } catch (e) {} }\n\nfunction mount(id) {\n  id = Number(id);\n  const box = textBox(id);\n  if (!box) return;\n  const old = hostOf(id);\n  if (!shouldMount(id)) { if (old) old.remove(); return; }\n  if (old && old.parentNode === box && box.lastElementChild === old) { tickOne(id); return; }   // 已经在正文底部：只重画\n  if (old) old.remove();\n  const d = doc(), host = d.createElement('div');\n  host.className = HOST;\n  host.setAttribute('data-message-id', String(id));\n  host.innerHTML = PANEL_HTML;\n  box.appendChild(host);\n  // innerHTML 塞进去的 <script> 不执行：换成新建的 script 元素，它在酒馆页面里跑一次\n  host.querySelectorAll('script').forEach(s => { const n = d.createElement('script'); n.textContent = s.textContent; s.replaceWith(n); });\n}\nfunction mountAll() {\n  let last = -1;\n  try { last = getLastMessageId(); } catch (e) {}\n  for (let i = 0; i <= last; i++) mount(i);\n}\n\n$(async () => {\n  try { await waitGlobalInitialized('Mvu'); } catch (e) {}\n  const top = window.parent;\n  // 面板读变量的入口：给楼层号，回这一楼的 stat_data\n  top.__mvuStatusRead = function (id) {\n    try { const m = Mvu.getMvuData({ type: 'message', message_id: id }); if (m && m.stat_data) return m.stat_data; } catch (e) {}\n    try { const v = getVariables({ type: 'message', message_id: id }); if (v && v.stat_data) return v.stat_data; } catch (e) {}\n    return {};\n  };\n  top.__mvuStatusTicks = top.__mvuStatusTicks || {};\n  const ev = (typeof Mvu === 'object' && Mvu && Mvu.events) || {};\n  const later = () => { setTimeout(tickAll, 0); setTimeout(tickAll, 800); };\n  eventOn(ev.VARIABLE_UPDATE_ENDED || 'mag_variable_update_ended', later);\n  eventOn(ev.VARIABLE_INITIALIZED || 'mag_variable_initiailized', later);          // 官方常量的字符串就是这么拼的\n  eventOn(tavern_events.CHARACTER_MESSAGE_RENDERED, mount);\n  eventOn(tavern_events.MESSAGE_UPDATED, mount);\n  eventOn(tavern_events.MESSAGE_SWIPED, mount);\n  eventOn(tavern_events.MESSAGE_DELETED, () => setTimeout(mountAll, 0));\n  eventOn(tavern_events.CHAT_CHANGED, () => setTimeout(mountAll, 500));\n  mountAll();\n});\n\n// 脚本停用、换卡时把挂上去的面板收走\n$(window).on('pagehide', () => { try { doc().querySelectorAll('.' + HOST).forEach(h => h.remove()); } catch (e) {} });\n",
+      "info": "把状态栏挂到每条 AI 回复的正文底部",
+      "button": {
+       "enabled": false,
+       "buttons": []
+      },
+      "data": {},
+      "export_with": {
+       "data": true,
+       "button": false
+      }
+     }
+    ],
+    "variables": {}
+   },
+   "regex_scripts": [
+    {
+     "id": "mvu-hide-update-block",
+     "scriptName": "[MVU]去除变量更新显示",
+     "findRegex": "/<UpdateVariable>\\s*[\\s\\S]*?<\\/UpdateVariable>\\s*/gi",
+     "replaceString": "",
+     "trimStrings": [],
+     "placement": [
+      2
+     ],
+     "disabled": false,
+     "markdownOnly": true,
+     "promptOnly": false,
+     "runOnEdit": true,
+     "substituteRegex": 0,
+     "minDepth": null,
+     "maxDepth": null
+    },
+    {
+     "id": "mvu-hide-placeholder",
+     "scriptName": "[MVU]去除正文底部占位符",
+     "findRegex": "/<StatusPlaceHolderImpl\\s*\\/?>/gi",
+     "replaceString": "",
+     "trimStrings": [],
+     "placement": [
+      1,
+      2
+     ],
+     "disabled": false,
+     "markdownOnly": true,
+     "promptOnly": true,
+     "runOnEdit": true,
+     "substituteRegex": 0,
+     "minDepth": null,
+     "maxDepth": null
+    }
+   ]
+  },
+  "character_book": {
+   "name": "MVU变量卡_空模板世界书",
+   "entries": [
+    {
+     "id": 0,
+     "keys": [],
+     "secondary_keys": [],
+     "comment": "[mvu_update]变量更新规则",
+     "content": "---\n变量更新规则:\n  首轮定值:\n    - 故事开始后的第一次更新，依据玩家设定和开场正文，把 -1、空串、空集合补成真实的起始值\n    - 不确定的保持待确定，不编造\n    - 只写玩家真的认识、真的接触过的人和东西；陌生人开局时关系类变量保持待确定\n  好感度:\n    type: number\n    range: 0~100，-1 表示待确定\n    check:\n      - 依据本轮互动加减 1~5\n      - 到 100 后不再增加，到 0 后不再减少\n  所持金:\n    type: number\n    range: 0~9999999，-1 表示待确定\n    check:\n      - 花钱、收钱时按实际金额加减\n  心情:\n    check:\n      - 情绪明显变化时换成新状态\n  物品栏:\n    type: |-\n      { [物品名: string]: { 描述: string, 数量: number } }\n    check:\n      - 得到新物品时用 add 新增这一项\n      - 数量变化时用 replace 改「数量」\n      - 用完、丢掉、送人时用 remove 删掉这一项\n",
+     "constant": true,
+     "selective": false,
+     "insertion_order": 902,
+     "enabled": true,
+     "position": "at_depth",
+     "use_regex": true,
+     "extensions": {
+      "position": 4,
+      "depth": 0,
+      "role": 0,
+      "probability": 100,
+      "useProbability": true,
+      "scan_depth": null,
+      "prevent_recursion": true,
+      "exclude_recursion": true,
+      "group": "",
+      "group_override": false,
+      "group_weight": 100
+     }
+    },
+    {
+     "id": 1,
+     "keys": [],
+     "secondary_keys": [],
+     "comment": "[mvu_update]变量输出格式",
+     "content": "---\n变量输出格式:\n  rule:\n    - 每条回复的末尾只输出一个 <UpdateVariable>，里面先写 <Analysis>，再写 <JSONPatch>\n    - <JSONPatch> 里是合法的 JSON 数组，一个元素是一条操作\n    - 路径用 / 分隔，不带 stat_data 前缀\n    - 只用四种操作：add 新增键或项，replace 改已有路径的值，remove 删除，move 移动或改名\n    - 下划线开头的字段只读，不出现在更新里\n    - 只更新本轮真正变了的内容；数值在原值上加减，不凭空重置\n  format: |-\n    <UpdateVariable>\n    <Analysis>用英文写，不超过 80 词：\n    - 本轮过了多久\n    - 是否允许大幅更新：yes/no\n    - 按各变量的 check 逐项给出结论\n    </Analysis>\n    <JSONPatch>\n    [\n      { \"op\": \"replace\", \"path\": \"/好感度\", \"value\": 55 },\n      { \"op\": \"add\", \"path\": \"/物品栏/发夹\", \"value\": { \"描述\": \"蓝色发夹\", \"数量\": 1 } },\n      { \"op\": \"remove\", \"path\": \"/物品栏/发夹\" },\n      { \"op\": \"move\", \"from\": \"/物品栏/旧名\", \"to\": \"/物品栏/新名\" }\n    ]\n    </JSONPatch>\n    </UpdateVariable>\n",
+     "constant": true,
+     "selective": false,
+     "insertion_order": 901,
+     "enabled": true,
+     "position": "at_depth",
+     "use_regex": true,
+     "extensions": {
+      "position": 4,
+      "depth": 0,
+      "role": 0,
+      "probability": 100,
+      "useProbability": true,
+      "scan_depth": null,
+      "prevent_recursion": true,
+      "exclude_recursion": true,
+      "group": "",
+      "group_override": false,
+      "group_weight": 100
+     }
+    },
+    {
+     "id": 2,
+     "keys": [],
+     "secondary_keys": [],
+     "comment": "变量列表",
+     "content": "---\n<status_current_variable>\n{{format_message_variable::stat_data}}\n</status_current_variable>\n\n- 不在正文里输出 <status_current_variable>，它只用来读当前变量。\n",
+     "constant": true,
+     "selective": false,
+     "insertion_order": 900,
+     "enabled": true,
+     "position": "at_depth",
+     "use_regex": true,
+     "extensions": {
+      "position": 4,
+      "depth": 0,
+      "role": 0,
+      "probability": 100,
+      "useProbability": true,
+      "scan_depth": null,
+      "prevent_recursion": true,
+      "exclude_recursion": true,
+      "group": "",
+      "group_override": false,
+      "group_weight": 100
+     }
+    },
+    {
+     "id": 3,
+     "keys": [],
+     "secondary_keys": [],
+     "comment": "[initvar]变量初始化勿开",
+     "content": "好感度: -1\n所持金: -1\n心情: ''\n物品栏: {}\n",
+     "constant": true,
+     "selective": false,
+     "insertion_order": 899,
+     "enabled": false,
+     "position": "after_char",
+     "use_regex": true,
+     "extensions": {
+      "position": 1,
+      "depth": 4,
+      "role": 0,
+      "probability": 100,
+      "useProbability": true,
+      "scan_depth": null,
+      "prevent_recursion": true,
+      "exclude_recursion": true,
+      "group": "",
+      "group_override": false,
+      "group_weight": 100
+     }
+    }
+   ]
+  }
+ }
+}
