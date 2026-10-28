@@ -1,0 +1,556 @@
+{
+  "status": "PASS",
+  "candidate": "1.0.0-candidate5",
+  "real_android_sillytavern": "NOT_TESTED",
+  "scope": "timeline date redistribution only",
+  "nodes": {
+    "modern_redistributed": 446,
+    "historical_preserved": 27,
+    "fixed_total": 473,
+    "sandboxes": 9,
+    "runtime_total": 482
+  },
+  "invariants": {
+    "event_labels_titles_bodies_order_unchanged": true,
+    "historical_dates_unchanged": true,
+    "timeline_recursion": "9/9 false,false",
+    "character_book_entries": 293,
+    "mvu_unchanged": true,
+    "non_timeline_worldbook_unchanged": true,
+    "cover_bytes_identical_to_candidate4": true
+  },
+  "density": {
+    "MAIN01": {
+      "modern_fixed_events": 48,
+      "historical_fixed_events_unchanged": 3,
+      "runtime_days": 12,
+      "first_runtime_date": "2007-05-18",
+      "last_fixed_date": "2007-05-29",
+      "sandbox_start": "2007-05-30",
+      "max_events_per_day": 6,
+      "average_events_per_day": 4.0,
+      "daily_counts": [
+        {
+          "date": "2007-05-18",
+          "events": 2
+        },
+        {
+          "date": "2007-05-19",
+          "events": 3
+        },
+        {
+          "date": "2007-05-20",
+          "events": 4
+        },
+        {
+          "date": "2007-05-21",
+          "events": 5
+        },
+        {
+          "date": "2007-05-22",
+          "events": 4
+        },
+        {
+          "date": "2007-05-23",
+          "events": 5
+        },
+        {
+          "date": "2007-05-24",
+          "events": 3
+        },
+        {
+          "date": "2007-05-25",
+          "events": 4
+        },
+        {
+          "date": "2007-05-26",
+          "events": 6
+        },
+        {
+          "date": "2007-05-27",
+          "events": 4
+        },
+        {
+          "date": "2007-05-28",
+          "events": 4
+        },
+        {
+          "date": "2007-05-29",
+          "events": 4
+        }
+      ],
+      "dates_changed": 43
+    },
+    "MAIN02A": {
+      "modern_fixed_events": 35,
+      "historical_fixed_events_unchanged": 5,
+      "runtime_days": 7,
+      "first_runtime_date": "2009-08-28",
+      "last_fixed_date": "2009-09-03",
+      "sandbox_start": "2009-09-04",
+      "max_events_per_day": 7,
+      "average_events_per_day": 5.0,
+      "daily_counts": [
+        {
+          "date": "2009-08-28",
+          "events": 4
+        },
+        {
+          "date": "2009-08-29",
+          "events": 5
+        },
+        {
+          "date": "2009-08-30",
+          "events": 4
+        },
+        {
+          "date": "2009-08-31",
+          "events": 6
+        },
+        {
+          "date": "2009-09-01",
+          "events": 2
+        },
+        {
+          "date": "2009-09-02",
+          "events": 7
+        },
+        {
+          "date": "2009-09-03",
+          "events": 7
+        }
+      ],
+      "dates_changed": 14
+    },
+    "MAIN02B": {
+      "modern_fixed_events": 41,
+      "historical_fixed_events_unchanged": 0,
+      "runtime_days": 8,
+      "first_runtime_date": "2009-09-04",
+      "last_fixed_date": "2009-09-11",
+      "sandbox_start": "2009-09-12",
+      "max_events_per_day": 6,
+      "average_events_per_day": 5.12,
+      "daily_counts": [
+        {
+          "date": "2009-09-04",
+          "events": 5
+        },
+        {
+          "date": "2009-09-05",
+          "events": 5
+        },
+        {
+          "date": "2009-09-06",
+          "events": 4
+        },
+        {
+          "date": "2009-09-07",
+          "events": 5
+        },
+        {
+          "date": "2009-09-08",
+          "events": 5
+        },
+        {
+          "date": "2009-09-09",
+          "events": 6
+        },
+        {
+          "date": "2009-09-10",
+          "events": 6
+        },
+        {
+          "date": "2009-09-11",
+          "events": 5
+        }
+      ],
+      "dates_changed": 41
+    },
+    "MAIN03A": {
+      "modern_fixed_events": 44,
+      "historical_fixed_events_unchanged": 7,
+      "runtime_days": 10,
+      "first_runtime_date": "2012-07-01",
+      "last_fixed_date": "2012-07-10",
+      "sandbox_start": "2012-07-11",
+      "max_events_per_day": 6,
+      "average_events_per_day": 4.4,
+      "daily_counts": [
+        {
+          "date": "2012-07-01",
+          "events": 6
+        },
+        {
+          "date": "2012-07-02",
+          "events": 3
+        },
+        {
+          "date": "2012-07-03",
+          "events": 3
+        },
+        {
+          "date": "2012-07-04",
+          "events": 6
+        },
+        {
+          "date": "2012-07-05",
+          "events": 3
+        },
+        {
+          "date": "2012-07-06",
+          "events": 4
+        },
+        {
+          "date": "2012-07-07",
+          "events": 6
+        },
+        {
+          "date": "2012-07-08",
+          "events": 4
+        },
+        {
+          "date": "2012-07-09",
+          "events": 4
+        },
+        {
+          "date": "2012-07-10",
+          "events": 5
+        }
+      ],
+      "dates_changed": 37
+    },
+    "MAIN03B": {
+      "modern_fixed_events": 59,
+      "historical_fixed_events_unchanged": 0,
+      "runtime_days": 14,
+      "first_runtime_date": "2012-07-11",
+      "last_fixed_date": "2012-07-24",
+      "sandbox_start": "2012-07-25",
+      "max_events_per_day": 6,
+      "average_events_per_day": 4.21,
+      "daily_counts": [
+        {
+          "date": "2012-07-11",
+          "events": 5
+        },
+        {
+          "date": "2012-07-12",
+          "events": 4
+        },
+        {
+          "date": "2012-07-13",
+          "events": 4
+        },
+        {
+          "date": "2012-07-14",
+          "events": 3
+        },
+        {
+          "date": "2012-07-15",
+          "events": 4
+        },
+        {
+          "date": "2012-07-16",
+          "events": 3
+        },
+        {
+          "date": "2012-07-17",
+          "events": 4
+        },
+        {
+          "date": "2012-07-18",
+          "events": 3
+        },
+        {
+          "date": "2012-07-19",
+          "events": 5
+        },
+        {
+          "date": "2012-07-20",
+          "events": 5
+        },
+        {
+          "date": "2012-07-21",
+          "events": 5
+        },
+        {
+          "date": "2012-07-22",
+          "events": 4
+        },
+        {
+          "date": "2012-07-23",
+          "events": 4
+        },
+        {
+          "date": "2012-07-24",
+          "events": 6
+        }
+      ],
+      "dates_changed": 59
+    },
+    "MAIN04A": {
+      "modern_fixed_events": 50,
+      "historical_fixed_events_unchanged": 3,
+      "runtime_days": 12,
+      "first_runtime_date": "2017-07-08",
+      "last_fixed_date": "2017-07-19",
+      "sandbox_start": "2017-07-20",
+      "max_events_per_day": 6,
+      "average_events_per_day": 4.17,
+      "daily_counts": [
+        {
+          "date": "2017-07-08",
+          "events": 4
+        },
+        {
+          "date": "2017-07-09",
+          "events": 5
+        },
+        {
+          "date": "2017-07-10",
+          "events": 6
+        },
+        {
+          "date": "2017-07-11",
+          "events": 5
+        },
+        {
+          "date": "2017-07-12",
+          "events": 5
+        },
+        {
+          "date": "2017-07-13",
+          "events": 4
+        },
+        {
+          "date": "2017-07-14",
+          "events": 3
+        },
+        {
+          "date": "2017-07-15",
+          "events": 4
+        },
+        {
+          "date": "2017-07-16",
+          "events": 3
+        },
+        {
+          "date": "2017-07-17",
+          "events": 3
+        },
+        {
+          "date": "2017-07-18",
+          "events": 4
+        },
+        {
+          "date": "2017-07-19",
+          "events": 4
+        }
+      ],
+      "dates_changed": 34
+    },
+    "MAIN04B": {
+      "modern_fixed_events": 60,
+      "historical_fixed_events_unchanged": 0,
+      "runtime_days": 14,
+      "first_runtime_date": "2017-07-20",
+      "last_fixed_date": "2017-08-02",
+      "sandbox_start": "2017-08-03",
+      "max_events_per_day": 6,
+      "average_events_per_day": 4.29,
+      "daily_counts": [
+        {
+          "date": "2017-07-20",
+          "events": 5
+        },
+        {
+          "date": "2017-07-21",
+          "events": 4
+        },
+        {
+          "date": "2017-07-22",
+          "events": 5
+        },
+        {
+          "date": "2017-07-23",
+          "events": 3
+        },
+        {
+          "date": "2017-07-24",
+          "events": 4
+        },
+        {
+          "date": "2017-07-25",
+          "events": 4
+        },
+        {
+          "date": "2017-07-26",
+          "events": 5
+        },
+        {
+          "date": "2017-07-27",
+          "events": 5
+        },
+        {
+          "date": "2017-07-28",
+          "events": 4
+        },
+        {
+          "date": "2017-07-29",
+          "events": 3
+        },
+        {
+          "date": "2017-07-30",
+          "events": 6
+        },
+        {
+          "date": "2017-07-31",
+          "events": 5
+        },
+        {
+          "date": "2017-08-01",
+          "events": 4
+        },
+        {
+          "date": "2017-08-02",
+          "events": 3
+        }
+      ],
+      "dates_changed": 60
+    },
+    "MAIN05A": {
+      "modern_fixed_events": 50,
+      "historical_fixed_events_unchanged": 9,
+      "runtime_days": 11,
+      "first_runtime_date": "2022-09-01",
+      "last_fixed_date": "2022-09-11",
+      "sandbox_start": "2022-09-12",
+      "max_events_per_day": 6,
+      "average_events_per_day": 4.55,
+      "daily_counts": [
+        {
+          "date": "2022-09-01",
+          "events": 5
+        },
+        {
+          "date": "2022-09-02",
+          "events": 5
+        },
+        {
+          "date": "2022-09-03",
+          "events": 4
+        },
+        {
+          "date": "2022-09-04",
+          "events": 4
+        },
+        {
+          "date": "2022-09-05",
+          "events": 5
+        },
+        {
+          "date": "2022-09-06",
+          "events": 5
+        },
+        {
+          "date": "2022-09-07",
+          "events": 6
+        },
+        {
+          "date": "2022-09-08",
+          "events": 6
+        },
+        {
+          "date": "2022-09-09",
+          "events": 4
+        },
+        {
+          "date": "2022-09-10",
+          "events": 3
+        },
+        {
+          "date": "2022-09-11",
+          "events": 3
+        }
+      ],
+      "dates_changed": 45
+    },
+    "MAIN05B": {
+      "modern_fixed_events": 59,
+      "historical_fixed_events_unchanged": 0,
+      "runtime_days": 12,
+      "first_runtime_date": "2022-09-12",
+      "last_fixed_date": "2022-09-23",
+      "sandbox_start": "2022-09-24",
+      "max_events_per_day": 6,
+      "average_events_per_day": 4.92,
+      "daily_counts": [
+        {
+          "date": "2022-09-12",
+          "events": 5
+        },
+        {
+          "date": "2022-09-13",
+          "events": 5
+        },
+        {
+          "date": "2022-09-14",
+          "events": 5
+        },
+        {
+          "date": "2022-09-15",
+          "events": 5
+        },
+        {
+          "date": "2022-09-16",
+          "events": 5
+        },
+        {
+          "date": "2022-09-17",
+          "events": 5
+        },
+        {
+          "date": "2022-09-18",
+          "events": 4
+        },
+        {
+          "date": "2022-09-19",
+          "events": 4
+        },
+        {
+          "date": "2022-09-20",
+          "events": 6
+        },
+        {
+          "date": "2022-09-21",
+          "events": 6
+        },
+        {
+          "date": "2022-09-22",
+          "events": 5
+        },
+        {
+          "date": "2022-09-23",
+          "events": 4
+        }
+      ],
+      "dates_changed": 59
+    }
+  },
+  "global_density": {
+    "max_events_per_runtime_day": 7,
+    "seven_event_days": [
+      "MAIN02A 2009-09-02",
+      "MAIN02A 2009-09-03"
+    ],
+    "reason": "continuous kidnapping/forest-battle chain and immediate fallout; deliberately kept dense",
+    "all_other_days_max": 6
+  },
+  "package": {
+    "json_sha256": "fd6ee660baa299812b5b42d53ba8422ac296fa1f17d9d55413b3b5ce401d4918",
+    "png_sha256": "abaff268f612cff1b40d0d90837e20c35a27a08775fc8f4e41b032481ff61e2a",
+    "chara_equals_ccv3_equals_json": true,
+    "png_crc_valid": true
+  }
+}
