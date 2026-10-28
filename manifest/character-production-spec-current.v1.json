@@ -2,10 +2,10 @@
   "schema": "transformers-steel-maidens.character-production-spec.v1",
   "status": "active",
   "character_schema_base": "meimei-fullstack-chara-v1",
-  "appearance_profile": "cybertronian-native-roster-anchored-v1.4",
-  "character_spec": "docs/002_变形钢姬_咩咩全栈人物条目与能力条目生产规范_v1.4.md",
-  "previous_spec": "docs/002_变形钢姬_咩咩全栈人物条目与能力条目生产规范_v1.3.md",
-  "qa": "qa/CHARACTER_LAYER_69_人物能力总拉通审计_v2.0.md",
+  "appearance_profile": "cybertronian-native-roster-anchored-v1.5",
+  "character_spec": "docs/002_变形钢姬_咩咩全栈人物条目与能力条目生产规范_v1.5.md",
+  "previous_spec": "docs/002_变形钢姬_咩咩全栈人物条目与能力条目生产规范_v1.4.md",
+  "qa": "qa/CHARACTER_LAYER_69_人际关系补全与双向审计_v2.1.md",
   "roster": "docs/001_变形钢姬_人物总名册_v0.4.md",
   "name_replacements": "manifest/character-name-replacements.v1.json",
   "character_paths": {
@@ -16,6 +16,11 @@
   "roster_inherited_fields": ["阵营","定位","变形载具","外貌锚点","性征武装模块"],
   "appearance_fields": ["头部主色","头部结构","光学镜","机体比例","胸甲结构","上身装甲","下身装甲","外置结构","足部结构"],
   "psychology_model": ["Trauma","Defense","Trigger","Need"],
+  "relationship_field": "人际关系",
+  "relationship_placement": {
+    "after": "心理模型.Need",
+    "before": "对话范例"
+  },
   "dialogue_examples": 3,
   "ability_tag": "<核心设定:角色名·能力>",
   "source_format": {
@@ -29,6 +34,12 @@
     "appearance_anchor_must_match_roster_verbatim": true,
     "engineering_source_notes_must_not_enter_inherited_fields": true,
     "preserve_meimei_psychology_model_exactly": true,
+    "relationship_field_inside_character_entry": true,
+    "relationship_after_psychology_before_dialogue": true,
+    "no_standalone_relation_layer": true,
+    "stable_relationships_only": true,
+    "strong_relationships_bidirectionally_consistent": true,
+    "timeline_owns_relationship_state_changes": true,
     "preserve_three_dialogue_examples": true,
     "use_cybertronian_native_appearance_fields": true,
     "character_weapon_field_is_summary_only": true,
@@ -40,5 +51,5 @@
     "formal_worldbook_avoids_meta_engineering_wording": true,
     "formal_timeline_uses_au_names": true
   },
-  "production_status": "FORMAT_LOCKED_AFTER_CHARACTER_LAYER_AUDIT"
+  "production_status": "FORMAT_LOCKED_WITH_EMBEDDED_RELATIONSHIPS"
 }

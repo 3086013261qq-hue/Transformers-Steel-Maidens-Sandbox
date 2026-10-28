@@ -1,0 +1,31 @@
+{
+  "schema": "transformers-steel-maidens.character-layer-audited.v2",
+  "status": "complete",
+  "roster": "docs/001_变形钢姬_人物总名册_v0.4.md",
+  "production_spec": "docs/002_变形钢姬_咩咩全栈人物条目与能力条目生产规范_v1.5.md",
+  "name_replacements": "manifest/character-name-replacements.v1.json",
+  "counts": {
+    "characters": 69,
+    "abilities": 69,
+    "relationship_fields": 69,
+    "paired": 69,
+    "formal_character_ability_artifacts": 138
+  },
+  "relationship_integration": {
+    "field": "人际关系",
+    "placement_after": "心理模型.Need",
+    "placement_before": "对话范例",
+    "standalone_relation_layer": false,
+    "strong_relationship_bidirectional_audit": true,
+    "timeline_owns_relation_state_changes": true
+  },
+  "previous_audit": "manifest/character-layer-audited.v1.json",
+  "previous_audit_qa": "qa/CHARACTER_LAYER_69_人物能力总拉通审计_v2.0.md",
+  "qa": "qa/CHARACTER_LAYER_69_人际关系补全与双向审计_v2.1.md",
+  "known_upstream_debt": [],
+  "new_global_setting_required": false,
+  "formal_names_are_au_feminized_names": true,
+  "original_names_engineering_only": true,
+  "production_status": "CHARACTER_RELATIONSHIPS_EMBEDDED_AND_LOCKED",
+  "next_phase_options": ["LOCATION_LAYER","BAYVERSE_TIMELINE"]
+}
