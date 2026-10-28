@@ -1,0 +1,26 @@
+{
+  "schema": "transformers-steel-maidens.worldbook-lights.v0.1",
+  "status": "blue_layer_drafting",
+  "policy": {
+    "blue": "always_on",
+    "green": "keyword_triggered",
+    "precedence": "blue_over_green",
+    "notes": [
+      "蓝灯逐条精修、独立文件管理；不得恢复旧式汇总蓝灯。",
+      "BLUE 条目只定义全世界持续成立的上位事实，不承担机制细节、分类、案例、流程或具体人物展开。",
+      "GREEN 条目必须从已封版 BLUE 条目向下展开，不得覆盖、改写或与上位蓝灯冲突。",
+      "当前仅 BLUE01 已进入正式现行层；其余蓝灯仍待逐条讨论与精修。"
+    ]
+  },
+  "blue_entries": [
+    {
+      "id": "BLUE01",
+      "path": "worldbook/settings/BLUE01_世界基调.md",
+      "enabled": true,
+      "constant": true,
+      "priority": 1000,
+      "keywords": []
+    }
+  ],
+  "active_green_entries": []
+}
