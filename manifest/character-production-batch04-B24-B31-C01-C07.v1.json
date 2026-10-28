@@ -1,0 +1,28 @@
+{
+  "schema": "transformers-steel-maidens.character-production-batch.v1",
+  "status": "approved",
+  "batch": "CHARACTER_BATCH04_B24_B31_C01_C07",
+  "production_spec": "docs/002_变形钢姬_咩咩全栈人物条目与能力条目生产规范_v1.3.md",
+  "roster": "docs/001_变形钢姬_人物总名册_v0.3.md",
+  "count": 15,
+  "ids": ["B24","B25","B26","B27","B28","B29","B30","B31","C01","C02","C03","C04","C05","C06","C07"],
+  "names": ["博妮珂","芙蕾茜","拉薇琪","蕾瑟碧","赛德薇","斯卡佩拉","格琳朵","黛莫莉莎","兰佩琪","米克茜","珑荷","斯嘉佩","克兰茜","克萝芭","哈琪特"],
+  "formal_names_are_au_feminized_names": true,
+  "original_names_engineering_only": true,
+  "artifacts_per_character": ["character","ability"],
+  "roster_inherited_fields": ["阵营","定位","变形载具","外貌锚点","性征武装模块"],
+  "appearance_anchor_verbatim": true,
+  "psychology_model": ["Trauma","Defense","Trigger","Need"],
+  "preview_readable_source_format": true,
+  "qa": "qa/CHARACTER_BATCH04_B24-B31_C01-C07_人物能力生产QA_v1.0.md",
+  "batch_status": "CHARACTER_BATCH04_APPROVED",
+  "production_progress": {
+    "completed": 62,
+    "total": 69,
+    "remaining": 7
+  },
+  "next_batch": {
+    "count": 7,
+    "ids": ["C08","C09","C10","C11","C12","C13","C14"]
+  }
+}
