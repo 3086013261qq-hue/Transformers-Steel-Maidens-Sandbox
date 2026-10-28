@@ -1,0 +1,36 @@
+name: Assemble Candidate5 card
+
+on:
+  push:
+    paths:
+      - 'build/cards/.candidate5-ready'
+
+permissions:
+  contents: write
+
+jobs:
+  assemble:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Reconstruct exact Candidate5 PNG and JSON
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p build/cards qa
+          cat build/cards/.candidate5.part*.b64 | base64 -d | zstd -d -o 'build/cards/变形钢姬_v1.0.0-candidate5.png'
+          echo 'abaff268f612cff1b40d0d90837e20c35a27a08775fc8f4e41b032481ff61e2a  build/cards/变形钢姬_v1.0.0-candidate5.png' | sha256sum -c -
+          python3 tools/extract_candidate5_json.py
+          echo 'fd6ee660baa299812b5b42d53ba8422ac296fa1f17d9d55413b3b5ce401d4918  build/cards/变形钢姬_v1.0.0-candidate5.json' | sha256sum -c -
+      - name: Commit final artifacts and remove transport chunks
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -f build/cards/.candidate5.part*.b64 build/cards/.candidate5-ready
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add build/cards/ qa/ .github/workflows/assemble-candidate5.yml tools/extract_candidate5_json.py
+          git commit -m 'build: publish Steel Maidens Candidate5 final card'
+          git push
