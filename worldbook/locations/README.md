@@ -61,9 +61,9 @@ RP场景:
 
 正式候选总名册见：`docs/005_变形钢姬_地点总名册_v0.1.md`。
 
-## Batch 01 样板
+## 生产进度
 
-第一批只生产五种不同类型的模板：
+### Batch 01｜5条样板｜PASS
 
 - LOC-A01 赛博坦
 - LOC-A02 芝加哥
@@ -71,4 +71,22 @@ RP场景:
 - LOC-A04 Diego Garcia NEST基地
 - LOC-A06 凯德·伊格尔废料场·赛博坦避难场
 
-验收通过后再批量展开其余 34 个地点。
+QA：`qa/locations/location-batch01_v0.1_QA.md`
+
+### Batch 02｜20条｜PASS
+
+- LOC-A05 / A07 / A08 / A09
+- LOC-B01 ～ LOC-B16
+
+Manifest：`manifest/location-production-batch02.v1.json`
+
+QA：`qa/locations/location-batch02_v1.0_QA.md`
+
+### Batch 03｜待生产14条
+
+- LOC-B17 ～ LOC-B22
+- LOC-C01 ～ LOC-C08
+
+Batch 03 完成后直接进行 39 / 39 地点总拉通审计，不再拆小批。
+
+**当前正式地点进度：25 / 39。**
