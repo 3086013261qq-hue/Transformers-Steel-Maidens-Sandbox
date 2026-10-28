@@ -1,0 +1,21 @@
+{
+  "schema": "transformers-steel-maidens.character-production-batch.v1",
+  "status": "approved",
+  "batch": "A_GROUP_BATCH01_A02_A16",
+  "production_spec": "docs/002_变形钢姬_咩咩全栈人物条目与能力条目生产规范_v1.3.md",
+  "roster": "docs/001_变形钢姬_人物总名册_v0.3.md",
+  "count": 15,
+  "ids": ["A02","A03","A04","A05","A06","A07","A08","A09","A10","A11","A12","A13","A14","A15","A16"],
+  "names": ["碧娅","嘉芝琳","艾琳铠","芮雪","赛薇","阿尔茜","捷菲雅","森缇雅","米拉琪","薇尔嘉","豪妲","德莉芙","克洛希娅","萝蒂","格琳洛珂"],
+  "artifacts_per_character": ["character","ability"],
+  "roster_inherited_fields": ["阵营","定位","变形载具","外貌锚点","性征武装模块"],
+  "appearance_anchor_verbatim": true,
+  "psychology_model": ["Trauma","Defense","Trigger","Need"],
+  "preview_readable_source_format": true,
+  "qa": "qa/A_GROUP_BATCH01_A02-A16_人物能力生产QA_v1.0.md",
+  "batch_status": "A_GROUP_BATCH01_APPROVED",
+  "next_batch": {
+    "count": 15,
+    "ids": ["A18","A19","A20","A21","A22","A23","A24","B01","B02","B03","B04","B05","B06","B07","B08"]
+  }
+}
