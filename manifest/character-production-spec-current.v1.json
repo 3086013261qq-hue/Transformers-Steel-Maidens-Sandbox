@@ -2,9 +2,9 @@
   "schema": "transformers-steel-maidens.character-production-spec.v1",
   "status": "active",
   "character_schema_base": "meimei-fullstack-chara-v1",
-  "appearance_profile": "cybertronian-native-v1.1",
-  "character_spec": "docs/002_变形钢姬_咩咩全栈人物条目与能力条目生产规范_v1.1.md",
-  "qa": "qa/人物能力生产规范_v1.1_QA.md",
+  "appearance_profile": "cybertronian-native-v1.2",
+  "character_spec": "docs/002_变形钢姬_咩咩全栈人物条目与能力条目生产规范_v1.2.md",
+  "qa": "qa/人物能力生产规范_v1.2_QA.md",
   "roster": "docs/001_变形钢姬_人物总名册_v0.3.md",
   "name_replacements": "manifest/character-name-replacements.v1.json",
   "character_paths": {
@@ -12,8 +12,12 @@
     "other": "worldbook/characters/other/"
   },
   "ability_path": "worldbook/abilities/",
-  "psychology_model": ["Trauma", "Defense", "Trigger", "Need"],
-  "dialogue_examples": 3,
+  "identity_fields": [
+    "阵营",
+    "定位",
+    "变形载具",
+    "性征武装模块"
+  ],
   "appearance_fields": [
     "头部主色",
     "头部结构",
@@ -25,6 +29,8 @@
     "外置结构",
     "足部结构"
   ],
+  "psychology_model": ["Trauma", "Defense", "Trigger", "Need"],
+  "dialogue_examples": 3,
   "deprecated_appearance_fields": [
     "发色",
     "发型",
@@ -38,12 +44,13 @@
   ],
   "ability_tag": "<核心设定:角色名·能力>",
   "hard_rules": {
-    "preserve_meimei_character_structure": true,
-    "preserve_psychology_model_exactly": true,
+    "preserve_meimei_psychology_model_exactly": true,
     "preserve_three_dialogue_examples": true,
+    "require_identity_fields": true,
     "use_cybertronian_native_appearance_fields": true,
-    "no_human_hair_clothing_shoes_hallucination": true,
+    "character_weapon_field_is_summary_only": true,
     "abilities_split_from_character_entry": true,
+    "no_human_hair_clothing_shoes_hallucination": true,
     "formal_timeline_uses_au_names": true
   },
   "production_status": "FORMAT_LOCKED"
