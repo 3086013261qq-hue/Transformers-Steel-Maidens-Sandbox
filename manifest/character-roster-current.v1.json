@@ -1,9 +1,10 @@
 {
   "schema": "transformers-steel-maidens.character-roster-current.v1",
   "status": "active",
-  "current_roster": "docs/001_变形钢姬_人物总名册_v0.3.md",
+  "current_roster": "docs/001_变形钢姬_人物总名册_v0.4.md",
+  "previous_roster": "docs/001_变形钢姬_人物总名册_v0.3.md",
   "name_replacements": "manifest/character-name-replacements.v1.json",
-  "qa": "qa/人物总名册_v0.3_载具定位外貌与扶她武器模块全量审计_QA.md",
+  "qa": "qa/人物总名册_v0.4_人物层拉通审计_QA.md",
   "counts": {
     "main": 24,
     "important": 31,
@@ -14,5 +15,7 @@
     "source_names_are_lookup_keys_only": true,
     "formal_world_timeline_uses_au_names": true
   },
-  "production_status": "CHARACTER_ROSTER_PRODUCTION_READY"
+  "inherited_business_fields": ["阵营","定位","变形载具","外貌锚点","性征武装模块"],
+  "engineering_source_notes_must_not_be_inherited": true,
+  "production_status": "CHARACTER_ROSTER_AUDITED_AND_LOCKED"
 }

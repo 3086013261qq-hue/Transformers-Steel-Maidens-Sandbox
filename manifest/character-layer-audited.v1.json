@@ -1,0 +1,27 @@
+{
+  "schema": "transformers-steel-maidens.character-layer-audited.v1",
+  "status": "complete",
+  "roster": "docs/001_变形钢姬_人物总名册_v0.4.md",
+  "production_spec": "docs/002_变形钢姬_咩咩全栈人物条目与能力条目生产规范_v1.4.md",
+  "name_replacements": "manifest/character-name-replacements.v1.json",
+  "counts": {
+    "characters": 69,
+    "abilities": 69,
+    "paired": 69,
+    "formal_character_ability_artifacts": 138
+  },
+  "audit_fixes": {
+    "upstream_roster_wording_debts_fixed": ["A21","B12","B13"],
+    "mass_scale_conflicts_fixed": ["B12"],
+    "ability_granularity_upgraded": ["A18","A19","A20","A21","A22","A23","A24","B01","B02","B03","B04","B05","B06","B07","B08"],
+    "nonstandard_life_continuity_clarified": ["C08","C09"]
+  },
+  "known_upstream_debt": [],
+  "new_global_setting_required": false,
+  "qa": "qa/CHARACTER_LAYER_69_人物能力总拉通审计_v2.0.md",
+  "roster_qa": "qa/人物总名册_v0.4_人物层拉通审计_QA.md",
+  "formal_names_are_au_feminized_names": true,
+  "original_names_engineering_only": true,
+  "production_status": "CHARACTER_LAYER_AUDITED_AND_LOCKED",
+  "next_phase_options": ["RELATION_LAYER","LOCATION_LAYER","BAYVERSE_TIMELINE"]
+}

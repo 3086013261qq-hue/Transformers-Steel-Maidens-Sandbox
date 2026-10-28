@@ -1,0 +1,12 @@
+{
+  "schema": "transformers-steel-maidens.character-layer-current.v1",
+  "status": "active",
+  "current_audit": "manifest/character-layer-audited.v1.json",
+  "current_roster": "docs/001_变形钢姬_人物总名册_v0.4.md",
+  "current_spec": "docs/002_变形钢姬_咩咩全栈人物条目与能力条目生产规范_v1.4.md",
+  "overall_qa": "qa/CHARACTER_LAYER_69_人物能力总拉通审计_v2.0.md",
+  "character_count": 69,
+  "ability_count": 69,
+  "known_debt_count": 0,
+  "state": "CHARACTER_LAYER_AUDITED_AND_LOCKED"
+}
