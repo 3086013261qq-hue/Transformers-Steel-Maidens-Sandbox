@@ -1,14 +1,20 @@
 {
   "schema": "transformers-steel-maidens.character-layer-current.v1",
   "status": "active",
-  "current_audit": "manifest/character-layer-audited.v2.json",
-  "current_roster": "docs/001_变形钢姬_人物总名册_v0.4.md",
-  "current_spec": "docs/002_变形钢姬_咩咩全栈人物条目与能力条目生产规范_v1.5.md",
-  "overall_qa": "qa/CHARACTER_LAYER_69_人际关系补全与双向审计_v2.1.md",
-  "character_count": 69,
-  "ability_count": 69,
-  "relationship_field_count": 69,
+  "current_audit": "manifest/character-layer-audited.v3.json",
+  "cybertronian_roster": "docs/001_变形钢姬_人物总名册_v0.4.md",
+  "cybertronian_spec": "docs/002_变形钢姬_咩咩全栈人物条目与能力条目生产规范_v1.5.md",
+  "human_npc_roster": "docs/004_变形钢姬_人类NPC总名册_v1.0.md",
+  "human_npc_spec": "docs/003_变形钢姬_人类NPC人物条目生产规范_v1.0.md",
+  "human_npc_manifest": "manifest/human-npc-production-current.v1.json",
+  "counts": {
+    "cybertronian_characters": 69,
+    "human_npcs": 28,
+    "total_character_entries": 97,
+    "ability_entries": 69,
+    "relationship_fields": 97
+  },
   "standalone_relation_layer": false,
   "known_debt_count": 0,
-  "state": "CHARACTER_RELATIONSHIPS_EMBEDDED_AND_LOCKED"
+  "state": "CHARACTER_LAYER_WITH_HUMAN_NPCS_COMPLETE"
 }

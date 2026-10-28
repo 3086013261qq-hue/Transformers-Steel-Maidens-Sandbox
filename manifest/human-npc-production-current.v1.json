@@ -1,0 +1,27 @@
+{
+  "schema": "transformers-steel-maidens.human-npc-production.v1",
+  "status": "complete",
+  "spec": "docs/003_变形钢姬_人类NPC人物条目生产规范_v1.0.md",
+  "roster": "docs/004_变形钢姬_人类NPC总名册_v1.0.md",
+  "path": "worldbook/characters/human/",
+  "qa": "qa/HUMAN_NPC_28_全量生产与格式审计_v1.0.md",
+  "counts": {
+    "human_npcs": 28,
+    "character_entries": 28,
+    "ability_entries": 0
+  },
+  "format": {
+    "schema_base": "meimei-fullstack-chara-v1-human",
+    "appearance_fields": ["发色","发型","瞳色","身材","胸部","上衣","下装","配饰","鞋子"],
+    "psychology": ["Trauma","Defense","Trigger","Need"],
+    "relationship_field": "人际关系",
+    "relationship_after_psychology": true,
+    "relationship_before_dialogue": true,
+    "dialogue_examples": 3
+  },
+  "minor_safety": {
+    "nonsexualized_character_ids": ["H02","H18","H27"],
+    "cup_measurement_forbidden_for_minors": true
+  },
+  "production_status": "HUMAN_NPC_LAYER_COMPLETE"
+}
