@@ -1,0 +1,1380 @@
+{
+  "schema": "transformers-steel-maidens.worldbook-assembly.v1",
+  "source_head": "b839ff62deefade9439ced65bd8ebf6c26a9142c",
+  "fullstack_basis": "咩咩制卡·全栈 v1.0.0 / chara_card_v3 character_book",
+  "output": "build/worldbook/变形钢姬_worldbook_v1.0.0.json",
+  "entry_counts": {
+    "total": 283,
+    "section_markers": 14,
+    "timelines": 9,
+    "blue_settings": 9,
+    "green_settings": 46,
+    "abilities": 69,
+    "cybertronian_characters": 69,
+    "human_characters": 28,
+    "locations": 39,
+    "triggered_entries": 251
+  },
+  "policies": {
+    "strip_engineering_headers": true,
+    "trigger_keys": "exactly one regex in keys; secondary_keys=[]",
+    "green_recursion": {
+      "prevent_recursion": true,
+      "exclude_recursion": true
+    },
+    "extension_naming": "ccv3 canonical snake_case; no recursion/display camelCase aliases",
+    "timeline_default": "MAIN01 enabled; remaining eight disabled; manual switching only",
+    "location_trigger": "single exact-current-location <status> regex to prevent parent/child collision"
+  },
+  "sources": [
+    {
+      "comment": "时间线-MAIN01-第一卷《Transformers》(多选一)",
+      "source": "timeline/fullstack/MAIN01_movie-01_Transformers-2007.md",
+      "runtime_content_sha256": "a27b17eddd99f517abd861c2c521a07741ffa1aa82ab225bba891c0ee421a73c"
+    },
+    {
+      "comment": "时间线-MAIN02A-第二卷（上）《卷土重来》(多选一)",
+      "source": "timeline/fullstack/MAIN02A_movie-02_Revenge-of-the-Fallen-2009_upper.md",
+      "runtime_content_sha256": "5ff0160ad2c06a289d68f6e367483b57db04bd02e7a7ed3970018eb92044a9d1"
+    },
+    {
+      "comment": "时间线-MAIN02B-第二卷（下）《卷土重来》(多选一)",
+      "source": "timeline/fullstack/MAIN02B_movie-02_Revenge-of-the-Fallen-2009_lower.md",
+      "runtime_content_sha256": "bc7f5874b0d68d32f5c050e43dc63100f2a6d0a3f1faf9ba0381793d810adf67"
+    },
+    {
+      "comment": "时间线-MAIN03A-第三卷（上）《月黑之时》(多选一)",
+      "source": "timeline/fullstack/MAIN03A_movie-03_Dark-of-the-Moon-2012_upper.md",
+      "runtime_content_sha256": "7784fdfd46484412a1b55ef71e06b0a5c5ce67a3877d5527522e2dd585889e82"
+    },
+    {
+      "comment": "时间线-MAIN03B-第三卷（下）《月黑之时》(多选一)",
+      "source": "timeline/fullstack/MAIN03B_movie-03_Dark-of-the-Moon-2012_lower.md",
+      "runtime_content_sha256": "d6a5e2dc491513f220941dda39279134e5a0c9b3c4a057daafba9a6987234cde"
+    },
+    {
+      "comment": "时间线-MAIN04A-第四卷（上）《绝迹重生》(多选一)",
+      "source": "timeline/fullstack/MAIN04A_movie-04_Age-of-Extinction-2017_upper.md",
+      "runtime_content_sha256": "7cc046608e49381480ea565b75325affd85a884255b2da64045fe2379d14e144"
+    },
+    {
+      "comment": "时间线-MAIN04B-第四卷（下）《绝迹重生》(多选一)",
+      "source": "timeline/fullstack/MAIN04B_movie-04_Age-of-Extinction-2017_lower.md",
+      "runtime_content_sha256": "5de5e0de57df970a1e1b98a7f50a95d42098969847bd7cc40cc33fe32ff0392c"
+    },
+    {
+      "comment": "时间线-MAIN05A-第五卷（上）《最后的骑士》(多选一)",
+      "source": "timeline/fullstack/MAIN05A_movie-05_The-Last-Knight-2022_upper.md",
+      "runtime_content_sha256": "226aca91661962ac183f88ef969631ab0220849f705d13e4958e3035ecb1498e"
+    },
+    {
+      "comment": "时间线-MAIN05B-第五卷（下）《最后的骑士》(多选一)",
+      "source": "timeline/fullstack/MAIN05B_movie-05_The-Last-Knight-2022_lower.md",
+      "runtime_content_sha256": "49862243b42295642a2e0d23f23d4cc6556e7d61ce0fb1cf1e93c687cb7e22d0"
+    },
+    {
+      "comment": "核心设定:世界基调",
+      "source": "worldbook/settings/BLUE01_世界基调.md",
+      "runtime_content_sha256": "7e3145dfa6656fae8a9c3e0cfa32e61ae1727fb43d4f9d594ea1dcccc5014156"
+    },
+    {
+      "comment": "核心设定:赛博坦机械生命本质",
+      "source": "worldbook/settings/BLUE02_赛博坦机械生命本质.md",
+      "runtime_content_sha256": "fc80aff20fefb785dabd2a8576fbceefce1c8799c16cdfef88caba460cbb45dc"
+    },
+    {
+      "comment": "核心设定:全女性赛博坦文明与双重性征",
+      "source": "worldbook/settings/BLUE03_全女性赛博坦文明与双重性征.md",
+      "runtime_content_sha256": "aa76048ceaa09aa0bc50eb904360a6f532ea6c7e1abe060780323413f996afae"
+    },
+    {
+      "comment": "核心设定:火种能量与专属武装系统",
+      "source": "worldbook/settings/BLUE04_火种能量与专属武装系统.md",
+      "runtime_content_sha256": "06ce6cafbd6b58c67d6793ce485c6eefea2f995c6a176e94de8964f4a052949a"
+    },
+    {
+      "comment": "核心设定:变形扫描与载具拟态",
+      "source": "worldbook/settings/BLUE05_变形扫描与载具拟态.md",
+      "runtime_content_sha256": "46e842c2a32944397a310b0c41f0942b9da34cf4f694f8bb7cde01548d0011c5"
+    },
+    {
+      "comment": "核心设定:战力与机体强弱基准",
+      "source": "worldbook/settings/BLUE06_战力与机体强弱基准.md",
+      "runtime_content_sha256": "1485ffc00960fbcff3fbc1ead0792f87f2750a704f5e61d78d1b225aa1f2598e"
+    },
+    {
+      "comment": "核心设定:汽车人霸天虎与赛博坦内战",
+      "source": "worldbook/settings/BLUE07_汽车人霸天虎与赛博坦内战.md",
+      "runtime_content_sha256": "17eaa073cbe29a5141572ca655297d6d2aadad20d2a3ad9f6e131d909f446358"
+    },
+    {
+      "comment": "核心设定:地球赛博坦与古代宇宙遗产",
+      "source": "worldbook/settings/BLUE08_地球赛博坦与古代宇宙遗产.md",
+      "runtime_content_sha256": "9e88a719461b01c094501e465016ede3c08a7b6c6a7624dbd59465ce573fa43b"
+    },
+    {
+      "comment": "核心设定:赛博坦角色视觉与载具锚点",
+      "source": "worldbook/settings/BLUE09_赛博坦角色视觉与载具锚点.md",
+      "runtime_content_sha256": "c0c57f643b2d0c6b50d1866f2d94806ecc14ed08bc210043a5c0f91bbe4acde0"
+    },
+    {
+      "comment": "核心设定:现代地球社会与现实秩序",
+      "source": "worldbook/settings/GREEN01_现代地球社会与现实秩序.md",
+      "runtime_content_sha256": "1de4e9b59cb07e0660cb4cdfae45b8ef8e33a656a283aece4e6008990df35311"
+    },
+    {
+      "comment": "核心设定:政府军方与赛博坦接触机制",
+      "source": "worldbook/settings/GREEN02_政府军方与赛博坦接触机制.md",
+      "runtime_content_sha256": "48605327543cc81514ad0b32361613ef0c30b313340e09d02db62e470bf1f122"
+    },
+    {
+      "comment": "核心设定:公众认知保密与媒体信息",
+      "source": "worldbook/settings/GREEN03_公众认知保密与媒体信息.md",
+      "runtime_content_sha256": "f6b6f3e62b1f5f81915bbaf1845d7a0e462ca5d0ddecdf890132671bad672150"
+    },
+    {
+      "comment": "核心设定:城市战损疏散与灾后响应",
+      "source": "worldbook/settings/GREEN04_城市战损疏散与灾后响应.md",
+      "runtime_content_sha256": "7dc6d4d035df9b752656a9c6c1dab1016f4e1cb51d7b9fce6ecf6f9564b31f0f"
+    },
+    {
+      "comment": "核心设定:人类与赛博坦个体共处边界",
+      "source": "worldbook/settings/GREEN05_人类与赛博坦个体共处边界.md",
+      "runtime_content_sha256": "133efb4f769e08870319f235d8a289e5ac2d63dd8bbe9bfce5955344a4d69cc6"
+    },
+    {
+      "comment": "核心设定:火种与个体自我连续性",
+      "source": "worldbook/settings/GREEN06_火种与个体自我连续性.md",
+      "runtime_content_sha256": "8ae4f237f9e37e9572bb931bc8186e8b666f098f47369e465d6f07189251edaf"
+    },
+    {
+      "comment": "核心设定:Energon与生命代谢循环",
+      "source": "worldbook/settings/GREEN07_Energon与生命代谢循环.md",
+      "runtime_content_sha256": "0aabb582b20aa880429dda17dc099c008917acd293d67bae1c4c2fededee52f5"
+    },
+    {
+      "comment": "核心设定:活体机械组织与机体器官",
+      "source": "worldbook/settings/GREEN08_活体机械组织与机体器官.md",
+      "runtime_content_sha256": "35062cee28b5bf52c482ca0205f605d7aef910072cacd1893e2b90c3a3d34558"
+    },
+    {
+      "comment": "核心设定:维修医疗与机体重构",
+      "source": "worldbook/settings/GREEN09_维修医疗与机体重构.md",
+      "runtime_content_sha256": "58cc0e32ddf9ba89a9f992834d8d52a4a259c1e0071294d69a44661c6c5b9956"
+    },
+    {
+      "comment": "核心设定:重伤维生休眠与死亡判定",
+      "source": "worldbook/settings/GREEN10_重伤维生休眠与死亡判定.md",
+      "runtime_content_sha256": "f09a9f690e554b95fc80bf4255a31825a581b79cb3229ccbf7273998393e2010"
+    },
+    {
+      "comment": "核心设定:女性体态与机体外观",
+      "source": "worldbook/settings/GREEN11_女性体态与机体外观.md",
+      "runtime_content_sha256": "5e62ed0ef6f98820c069add57b3cbea28c4471cca01305e8e201d69bcf6bbdcc"
+    },
+    {
+      "comment": "核心设定:双重性征结构与感知系统",
+      "source": "worldbook/settings/GREEN12_双重性征结构与感知系统.md",
+      "runtime_content_sha256": "79cb337345099dc9a14e0039f90ff72be0f178a9aba12867e85f289ed3eec384"
+    },
+    {
+      "comment": "核心设定:身体隐私医疗检查与自主权",
+      "source": "worldbook/settings/GREEN13_身体隐私医疗检查与自主权.md",
+      "runtime_content_sha256": "9b85351939260847030ec68f2611fa8091b603789293cd0f1a81cc0cbb7459cd"
+    },
+    {
+      "comment": "核心设定:性征武装器官的生理属性",
+      "source": "worldbook/settings/GREEN14_性征武装器官的生理属性.md",
+      "runtime_content_sha256": "3f086189652f7e96b8293417320eb5281af38a62267730d99a89500ea09b66a1"
+    },
+    {
+      "comment": "核心设定:赛博坦性别观与身体文化",
+      "source": "worldbook/settings/GREEN15_赛博坦性别观与身体文化.md",
+      "runtime_content_sha256": "3fbda76bf4ff698678714fb70cec8543ef5b6e29c74456543c423c2500f5883a"
+    },
+    {
+      "comment": "核心设定:武装器官展开与战斗形态",
+      "source": "worldbook/settings/GREEN16_武装器官展开与战斗形态.md",
+      "runtime_content_sha256": "85c67583b8eaef6df49b86f65f08e939bd720837fc048eda1dc1d6ea423e0f27"
+    },
+    {
+      "comment": "核心设定:专属武器谱系与战术定位",
+      "source": "worldbook/settings/GREEN17_专属武器谱系与战术定位.md",
+      "runtime_content_sha256": "bd53bb2a8298e72d958ca93c35a738f4e612be370b0943791cb4f5ff006d9966"
+    },
+    {
+      "comment": "核心设定:能量供给与控制链接",
+      "source": "worldbook/settings/GREEN18_能量供给与控制链接.md",
+      "runtime_content_sha256": "260948822e79bc768c1ab087c455813ffaffabbcdab7a8f526da6ab56d39d3da"
+    },
+    {
+      "comment": "核心设定:有限拆离回收与失落后果",
+      "source": "worldbook/settings/GREEN19_有限拆离回收与失落后果.md",
+      "runtime_content_sha256": "c0bb840c7e9911430d7b79d664e28e75e674f155be247d6c7d3ed5337be62908"
+    },
+    {
+      "comment": "核心设定:冷却过载与武装损毁",
+      "source": "worldbook/settings/GREEN20_冷却过载与武装损毁.md",
+      "runtime_content_sha256": "252d72f9a7b121a3af380b4e9e377f92abb65e222a4427de29eef3229251a674"
+    },
+    {
+      "comment": "核心设定:扫描模板获取与兼容边界",
+      "source": "worldbook/settings/GREEN21_扫描模板获取与兼容边界.md",
+      "runtime_content_sha256": "ecacfd71e1d264c11359f96492d4f65532559ac6792644355ef2f50e451d9c5f"
+    },
+    {
+      "comment": "核心设定:结构映射与形态连续性",
+      "source": "worldbook/settings/GREEN22_结构映射与形态连续性.md",
+      "runtime_content_sha256": "5de0acf0656805c9a82244750af1b325411d53c7de636cd04a32295cfb1aaf43"
+    },
+    {
+      "comment": "核心设定:质量体积与拟态尺度边界",
+      "source": "worldbook/settings/GREEN23_质量体积与拟态尺度边界.md",
+      "runtime_content_sha256": "1659450d48373b3cd312e9c6386843b88800e1230e82d7feff18c699bb54f6f0"
+    },
+    {
+      "comment": "核心设定:载具功能乘员与伪装表现",
+      "source": "worldbook/settings/GREEN24_载具功能乘员与伪装表现.md",
+      "runtime_content_sha256": "abb4c859b0a98c990f750bfe01b42ed5b87572b841febaa19a9d2fdb0416525d"
+    },
+    {
+      "comment": "核心设定:战斗变形受损变形与重新扫描",
+      "source": "worldbook/settings/GREEN25_战斗变形受损变形与重新扫描.md",
+      "runtime_content_sha256": "c80cebcc77cb33d3d59871dc15b9170de34a9c2d0a9598dbbca4bf2e6cd66a71"
+    },
+    {
+      "comment": "核心设定:机体规格与结构上限",
+      "source": "worldbook/settings/GREEN26_机体规格与结构上限.md",
+      "runtime_content_sha256": "f1bbccbbad98920d2d55caca1ef17afc1514ede48e868ec2cdb941d3d13a5d24"
+    },
+    {
+      "comment": "核心设定:体型质量与正面优势",
+      "source": "worldbook/settings/GREEN27_体型质量与正面优势.md",
+      "runtime_content_sha256": "be6ea8f178f9b6d2541d8c490f2b8da3d3e1f3f1a12d42270142d3061ef86e22"
+    },
+    {
+      "comment": "核心设定:火种稳定与持续输出",
+      "source": "worldbook/settings/GREEN28_火种稳定与持续输出.md",
+      "runtime_content_sha256": "7b3af34911fcbcca87cd28ad3e9a3c59a06bf29db5e7060c39e8705269c0cb51"
+    },
+    {
+      "comment": "核心设定:经验技术伤势与临场状态",
+      "source": "worldbook/settings/GREEN29_经验技术伤势与临场状态.md",
+      "runtime_content_sha256": "d38372711c38c3be31fa504084a3d66e786f08672425263aa25d4f8c57a336c9"
+    },
+    {
+      "comment": "核心设定:环境克制协同与越级胜负",
+      "source": "worldbook/settings/GREEN30_环境克制协同与越级胜负.md",
+      "runtime_content_sha256": "cd1f84529566eade08c8f0ef8a76cfc18fbfece589e0b076c5bcc7bc4ce4e3ee"
+    },
+    {
+      "comment": "核心设定:阵营核心价值与政治路线",
+      "source": "worldbook/settings/GREEN31_阵营核心价值与政治路线.md",
+      "runtime_content_sha256": "3d10997f16aee1f92d08f6ee4d104e2b0d9c475030dcdf6a43883b51145713d9"
+    },
+    {
+      "comment": "核心设定:加入动机阵营归属与成员身份",
+      "source": "worldbook/settings/GREEN32_加入动机阵营归属与成员身份.md",
+      "runtime_content_sha256": "5a2ceda5892e9c795d7bc71a1fb2311de9642c79127a887aa4915f0820c36849"
+    },
+    {
+      "comment": "核心设定:指挥链军纪与命令边界",
+      "source": "worldbook/settings/GREEN33_指挥链军纪与命令边界.md",
+      "runtime_content_sha256": "0b52b65d94f9390f1e6694a861a33e1f69a75a08c17a2304e7ad6c859709e692"
+    },
+    {
+      "comment": "核心设定:叛离转阵营投降与赎罪",
+      "source": "worldbook/settings/GREEN34_叛离转阵营投降与赎罪.md",
+      "runtime_content_sha256": "8ed8205fd00ce2313e6c631506e6995867efe3a7d84dc35036aa9adc011a5935"
+    },
+    {
+      "comment": "核心设定:战争伦理平民与占领边界",
+      "source": "worldbook/settings/GREEN35_战争伦理平民与占领边界.md",
+      "runtime_content_sha256": "09e150eeb943725c5b24f7a654db41fd35519824cd9cf8ea13194633edc85670"
+    },
+    {
+      "comment": "核心设定:AllSpark火种源的生命激活与边界",
+      "source": "worldbook/settings/GREEN36_AllSpark火种源的生命激活与边界.md",
+      "runtime_content_sha256": "def94c34bfc0c493224cac7314123c8aef0b328a4df2d2bf072304493feb3811"
+    },
+    {
+      "comment": "核心设定:至尊体系领袖矩阵与恒星级遗产",
+      "source": "worldbook/settings/GREEN37_至尊体系领袖矩阵与恒星级遗产.md",
+      "runtime_content_sha256": "fb0afdc850c04d1951b45cd05db64f7cd39fb3ce8981d0aeacd5ddf5680b3a7d"
+    },
+    {
+      "comment": "核心设定:创造者系遗产物质塑造与行星工程",
+      "source": "worldbook/settings/GREEN38_创造者系遗产物质塑造与行星工程.md",
+      "runtime_content_sha256": "c8fb8c7dacb77b89f0014fce5859fbf70c48445fa088939e236c24eda53d92bc"
+    },
+    {
+      "comment": "核心设定:Unicron地球本体与行星苏醒风险",
+      "source": "worldbook/settings/GREEN39_Unicron地球本体与行星苏醒风险.md",
+      "runtime_content_sha256": "62057c63395301829c61e5bf6fd024f7c897f9780328a39bb0a52d7d84832525"
+    },
+    {
+      "comment": "核心设定:古代遗产权限组合与代价",
+      "source": "worldbook/settings/GREEN40_古代遗产权限组合与代价.md",
+      "runtime_content_sha256": "683d035f71a4b523eec83c5c4e915b851ad914b9a40f522fa9035dfa08a318ed"
+    },
+    {
+      "comment": "核心设定:赛博坦社会职业与非战争日常",
+      "source": "worldbook/settings/GREEN41_赛博坦社会职业与非战争日常.md",
+      "runtime_content_sha256": "5b5e0aa6a3fa964b5977890fd0f8158a509ed26ca3810d1044fecd2cf71263da"
+    },
+    {
+      "comment": "核心设定:语言通讯翻译与数据接口边界",
+      "source": "worldbook/settings/GREEN42_语言通讯翻译与数据接口边界.md",
+      "runtime_content_sha256": "2acd9869e761a8066d18d5fac9dfbb13bb65fe1452b525ae5c5c4c463dcd9ef9"
+    },
+    {
+      "comment": "核心设定:寿命成长阶段与时间尺度",
+      "source": "worldbook/settings/GREEN43_寿命成长阶段与时间尺度.md",
+      "runtime_content_sha256": "509c8277e5c9c740bd737a9605f533d048d78a27aad5f10ae7fb7b455e8b4b05"
+    },
+    {
+      "comment": "核心设定:伴侣家庭与亲密关系文化",
+      "source": "worldbook/settings/GREEN44_伴侣家庭与亲密关系文化.md",
+      "runtime_content_sha256": "e6b5c3241d684a7e675012af01457872bceb0f6ebf0d4f329c4b60a2bd71e6eb"
+    },
+    {
+      "comment": "核心设定:繁衍新生与亲代关系",
+      "source": "worldbook/settings/GREEN45_繁衍新生与亲代关系.md",
+      "runtime_content_sha256": "6bdef83588609ea375fc4b61b110e61cd2e9c7870be6dbbd2d1c71ece33d6092"
+    },
+    {
+      "comment": "核心设定:星际航行真空环境与跨行星部署",
+      "source": "worldbook/settings/GREEN46_星际航行真空环境与跨行星部署.md",
+      "runtime_content_sha256": "2728c02f2ede05b995065e410edf6005e98bf8b1d5f5a6b4c9e29ec76f91a9ea"
+    },
+    {
+      "comment": "核心设定:何博玟·能力",
+      "source": "worldbook/abilities/A01_何博玟_能力.md",
+      "runtime_content_sha256": "24ae3f659720b533cd7b71e98b88ba48a2b340803113a9a9dab8cf10561cea12"
+    },
+    {
+      "comment": "核心设定:碧娅·能力",
+      "source": "worldbook/abilities/A02_碧娅_能力.md",
+      "runtime_content_sha256": "e3bc3fbf539afd5c6baa75d1c7e1168f61ce3952984b310f11e8beac84a1318e"
+    },
+    {
+      "comment": "核心设定:嘉芝琳·能力",
+      "source": "worldbook/abilities/A03_嘉芝琳_能力.md",
+      "runtime_content_sha256": "89e23f7ff743be4c3a43e912a0854623b5e36bce151a51ab80071a324b77a71d"
+    },
+    {
+      "comment": "核心设定:艾琳铠·能力",
+      "source": "worldbook/abilities/A04_艾琳铠_能力.md",
+      "runtime_content_sha256": "e50979c968393233266fb97d8d549c92fcb7afcb2e6dc731f4a297740dd6a778"
+    },
+    {
+      "comment": "核心设定:芮雪·能力",
+      "source": "worldbook/abilities/A05_芮雪_能力.md",
+      "runtime_content_sha256": "9c3f93e42432894c63fee771252effd615db03b1f8dece4449873958e5ffb1b0"
+    },
+    {
+      "comment": "核心设定:赛薇·能力",
+      "source": "worldbook/abilities/A06_赛薇_能力.md",
+      "runtime_content_sha256": "8795a150e0f150ffc7faf2ae584de0f70c88a4ce958780da11c65cbe9334b885"
+    },
+    {
+      "comment": "核心设定:阿尔茜·能力",
+      "source": "worldbook/abilities/A07_阿尔茜_能力.md",
+      "runtime_content_sha256": "231181c1dac10779d5a11445a05446132a5ec45980fec92d4a6b109dfb88f5a2"
+    },
+    {
+      "comment": "核心设定:捷菲雅·能力",
+      "source": "worldbook/abilities/A08_捷菲雅_能力.md",
+      "runtime_content_sha256": "48ab17be808daaa849bd05117a89da517ee51dd673c1ec4281f903a046c7d7b6"
+    },
+    {
+      "comment": "核心设定:森缇雅·能力",
+      "source": "worldbook/abilities/A09_森缇雅_能力.md",
+      "runtime_content_sha256": "84e8c989b9fa57ffec343e5029dbda91a24853459feea7cb81c0d12145a46d08"
+    },
+    {
+      "comment": "核心设定:米拉琪·能力",
+      "source": "worldbook/abilities/A10_米拉琪_能力.md",
+      "runtime_content_sha256": "8dac11f3f7d6ded4f77da5dff5125f627cd12befc2311bae3ede0177f9fcc5ee"
+    },
+    {
+      "comment": "核心设定:薇尔嘉·能力",
+      "source": "worldbook/abilities/A11_薇尔嘉_能力.md",
+      "runtime_content_sha256": "b4592ceb5575310ac9696609b5c617370dd4881572ebb3960bbe7f02701a8054"
+    },
+    {
+      "comment": "核心设定:豪妲·能力",
+      "source": "worldbook/abilities/A12_豪妲_能力.md",
+      "runtime_content_sha256": "d5fe93bcf3104ba05b302dc4e0429f64d9381764974fe2ae2ae78f20fde0aa9e"
+    },
+    {
+      "comment": "核心设定:德莉芙·能力",
+      "source": "worldbook/abilities/A13_德莉芙_能力.md",
+      "runtime_content_sha256": "ebbac3b3747f5162b143e1fe351b11c2ebf364f175a73047a10ce97d80c1d834"
+    },
+    {
+      "comment": "核心设定:克洛希娅·能力",
+      "source": "worldbook/abilities/A14_克洛希娅_能力.md",
+      "runtime_content_sha256": "0b4e3c3ab0a2071b8847206f94013af48a7d2bbfbb7e204b5c29128b0ff37b42"
+    },
+    {
+      "comment": "核心设定:萝蒂·能力",
+      "source": "worldbook/abilities/A15_萝蒂_能力.md",
+      "runtime_content_sha256": "5061faebbe5eb9fe44187d2de0ee7379e53023595e638aa03773a10c21c1b9ae"
+    },
+    {
+      "comment": "核心设定:格琳洛珂·能力",
+      "source": "worldbook/abilities/A16_格琳洛珂_能力.md",
+      "runtime_content_sha256": "f73f95f176b3197dc4f792397169c9358af1c2ed5225a5b3e584719894ce6376"
+    },
+    {
+      "comment": "核心设定:薇震天·能力",
+      "source": "worldbook/abilities/A17_薇震天_能力.md",
+      "runtime_content_sha256": "8d906e65c6e9310a05f971bde34beba34f118533e4214177fa0fb7440c78c821"
+    },
+    {
+      "comment": "核心设定:星啸娅·能力",
+      "source": "worldbook/abilities/A18_星啸娅_能力.md",
+      "runtime_content_sha256": "86a7e9c5c75fabc746b5fe3cba3ee54dd7af355e6ac236378143c7187fede774"
+    },
+    {
+      "comment": "核心设定:芭莉凯·能力",
+      "source": "worldbook/abilities/A19_芭莉凯_能力.md",
+      "runtime_content_sha256": "dd628c7f715efb7cb487fe0da91d2ff6fd5b3cd30fe4d402ebae7bb8787cf708"
+    },
+    {
+      "comment": "核心设定:桑德薇·能力",
+      "source": "worldbook/abilities/A20_桑德薇_能力.md",
+      "runtime_content_sha256": "79c736d0599117f3406264e3e296fb7582e0ebb2fdc0cdd82c9ce22e30e3ad54"
+    },
+    {
+      "comment": "核心设定:朔珂薇·能力",
+      "source": "worldbook/abilities/A21_朔珂薇_能力.md",
+      "runtime_content_sha256": "0f6279e4a808bd33e86ad1c7c0f1cd9eedf0992fdda115c670f1b8d292d923d6"
+    },
+    {
+      "comment": "核心设定:梅格萝娜·能力",
+      "source": "worldbook/abilities/A22_梅格萝娜_能力.md",
+      "runtime_content_sha256": "c5692e9e2231d32e654e8e1c1f0c6edd756bd6c87b933810f84e11062a04e080"
+    },
+    {
+      "comment": "核心设定:洛黛恩·能力",
+      "source": "worldbook/abilities/A23_洛黛恩_能力.md",
+      "runtime_content_sha256": "d65b3225d506f73dad909121ed31e6851c26926489755b1d6aa0317e1deaa5d9"
+    },
+    {
+      "comment": "核心设定:昆塔莎·能力",
+      "source": "worldbook/abilities/A24_昆塔莎_能力.md",
+      "runtime_content_sha256": "8b4429dcddeea76ce65df53752f9b0b908451faa31f37ca0779b12514e3f7479"
+    },
+    {
+      "comment": "核心设定:克罗米娅·能力",
+      "source": "worldbook/abilities/B01_克罗米娅_能力.md",
+      "runtime_content_sha256": "d6b22f406ab2f0c8f42d1dee0a6d2b68eb9ced60604719dceac6713ebd4db759"
+    },
+    {
+      "comment": "核心设定:艾丽塔-1·能力",
+      "source": "worldbook/abilities/B02_艾丽塔-1_能力.md",
+      "runtime_content_sha256": "5ed3e0a201a6c96fa6fc182f3ebfb85cb010af726224278624d34b2812a02aa1"
+    },
+    {
+      "comment": "核心设定:乔缇·能力",
+      "source": "worldbook/abilities/B03_乔缇_能力.md",
+      "runtime_content_sha256": "9ee59baa99503ff141778b9926a8e4e35a66ddbbf04843261ab013ea454f5489"
+    },
+    {
+      "comment": "核心设定:斯琪·能力",
+      "source": "worldbook/abilities/B04_斯琪_能力.md",
+      "runtime_content_sha256": "1cbdd327381193983fe83d3999c98f93576923a070fc78d7857903dbf02101a2"
+    },
+    {
+      "comment": "核心设定:玛芙·能力",
+      "source": "worldbook/abilities/B05_玛芙_能力.md",
+      "runtime_content_sha256": "2ffef9db23a634964e02306416e39db1fb9e8bbc9dd8b9a504dc13623e0e7dbe"
+    },
+    {
+      "comment": "核心设定:薇莉·能力",
+      "source": "worldbook/abilities/B06_薇莉_能力.md",
+      "runtime_content_sha256": "5c4dfd5c3f97b1aa2a73bfa39e14dc53bc15e2b0b24ef88e370e65bdde700c2a"
+    },
+    {
+      "comment": "核心设定:布蕾茵·能力",
+      "source": "worldbook/abilities/B07_布蕾茵_能力.md",
+      "runtime_content_sha256": "e6640742360d10eea1f1bc2624ee8e86f7bcf5cb54773d91ce60cdfe9e4dc0df"
+    },
+    {
+      "comment": "核心设定:莉德芙·能力",
+      "source": "worldbook/abilities/B08_莉德芙_能力.md",
+      "runtime_content_sha256": "429adb6fb6a439bf0a8c486dcfc1e6281e2a373dcba4df7235ca3280fe8bd326"
+    },
+    {
+      "comment": "核心设定:路芭·能力",
+      "source": "worldbook/abilities/B09_路芭_能力.md",
+      "runtime_content_sha256": "39b7c1428414912ed3d5dcb185b70954acafdd2a2c5402f34c98422f2e9379ec"
+    },
+    {
+      "comment": "核心设定:托璇·能力",
+      "source": "worldbook/abilities/B10_托璇_能力.md",
+      "runtime_content_sha256": "6c1dde1b9cbdce20faef79f98f6dcd3a709a857a434657e696034b1a5fca1d95"
+    },
+    {
+      "comment": "核心设定:斯奎琪·能力",
+      "source": "worldbook/abilities/B11_斯奎琪_能力.md",
+      "runtime_content_sha256": "89e6bde3fab1f608edfd87271ed34964b547a45660c34e0e5cd25d4f7d14ed76"
+    },
+    {
+      "comment": "核心设定:柯曼妮·能力",
+      "source": "worldbook/abilities/B12_柯曼妮_能力.md",
+      "runtime_content_sha256": "bc16f0927bf5631f1f5cda0eec6bee6e4fdf3e970aebec64c44343e11ea1b604"
+    },
+    {
+      "comment": "核心设定:卡诺霏·能力",
+      "source": "worldbook/abilities/B13_卡诺霏_能力.md",
+      "runtime_content_sha256": "01867454d7b67fc6b492367f7741a6a8a256da554922c28cbee1bc6c4d00e75c"
+    },
+    {
+      "comment": "核心设定:黛翠·能力",
+      "source": "worldbook/abilities/B14_黛翠_能力.md",
+      "runtime_content_sha256": "01584553661833e6e71dfb981b5a3dc29df678b9171c0a8f881746734783f026"
+    },
+    {
+      "comment": "核心设定:特伦茜·能力",
+      "source": "worldbook/abilities/B15_特伦茜_能力.md",
+      "runtime_content_sha256": "169e672e695ced1242ecc1375a0411dc75d77b7030879391343849168f38e1bd"
+    },
+    {
+      "comment": "核心设定:布尔妲·能力",
+      "source": "worldbook/abilities/B16_布尔妲_能力.md",
+      "runtime_content_sha256": "21350ce1db5fd3f50e1ef31a5f396fd8349a6b8bc2dd6d84fcac67a031bd8437"
+    },
+    {
+      "comment": "核心设定:莉妲·能力",
+      "source": "worldbook/abilities/B17_莉妲_能力.md",
+      "runtime_content_sha256": "466096f32ffbf283f262310027007a0e3fa8b7b81550fbfe8113c8f8723eb5f5"
+    },
+    {
+      "comment": "核心设定:斯蕾芙·能力",
+      "source": "worldbook/abilities/B18_斯蕾芙_能力.md",
+      "runtime_content_sha256": "424515191f3f4d63c7bafcd8b70b762fe0c15e8f20bfda7f7c2e2fb2292c8274"
+    },
+    {
+      "comment": "核心设定:斯露琪·能力",
+      "source": "worldbook/abilities/B19_斯露琪_能力.md",
+      "runtime_content_sha256": "2844a5d2ae724c46c66d882bce6387225198196b4b80d51fbcf275c94fc55142"
+    },
+    {
+      "comment": "核心设定:斯蔻恩·能力",
+      "source": "worldbook/abilities/B20_斯蔻恩_能力.md",
+      "runtime_content_sha256": "6c3138db096d0a3500268067c9995149258050fb7eaa01db703ac5286573ce7c"
+    },
+    {
+      "comment": "核心设定:布莱蔻·能力",
+      "source": "worldbook/abilities/B21_布莱蔻_能力.md",
+      "runtime_content_sha256": "967288590b9b39b9ddee29f3eb2084a126ce92563d0948acd0603d3f4f4cd47a"
+    },
+    {
+      "comment": "核心设定:斯珂琶·能力",
+      "source": "worldbook/abilities/B22_斯珂琶_能力.md",
+      "runtime_content_sha256": "c98fb89f1ad50e27109cc20382e8798542c42180ce71ae8ef30b47d017bfe8e3"
+    },
+    {
+      "comment": "核心设定:布萝尔·能力",
+      "source": "worldbook/abilities/B23_布萝尔_能力.md",
+      "runtime_content_sha256": "38179098e8c6b2a58abc74e315ee59f04419d6bcb9518ba2042a83726ad9d24b"
+    },
+    {
+      "comment": "核心设定:博妮珂·能力",
+      "source": "worldbook/abilities/B24_博妮珂_能力.md",
+      "runtime_content_sha256": "767164cbae9d7cb6da6ea3afa8871b3ec3b8cfae5245cafb460d98e1fba557b3"
+    },
+    {
+      "comment": "核心设定:芙蕾茜·能力",
+      "source": "worldbook/abilities/B25_芙蕾茜_能力.md",
+      "runtime_content_sha256": "1466cf50a52b593260f5d7e6ac4bc3bb25054009e276cc642afe7ce179b29b90"
+    },
+    {
+      "comment": "核心设定:拉薇琪·能力",
+      "source": "worldbook/abilities/B26_拉薇琪_能力.md",
+      "runtime_content_sha256": "75613610979be55220bbe7ca6880be0774eb3ba6acfff1ca02f131c113a95596"
+    },
+    {
+      "comment": "核心设定:蕾瑟碧·能力",
+      "source": "worldbook/abilities/B27_蕾瑟碧_能力.md",
+      "runtime_content_sha256": "b18c1cca602691850da75c9a70a38dcd49fdb896dbfd2d519a72cffb29c9af35"
+    },
+    {
+      "comment": "核心设定:赛德薇·能力",
+      "source": "worldbook/abilities/B28_赛德薇_能力.md",
+      "runtime_content_sha256": "97ca33b741e5b0fd89063e300e03f346ef43c8dfa797e745f3d031cc7eedc13e"
+    },
+    {
+      "comment": "核心设定:斯卡佩拉·能力",
+      "source": "worldbook/abilities/B29_斯卡佩拉_能力.md",
+      "runtime_content_sha256": "a9770b5c1c94b9dfbdb6a22a0ef4cbc183dbb1f3789c8e4ad69d9e74df313239"
+    },
+    {
+      "comment": "核心设定:格琳朵·能力",
+      "source": "worldbook/abilities/B30_格琳朵_能力.md",
+      "runtime_content_sha256": "d5f9a865a06933c68540c3420998a56a97e590f9423390948690a17c674893c9"
+    },
+    {
+      "comment": "核心设定:黛莫莉莎·能力",
+      "source": "worldbook/abilities/B31_黛莫莉莎_能力.md",
+      "runtime_content_sha256": "543c697970bfe59198783bfc4eb8baf7720951f2a62ea1671cf2d7c07526f7a6"
+    },
+    {
+      "comment": "核心设定:兰佩琪·能力",
+      "source": "worldbook/abilities/C01_兰佩琪_能力.md",
+      "runtime_content_sha256": "b5efcfd76b76fc162303a7e6ae546aa1f4ddadbafa9b6254d593f88404501ebf"
+    },
+    {
+      "comment": "核心设定:米克茜·能力",
+      "source": "worldbook/abilities/C02_米克茜_能力.md",
+      "runtime_content_sha256": "87213a2d0bbf2785f87821c61401739a39bc2e9306d0345a230ad62661cfcfe0"
+    },
+    {
+      "comment": "核心设定:珑荷·能力",
+      "source": "worldbook/abilities/C03_珑荷_能力.md",
+      "runtime_content_sha256": "0822a9ef6bedfa4394914a7fe147b477c9436682ff5254f4ca4b1b08b1cb7f70"
+    },
+    {
+      "comment": "核心设定:斯嘉佩·能力",
+      "source": "worldbook/abilities/C04_斯嘉佩_能力.md",
+      "runtime_content_sha256": "4e4454fee99420656f810e18b971dbfa079d4ee2c9a2507d8558978faabf6b2a"
+    },
+    {
+      "comment": "核心设定:克兰茜·能力",
+      "source": "worldbook/abilities/C05_克兰茜_能力.md",
+      "runtime_content_sha256": "62a4bafaf8ddc71503c65809136ca9218b1a3afd41eeb39297bb55cade033b83"
+    },
+    {
+      "comment": "核心设定:克萝芭·能力",
+      "source": "worldbook/abilities/C06_克萝芭_能力.md",
+      "runtime_content_sha256": "bc183352e38c202df4023e6f15896f0428348caedbb4bb707f64af939a06792b"
+    },
+    {
+      "comment": "核心设定:哈琪特·能力",
+      "source": "worldbook/abilities/C07_哈琪特_能力.md",
+      "runtime_content_sha256": "02753f893897cb98cae06c4d0f528864656ce72379fd424f7d0afa0ab411f8b2"
+    },
+    {
+      "comment": "核心设定:斯汀嘉·能力",
+      "source": "worldbook/abilities/C08_斯汀嘉_能力.md",
+      "runtime_content_sha256": "4e99231676bade5a65fa06cce6bb517b1a4429f85598519cb8ebd7085565dd5d"
+    },
+    {
+      "comment": "核心设定:琼希普·能力",
+      "source": "worldbook/abilities/C09_琼希普_能力.md",
+      "runtime_content_sha256": "90011bc2e444a361652ef03391df12a6246a7f1c544ea7a3261d59e079d41dfa"
+    },
+    {
+      "comment": "核心设定:莫霍卡·能力",
+      "source": "worldbook/abilities/C10_莫霍卡_能力.md",
+      "runtime_content_sha256": "0471fef499f90b9fe5890eeb654ca16ab7f24f9675aed0cbe74c5917383745f7"
+    },
+    {
+      "comment": "核心设定:德蕾德·能力",
+      "source": "worldbook/abilities/C11_德蕾德_能力.md",
+      "runtime_content_sha256": "96110012f58edd9225e8f0906e272202547cbd3dbd0744a589ca19eeffa1d326"
+    },
+    {
+      "comment": "核心设定:妮特萝·宙丝·能力",
+      "source": "worldbook/abilities/C12_妮特萝·宙丝_能力.md",
+      "runtime_content_sha256": "a499484e410bd57bdaf168c905541d40849ada52e86cda43b7deead1298b8033"
+    },
+    {
+      "comment": "核心设定:昂斯萝特·能力",
+      "source": "worldbook/abilities/C13_昂斯萝特_能力.md",
+      "runtime_content_sha256": "fea4081fd6b684ed69e93735c5247f1a74b39cc1253b1022b0d29d98ec5a3fe6"
+    },
+    {
+      "comment": "核心设定:贝瑟琪·能力",
+      "source": "worldbook/abilities/C14_贝瑟琪_能力.md",
+      "runtime_content_sha256": "e65cd24383b7f59f5edd01b373b9cb950594d0bd57119c8e04baeac989cfb5e4"
+    },
+    {
+      "comment": "角色:何博玟",
+      "source": "worldbook/characters/main/A01_何博玟.md",
+      "runtime_content_sha256": "6045b8d2d80f1d9ccc8c5965f95f447b743fd50ffd17ea3a02cab59307c5e9fd"
+    },
+    {
+      "comment": "角色:碧娅",
+      "source": "worldbook/characters/main/A02_碧娅.md",
+      "runtime_content_sha256": "3d17afeb67d4bc2b2289f969ab85e35613c980bc1b97053b9bf75d685aed6999"
+    },
+    {
+      "comment": "角色:嘉芝琳",
+      "source": "worldbook/characters/main/A03_嘉芝琳.md",
+      "runtime_content_sha256": "3bfe2eaf8ccda2058cb4aebb6bd2fe824e3c566f2ae9dab5b191dfc88eed5482"
+    },
+    {
+      "comment": "角色:艾琳铠",
+      "source": "worldbook/characters/main/A04_艾琳铠.md",
+      "runtime_content_sha256": "259ee9f54cace4e74c69f0649a86063685d8425b75afbba25971376ee497fff3"
+    },
+    {
+      "comment": "角色:芮雪",
+      "source": "worldbook/characters/main/A05_芮雪.md",
+      "runtime_content_sha256": "a647e77e2ce85b3f874bf3d670bb840659af3f22f5e3e8224effa23519009715"
+    },
+    {
+      "comment": "角色:赛薇",
+      "source": "worldbook/characters/main/A06_赛薇.md",
+      "runtime_content_sha256": "736eabb733812f4a298a20f4d9e4cae7e36f2c420cb2e04815e7167d1ab29278"
+    },
+    {
+      "comment": "角色:阿尔茜",
+      "source": "worldbook/characters/main/A07_阿尔茜.md",
+      "runtime_content_sha256": "06e6d9f46124523c0653351ebfc6d109333b6f0dc2106849731ddcc273371b05"
+    },
+    {
+      "comment": "角色:捷菲雅",
+      "source": "worldbook/characters/main/A08_捷菲雅.md",
+      "runtime_content_sha256": "f143602cddc2c3891001539c7ff988439e4d944e25e3e007e938c028b8b8df6e"
+    },
+    {
+      "comment": "角色:森缇雅",
+      "source": "worldbook/characters/main/A09_森缇雅.md",
+      "runtime_content_sha256": "da92c75e91e02dc4b53c6fb406793d1ff62ad20ab322a7a1d0cd4912535d9891"
+    },
+    {
+      "comment": "角色:米拉琪",
+      "source": "worldbook/characters/main/A10_米拉琪.md",
+      "runtime_content_sha256": "347b9df1c5947b1a3b42e8c9a4b55c2c84a58b91f30d1a78db89985691f3895e"
+    },
+    {
+      "comment": "角色:薇尔嘉",
+      "source": "worldbook/characters/main/A11_薇尔嘉.md",
+      "runtime_content_sha256": "673bdac605bd57d90fd569fcf5cf1eb541c9d993116f1404cd82fe82e174c3dc"
+    },
+    {
+      "comment": "角色:豪妲",
+      "source": "worldbook/characters/main/A12_豪妲.md",
+      "runtime_content_sha256": "2afe37fb2d77af296a261461c578982c77f7b58bf03b31f59fd6ef24e971c91e"
+    },
+    {
+      "comment": "角色:德莉芙",
+      "source": "worldbook/characters/main/A13_德莉芙.md",
+      "runtime_content_sha256": "bcdda0a3efb95443245216f41747ac25e8f02d6cde10d1b68da2e3b8aca832dd"
+    },
+    {
+      "comment": "角色:克洛希娅",
+      "source": "worldbook/characters/main/A14_克洛希娅.md",
+      "runtime_content_sha256": "362edbfc2f1a0fac4482e1e7f634708bb011540e2327b83529778e2069f0dd54"
+    },
+    {
+      "comment": "角色:萝蒂",
+      "source": "worldbook/characters/main/A15_萝蒂.md",
+      "runtime_content_sha256": "989552fddeaef1b38a45b238fddb5d8a7a7387bec59bc7998c6d1de165267a0f"
+    },
+    {
+      "comment": "角色:格琳洛珂",
+      "source": "worldbook/characters/main/A16_格琳洛珂.md",
+      "runtime_content_sha256": "94c4dd803dbf974108288ca688bcf19a90ec0be8b2ddded48009805e5bb4fb6a"
+    },
+    {
+      "comment": "角色:薇震天",
+      "source": "worldbook/characters/main/A17_薇震天.md",
+      "runtime_content_sha256": "0d956545ce75d0944d7b779c62a64b3e6c045fbdf9130b6b83907f852d4d50e9"
+    },
+    {
+      "comment": "角色:星啸娅",
+      "source": "worldbook/characters/main/A18_星啸娅.md",
+      "runtime_content_sha256": "ac0905811eb23d4d760505962964d4af184ab2d5cdfa63362d1acb0e71ec1437"
+    },
+    {
+      "comment": "角色:芭莉凯",
+      "source": "worldbook/characters/main/A19_芭莉凯.md",
+      "runtime_content_sha256": "729edd2bd4e7862e3b5644cb7930c10874a24ee1dde48638b541b9585329e006"
+    },
+    {
+      "comment": "角色:桑德薇",
+      "source": "worldbook/characters/main/A20_桑德薇.md",
+      "runtime_content_sha256": "c3fcedc3dc2ce1ea2dc646427f955d8dc77ebddb21f7870fc7c74e14dce0f940"
+    },
+    {
+      "comment": "角色:朔珂薇",
+      "source": "worldbook/characters/main/A21_朔珂薇.md",
+      "runtime_content_sha256": "a3f31e3b65271bb3efb60b0f96a6a609662bb6e7e64ab09a7831295b7d09fd57"
+    },
+    {
+      "comment": "角色:梅格萝娜",
+      "source": "worldbook/characters/main/A22_梅格萝娜.md",
+      "runtime_content_sha256": "43dbceb1b46107dc750b52785af874f6c397a895b717ca8b2e9ddedeee028ae8"
+    },
+    {
+      "comment": "角色:洛黛恩",
+      "source": "worldbook/characters/main/A23_洛黛恩.md",
+      "runtime_content_sha256": "471018d8c264366b15da20bcfaa9ae622acfbf6ca534d8975eb72fac4d0cceff"
+    },
+    {
+      "comment": "角色:昆塔莎",
+      "source": "worldbook/characters/main/A24_昆塔莎.md",
+      "runtime_content_sha256": "3b8fe72ac6df0642ef6b85a6267fac083f2a23ff0ba32281c8d809d613f4df12"
+    },
+    {
+      "comment": "角色:克罗米娅",
+      "source": "worldbook/characters/other/B01_克罗米娅.md",
+      "runtime_content_sha256": "b6dfb2ee984fe21c04393653e40a52deea1b18c8b6f7a6cad463bfda1794b87f"
+    },
+    {
+      "comment": "角色:艾丽塔-1",
+      "source": "worldbook/characters/other/B02_艾丽塔-1.md",
+      "runtime_content_sha256": "259709632d8884eece9d3d534d837224dd4cce310a9f1d451ec162df7e2104b8"
+    },
+    {
+      "comment": "角色:乔缇",
+      "source": "worldbook/characters/other/B03_乔缇.md",
+      "runtime_content_sha256": "5a8b036013b2224f7a39c1354e58789f27c4f35a4defb7ad3feeb6a8975de220"
+    },
+    {
+      "comment": "角色:斯琪",
+      "source": "worldbook/characters/other/B04_斯琪.md",
+      "runtime_content_sha256": "dd5a8b8a9bd0789fedab4450be6ad434b59488874995e83682b2fe5a0b51d07d"
+    },
+    {
+      "comment": "角色:玛芙",
+      "source": "worldbook/characters/other/B05_玛芙.md",
+      "runtime_content_sha256": "24633ed60c9aa29383e5d85386a598b65068881b4b23cc0e06c29f4c57f0641b"
+    },
+    {
+      "comment": "角色:薇莉",
+      "source": "worldbook/characters/other/B06_薇莉.md",
+      "runtime_content_sha256": "e4a5233b371b66040efe354865872103cba52780bf6e1c762e16cfc9c911686b"
+    },
+    {
+      "comment": "角色:布蕾茵",
+      "source": "worldbook/characters/other/B07_布蕾茵.md",
+      "runtime_content_sha256": "e9c3215a61081349d588ccc2485192f185a074cbdfa35cbe84a735a518e4d550"
+    },
+    {
+      "comment": "角色:莉德芙",
+      "source": "worldbook/characters/other/B08_莉德芙.md",
+      "runtime_content_sha256": "cab3ce3e0a58e06217e6cee9e2327039cc38cf06480f5497b44b8e98b94b7a7b"
+    },
+    {
+      "comment": "角色:路芭",
+      "source": "worldbook/characters/other/B09_路芭.md",
+      "runtime_content_sha256": "f024a3993b56132065839a96bd60f77273eddcf1f14ff20c50f2cd0761586f12"
+    },
+    {
+      "comment": "角色:托璇",
+      "source": "worldbook/characters/other/B10_托璇.md",
+      "runtime_content_sha256": "ab2ca1cb2e0b6723272769c65729ea4bdf1cfd152c78466a9efc42805f6d4250"
+    },
+    {
+      "comment": "角色:斯奎琪",
+      "source": "worldbook/characters/other/B11_斯奎琪.md",
+      "runtime_content_sha256": "11eb2b29f65c83e3abaa1c41cd1a6eb9d5e7acba2ebf5bfd8ba4bc5e9d63a2e3"
+    },
+    {
+      "comment": "角色:柯曼妮",
+      "source": "worldbook/characters/other/B12_柯曼妮.md",
+      "runtime_content_sha256": "827c55438ddb6d03844d2adf14b55e248591621aab15ad505c69aa7ea9bdcbeb"
+    },
+    {
+      "comment": "角色:卡诺霏",
+      "source": "worldbook/characters/other/B13_卡诺霏.md",
+      "runtime_content_sha256": "5c53fb14e3c807e2e30cedeb2d0484388c8800082ece6ba655c420ad2247bc43"
+    },
+    {
+      "comment": "角色:黛翠",
+      "source": "worldbook/characters/other/B14_黛翠.md",
+      "runtime_content_sha256": "d59b9d9badd228707220a603094712f2521f158cb671a399aca386b44ed16844"
+    },
+    {
+      "comment": "角色:特伦茜",
+      "source": "worldbook/characters/other/B15_特伦茜.md",
+      "runtime_content_sha256": "4a68caed4f540d8733b263d63d0d3f69e1dd4e704f8766f0280f1be949a1caa9"
+    },
+    {
+      "comment": "角色:布尔妲",
+      "source": "worldbook/characters/other/B16_布尔妲.md",
+      "runtime_content_sha256": "a593e5cde2afc3ca0d7375b5b922a0bc850fa6b1acf0709c41553b15dc0efd3a"
+    },
+    {
+      "comment": "角色:莉妲",
+      "source": "worldbook/characters/other/B17_莉妲.md",
+      "runtime_content_sha256": "af19519487e7d18f167ba1453288ead5aa2be7906681240847ba2e3629fc45d5"
+    },
+    {
+      "comment": "角色:斯蕾芙",
+      "source": "worldbook/characters/other/B18_斯蕾芙.md",
+      "runtime_content_sha256": "46db9868facb04ca291c45a46215a76f8551fe7d4a1c2f8c12ff80f7127de59e"
+    },
+    {
+      "comment": "角色:斯露琪",
+      "source": "worldbook/characters/other/B19_斯露琪.md",
+      "runtime_content_sha256": "679b4294838bfc2db4e2444d4bffd57920ab5d6e9fcb6b973783d9be6ca08b24"
+    },
+    {
+      "comment": "角色:斯蔻恩",
+      "source": "worldbook/characters/other/B20_斯蔻恩.md",
+      "runtime_content_sha256": "7fcfd93bd7719c2ffdcdac02ad0c8cac549849edfc4983e4ce7ffd5621908fe9"
+    },
+    {
+      "comment": "角色:布莱蔻",
+      "source": "worldbook/characters/other/B21_布莱蔻.md",
+      "runtime_content_sha256": "af92115fd093d097951eaa0ad098f931945c63e6f14154675a8df734c94c3903"
+    },
+    {
+      "comment": "角色:斯珂琶",
+      "source": "worldbook/characters/other/B22_斯珂琶.md",
+      "runtime_content_sha256": "67304f43e373dae3b02bb127b0bf9f9e6ba028303b698df7e7ef32a2945fa2d6"
+    },
+    {
+      "comment": "角色:布萝尔",
+      "source": "worldbook/characters/other/B23_布萝尔.md",
+      "runtime_content_sha256": "014907241a2b2e5a0986668bc04ef462a6a3bb05f2778be1e9876933de041dd4"
+    },
+    {
+      "comment": "角色:博妮珂",
+      "source": "worldbook/characters/other/B24_博妮珂.md",
+      "runtime_content_sha256": "6dabf87bcf84b83a7f92d721dceb795ab2bad0e04fb70787362a2dd9caba75c3"
+    },
+    {
+      "comment": "角色:芙蕾茜",
+      "source": "worldbook/characters/other/B25_芙蕾茜.md",
+      "runtime_content_sha256": "805bacaa41222b0423a4a750d8912a734328df6c6feb9f9e3f9d7ce183d8cf5f"
+    },
+    {
+      "comment": "角色:拉薇琪",
+      "source": "worldbook/characters/other/B26_拉薇琪.md",
+      "runtime_content_sha256": "29d5e71345aea0d7691c0139a48cc793b35dc5876120a4749a27138290a38df5"
+    },
+    {
+      "comment": "角色:蕾瑟碧",
+      "source": "worldbook/characters/other/B27_蕾瑟碧.md",
+      "runtime_content_sha256": "3c074beb1657f83105118e5f800cbd6e12d0afb3319bbdc9c596e18916f3b995"
+    },
+    {
+      "comment": "角色:赛德薇",
+      "source": "worldbook/characters/other/B28_赛德薇.md",
+      "runtime_content_sha256": "c8cf2f3dd9ab6a13882fb67ffd0f82865f9ff92dd5f97e1407645c9fcd5b27db"
+    },
+    {
+      "comment": "角色:斯卡佩拉",
+      "source": "worldbook/characters/other/B29_斯卡佩拉.md",
+      "runtime_content_sha256": "4e7083694d782e3383c973be9756471cc8f1fc8738c53d3c09371d62ece8dcd5"
+    },
+    {
+      "comment": "角色:格琳朵",
+      "source": "worldbook/characters/other/B30_格琳朵.md",
+      "runtime_content_sha256": "0e0ccb7967a76b0be27297dc408cedb4e05fa7ab64be8b1e3c64ed1490022033"
+    },
+    {
+      "comment": "角色:黛莫莉莎",
+      "source": "worldbook/characters/other/B31_黛莫莉莎.md",
+      "runtime_content_sha256": "06b6037d8c76de53136a85800ab82972204a953d97036283b0198d8565dcb00c"
+    },
+    {
+      "comment": "角色:兰佩琪",
+      "source": "worldbook/characters/other/C01_兰佩琪.md",
+      "runtime_content_sha256": "cd6bc06d58c27fafdd6f8275a858378306bf61bc602e9f113a92907bbd5dd378"
+    },
+    {
+      "comment": "角色:米克茜",
+      "source": "worldbook/characters/other/C02_米克茜.md",
+      "runtime_content_sha256": "eb642893268a9b8676026bce34f919382fa09c75d5d5f5b915c59c276468a7ca"
+    },
+    {
+      "comment": "角色:珑荷",
+      "source": "worldbook/characters/other/C03_珑荷.md",
+      "runtime_content_sha256": "acbcb5e021815c82de3443af5cb58a230c2d13c212bd286682ccd681ab463b97"
+    },
+    {
+      "comment": "角色:斯嘉佩",
+      "source": "worldbook/characters/other/C04_斯嘉佩.md",
+      "runtime_content_sha256": "0f12eeffc7b122b8e1d8128928cfbca158548dab851bb56e0d8a6478ac7a0bb8"
+    },
+    {
+      "comment": "角色:克兰茜",
+      "source": "worldbook/characters/other/C05_克兰茜.md",
+      "runtime_content_sha256": "226ee8f0d1f0ea9bea0582be12ea535cfc368e3b6e0eacc0fb79e2a9422fecc0"
+    },
+    {
+      "comment": "角色:克萝芭",
+      "source": "worldbook/characters/other/C06_克萝芭.md",
+      "runtime_content_sha256": "bec2e856d94770de488a27d64652d9c2a99961059a0edd37043f9084ad68c9da"
+    },
+    {
+      "comment": "角色:哈琪特",
+      "source": "worldbook/characters/other/C07_哈琪特.md",
+      "runtime_content_sha256": "e3c07937038d7793faacf941846716b52aa6f010fd4d2b74e6441c9db248f9a6"
+    },
+    {
+      "comment": "角色:斯汀嘉",
+      "source": "worldbook/characters/other/C08_斯汀嘉.md",
+      "runtime_content_sha256": "813dacada9b3756d1aad4833e7dec38d098a20650a56f5d7afedb454f2e70326"
+    },
+    {
+      "comment": "角色:琼希普",
+      "source": "worldbook/characters/other/C09_琼希普.md",
+      "runtime_content_sha256": "c5caa8930b7b64ad2ac0a0a11377d7239587d95e5f3e368744595962781ab6f2"
+    },
+    {
+      "comment": "角色:莫霍卡",
+      "source": "worldbook/characters/other/C10_莫霍卡.md",
+      "runtime_content_sha256": "a319b72aa6dad82664af56954d7ba871853f1889739b283f73efe76ebdc81402"
+    },
+    {
+      "comment": "角色:德蕾德",
+      "source": "worldbook/characters/other/C11_德蕾德.md",
+      "runtime_content_sha256": "84d3b47acfa2f222e6a7d1f3ccd9b5df802ed7b89ccda0217c38a03f442a9428"
+    },
+    {
+      "comment": "角色:妮特萝·宙丝",
+      "source": "worldbook/characters/other/C12_妮特萝·宙丝.md",
+      "runtime_content_sha256": "5dd5b27809ea4b1611076d89e07ce1f6d048b5e90a5312bce4b74123ab0b6a2e"
+    },
+    {
+      "comment": "角色:昂斯萝特",
+      "source": "worldbook/characters/other/C13_昂斯萝特.md",
+      "runtime_content_sha256": "9a843ef448e7f3df2584dabb944463c7dabf09f5237ac6d0ee2251462888bd35"
+    },
+    {
+      "comment": "角色:贝瑟琪",
+      "source": "worldbook/characters/other/C14_贝瑟琪.md",
+      "runtime_content_sha256": "b57767876376ca4a751f328bb313ef17179394a22be1a46168fe2ad594a6cb17"
+    },
+    {
+      "comment": "角色:山姆·维特维奇",
+      "source": "worldbook/characters/human/H01_山姆·维特维奇.md",
+      "runtime_content_sha256": "0b6a6aa7fe303cf9a1e2b83b64eff8b219d6c26806d0887b9cd2c2cde1da5580"
+    },
+    {
+      "comment": "角色:米凯拉·贝恩斯",
+      "source": "worldbook/characters/human/H02_米凯拉·贝恩斯.md",
+      "runtime_content_sha256": "a3c07cc3742bfb40d9d107ce7d23e969d59077356f6c40d14a168edaf3558e5d"
+    },
+    {
+      "comment": "角色:威廉·伦诺克斯",
+      "source": "worldbook/characters/human/H03_威廉·伦诺克斯.md",
+      "runtime_content_sha256": "e702b44f83835afd7857f694036259ce5cbb9d636e4ed472d28fa0f204d886b0"
+    },
+    {
+      "comment": "角色:罗伯特·埃普斯",
+      "source": "worldbook/characters/human/H04_罗伯特·埃普斯.md",
+      "runtime_content_sha256": "8cc0c341500f56d237f0fdae94f78e1e3f63c3f07c2455f52ced398c5b38c69e"
+    },
+    {
+      "comment": "角色:西摩·西蒙斯",
+      "source": "worldbook/characters/human/H05_西摩·西蒙斯.md",
+      "runtime_content_sha256": "5d95e9e744428556a69b2be84f536a897e3844829060aeef6b1570f6aa90420e"
+    },
+    {
+      "comment": "角色:罗恩·维特维奇",
+      "source": "worldbook/characters/human/H06_罗恩·维特维奇.md",
+      "runtime_content_sha256": "77f5db58426a269590be3c6809fe725bb63d7ea896ebacc36c6b923cd5a5dbc0"
+    },
+    {
+      "comment": "角色:朱迪·维特维奇",
+      "source": "worldbook/characters/human/H07_朱迪·维特维奇.md",
+      "runtime_content_sha256": "3f66c2adf3787a6e2a2fc33169ed901561986310c0492154cd1aa91057feecb1"
+    },
+    {
+      "comment": "角色:玛吉·麦德森",
+      "source": "worldbook/characters/human/H08_玛吉·麦德森.md",
+      "runtime_content_sha256": "becc39fde2160e52a741302cc35fa9d529e303e9633c2329e3bdc809bc0597b1"
+    },
+    {
+      "comment": "角色:格伦·惠特曼",
+      "source": "worldbook/characters/human/H09_格伦·惠特曼.md",
+      "runtime_content_sha256": "c65e51281fc77ae61282da3b1cfc98afe4da5b829be1b0d4b88b6dde9d20e330"
+    },
+    {
+      "comment": "角色:约翰·凯勒",
+      "source": "worldbook/characters/human/H10_约翰·凯勒.md",
+      "runtime_content_sha256": "e2827fef510bf18da9858ca96ae3f42cf678b22954e999d78db9672502b7a727"
+    },
+    {
+      "comment": "角色:里奥·斯皮茨",
+      "source": "worldbook/characters/human/H11_里奥·斯皮茨.md",
+      "runtime_content_sha256": "39828b3fb65e46744a750ad7c3fbc2292aaf1efa7efefe6bd1549244d5c02c14"
+    },
+    {
+      "comment": "角色:西奥多·加洛韦",
+      "source": "worldbook/characters/human/H12_西奥多·加洛韦.md",
+      "runtime_content_sha256": "12e59d725c9a6137f09b224c39491b1e1c985adeceb470650b7e222df637838e"
+    },
+    {
+      "comment": "角色:莫肖尔将军",
+      "source": "worldbook/characters/human/H13_莫肖尔将军.md",
+      "runtime_content_sha256": "19d1c51d6c775148b1992dd8f72851d416ee68dbbfac05cee4f27b500e2df7e1"
+    },
+    {
+      "comment": "角色:卡莉·斯宾塞",
+      "source": "worldbook/characters/human/H14_卡莉·斯宾塞.md",
+      "runtime_content_sha256": "346d6d4e661b35a5cf9b14a61ee42a4c1a4475cb1d1e033c34f7e5a07930fea5"
+    },
+    {
+      "comment": "角色:迪伦·古尔德",
+      "source": "worldbook/characters/human/H15_迪伦·古尔德.md",
+      "runtime_content_sha256": "0eb7de5bccac92022f2e7eec4bf7f6652af48317984f5bbca8b6934a6dda1ae1"
+    },
+    {
+      "comment": "角色:夏洛特·米琳",
+      "source": "worldbook/characters/human/H16_夏洛特·米琳.md",
+      "runtime_content_sha256": "ee587955ede6897aabf64a5264ef9a3a3c3a097e22f5dd1fa70ee069b4cf01aa"
+    },
+    {
+      "comment": "角色:凯德·伊格尔",
+      "source": "worldbook/characters/human/H17_凯德·伊格尔.md",
+      "runtime_content_sha256": "9e57979a696642b90247e26bd7d05d4ace3fbd3eda0d61707843789a2ef545fc"
+    },
+    {
+      "comment": "角色:泰莎·伊格尔",
+      "source": "worldbook/characters/human/H18_泰莎·伊格尔.md",
+      "runtime_content_sha256": "625591e5b0a3f386621df5b189f2e6bc5b3704383e5b7d2b009fed5c35d9890e"
+    },
+    {
+      "comment": "角色:谢恩·戴森",
+      "source": "worldbook/characters/human/H19_谢恩·戴森.md",
+      "runtime_content_sha256": "83ac5325821c29ef9eaf61157b68b43799a76227d23a27639acfbe7d0288fce3"
+    },
+    {
+      "comment": "角色:约书亚·乔伊斯",
+      "source": "worldbook/characters/human/H20_约书亚·乔伊斯.md",
+      "runtime_content_sha256": "027e5fcb0b92965bedeac30f1ab53f4ec880d0724b5809fb1c28de4a7c0f40c7"
+    },
+    {
+      "comment": "角色:哈罗德·阿汀格",
+      "source": "worldbook/characters/human/H21_哈罗德·阿汀格.md",
+      "runtime_content_sha256": "2928ead5c364da4cd9e29376e5f6bf4d2cee500a9a883667618b6be2291f6d58"
+    },
+    {
+      "comment": "角色:詹姆斯·萨沃伊",
+      "source": "worldbook/characters/human/H22_詹姆斯·萨沃伊.md",
+      "runtime_content_sha256": "6c8c78a1d51f4d04f6ef0e2fb6e10df64b815cac8432a59b0c8e691f2a1146a3"
+    },
+    {
+      "comment": "角色:达茜·蒂里尔",
+      "source": "worldbook/characters/human/H23_达茜·蒂里尔.md",
+      "runtime_content_sha256": "cca1be031f75bcb52bb16b709114a51b4caf91388eb9fafebd7b45769a4b0878"
+    },
+    {
+      "comment": "角色:苏月明",
+      "source": "worldbook/characters/human/H24_苏月明.md",
+      "runtime_content_sha256": "2748f986679604afb8a95310a2a6cce984252e7ebf41a09313163bb83548958c"
+    },
+    {
+      "comment": "角色:埃德蒙·伯顿爵士",
+      "source": "worldbook/characters/human/H25_埃德蒙·伯顿爵士.md",
+      "runtime_content_sha256": "b8fd5a20d3a56048e71cc90647b37fd21a749ab0ccad462ddbdec62e8ec2d736"
+    },
+    {
+      "comment": "角色:维维安·温布利",
+      "source": "worldbook/characters/human/H26_维维安·温布利.md",
+      "runtime_content_sha256": "1b0f3fbcc05525d18c171af461c4ff656aa5ab7536175c3a27ab073e74974eb7"
+    },
+    {
+      "comment": "角色:伊莎贝拉",
+      "source": "worldbook/characters/human/H27_伊莎贝拉.md",
+      "runtime_content_sha256": "07c600f41fed53a7f3f8daa06fe694f840851e491e1f80239093b0601c779d06"
+    },
+    {
+      "comment": "角色:桑托斯",
+      "source": "worldbook/characters/human/H28_桑托斯.md",
+      "runtime_content_sha256": "98a467fcf91eca3bb70919cce3463ef2544f02cdb2a4fa90dce4fbfdd602ccfa"
+    },
+    {
+      "comment": "地点:赛博坦",
+      "source": "worldbook/locations/LOC-A01_赛博坦.md",
+      "runtime_content_sha256": "3b532b42d52b232af8ac8ecfbbad815a21a30bc64fda8b2b70b938228dc4fc66"
+    },
+    {
+      "comment": "地点:芝加哥",
+      "source": "worldbook/locations/LOC-A02_芝加哥.md",
+      "runtime_content_sha256": "3aece1addda913d2afee30f26bcbcc9e58f8fa40b618cc2f9e39294c57239463"
+    },
+    {
+      "comment": "地点:胡佛水坝·Sector 7地下设施",
+      "source": "worldbook/locations/LOC-A03_胡佛水坝·Sector7地下设施.md",
+      "runtime_content_sha256": "c7d98166a348fccdd2ad3319d7d21de9955c11b7379bb999f51f79b556f6241a"
+    },
+    {
+      "comment": "地点:Diego Garcia NEST基地",
+      "source": "worldbook/locations/LOC-A04_Diego-Garcia-NEST基地.md",
+      "runtime_content_sha256": "65ca00722fa223589b06cf85382245b5079c849126bad3c0c1a873a35a060564"
+    },
+    {
+      "comment": "地点:KSI芝加哥总部",
+      "source": "worldbook/locations/LOC-A05_KSI芝加哥总部.md",
+      "runtime_content_sha256": "36e47a01b407208bc0a8802cc61e22250b406b65b53985caf9019cc31ec55599"
+    },
+    {
+      "comment": "地点:凯德·伊格尔废料场·赛博坦避难场",
+      "source": "worldbook/locations/LOC-A06_凯德废料场·赛博坦避难场.md",
+      "runtime_content_sha256": "9002b008f731d1de9b85b669b3049146a7a69e29c1e12a60b3da6c653227c99f"
+    },
+    {
+      "comment": "地点:伯顿庄园·维特维坎秩序核心",
+      "source": "worldbook/locations/LOC-A07_伯顿庄园·维特维坎秩序核心.md",
+      "runtime_content_sha256": "2403e19d8720bccf9bf07b289f1cbe9ebaab84cb0f7e1fdd0a11604de15d2b77"
+    },
+    {
+      "comment": "地点:洛黛恩骑士舰",
+      "source": "worldbook/locations/LOC-A08_洛黛恩骑士舰.md",
+      "runtime_content_sha256": "74668dd7dda3fcb47008347e222e876fd7a97d2804b364829d738c222644af32"
+    },
+    {
+      "comment": "地点:海底赛博坦骑士舰",
+      "source": "worldbook/locations/LOC-A09_海底赛博坦骑士舰.md",
+      "runtime_content_sha256": "8453ff54c083ca38a87f7ba71a1d53decd2c1876b7e031d433b457772ca2cd5a"
+    },
+    {
+      "comment": "地点:北极冰层·薇震天发现区",
+      "source": "worldbook/locations/LOC-B01_北极冰层·薇震天发现区.md",
+      "runtime_content_sha256": "5f948a03ad8ffdfa30f2f977e04e025e487f3cd298355015e6a087a6a1945afd"
+    },
+    {
+      "comment": "地点:卡塔尔SOCCENT前进基地",
+      "source": "worldbook/locations/LOC-B02_卡塔尔SOCCENT前进基地.md",
+      "runtime_content_sha256": "8ef3de04bdc910b891bf801dd5af4931a21766ea057ef94cfbbea5b9b3c51267"
+    },
+    {
+      "comment": "地点:维特维奇家",
+      "source": "worldbook/locations/LOC-B03_维特维奇家.md",
+      "runtime_content_sha256": "f7ced4c2f54c81aac0c77105dd444175c26b3d9d79257d595a62d7049da976d4"
+    },
+    {
+      "comment": "地点:Mission City",
+      "source": "worldbook/locations/LOC-B04_Mission-City.md",
+      "runtime_content_sha256": "8221385c59ad38e34dd32e846cec2f322b99c028c8361eff2f355a61513762d4"
+    },
+    {
+      "comment": "地点:劳伦森深渊",
+      "source": "worldbook/locations/LOC-B05_劳伦森深渊.md",
+      "runtime_content_sha256": "47dd1e9c6212f6a63e39dfdc35a3504bceeacc1d24a325fbff7ed17b6b3239c4"
+    },
+    {
+      "comment": "地点:上海工业区",
+      "source": "worldbook/locations/LOC-B06_上海工业区.md",
+      "runtime_content_sha256": "b3d0be4d59e7d56f9d78696ffc8a8e066fb9babb4f5c0c29fde7adee8b46762f"
+    },
+    {
+      "comment": "地点:山姆大学校园",
+      "source": "worldbook/locations/LOC-B07_山姆大学校园.md",
+      "runtime_content_sha256": "e67308d221cf3e8f3e5b19f31fdf09b69231f67d57af084a1f8df88a8ce8971f"
+    },
+    {
+      "comment": "地点:森林战场",
+      "source": "worldbook/locations/LOC-B08_森林战场.md",
+      "runtime_content_sha256": "c49739266911208e9739b73e7a1ee22d1b99923b5f03c529a46301ac66aafbb0"
+    },
+    {
+      "comment": "地点:Smithsonian馆藏区",
+      "source": "worldbook/locations/LOC-B09_Smithsonian馆藏区.md",
+      "runtime_content_sha256": "c81cadf40885bafaae44cdd5fbd7b502d68801e3ec7f790607590a3a3827289b"
+    },
+    {
+      "comment": "地点:Petra至尊之墓",
+      "source": "worldbook/locations/LOC-B10_Petra至尊之墓.md",
+      "runtime_content_sha256": "69cd4372338fc5cce732925ce8516c25f45a69d3988f101531529e04eba3c33f"
+    },
+    {
+      "comment": "地点:吉萨金字塔群·太阳收割器战区",
+      "source": "worldbook/locations/LOC-B11_吉萨金字塔群·太阳收割器战区.md",
+      "runtime_content_sha256": "daf84ad6076c216f99670ad32dbf8a82058b1586beb3836cbb49ab891f01b4fc"
+    },
+    {
+      "comment": "地点:切尔诺贝利核事故区",
+      "source": "worldbook/locations/LOC-B12_切尔诺贝利核事故区.md",
+      "runtime_content_sha256": "6ba39ddfd8c42e2fa6f3d008858e1f843a4c5ea3cb0c9dcfea5edbb7eec8d0a2"
+    },
+    {
+      "comment": "地点:月球背面·方舟坠毁区",
+      "source": "worldbook/locations/LOC-B13_月球背面·方舟坠毁区.md",
+      "runtime_content_sha256": "8ac46112c21ed55bebcd65afe7ec11d2da3e13de32d40339dbc5dc456a535a54"
+    },
+    {
+      "comment": "地点:NEST美国本土指挥基地",
+      "source": "worldbook/locations/LOC-B14_NEST美国本土指挥基地.md",
+      "runtime_content_sha256": "35f0893c53a9494ae358f5fc045f33af6712270226eabc46395393c1a32d8108"
+    },
+    {
+      "comment": "地点:华盛顿特区·空间桥启动区",
+      "source": "worldbook/locations/LOC-B15_华盛顿特区·空间桥启动区.md",
+      "runtime_content_sha256": "77b57a94b0292446f5ee93600db896b5a4162ab824fb9bdf6670c623affdd078"
+    },
+    {
+      "comment": "地点:Xantium撤离节点",
+      "source": "worldbook/locations/LOC-B16_Xantium撤离节点.md",
+      "runtime_content_sha256": "fd8fc7a90f8a60a72bd81666af631b6c6c0fdeba7f91ead9d24cb73f26c866e6"
+    },
+    {
+      "comment": "地点:伊格尔农场",
+      "source": "worldbook/locations/LOC-B17_伊格尔农场.md",
+      "runtime_content_sha256": "8a330d8b70a1d41ef2ea5550a702f861708ce9064ea330ee0900245e066bf2e4"
+    },
+    {
+      "comment": "地点:中国KSI生产设施",
+      "source": "worldbook/locations/LOC-B18_中国KSI生产设施.md",
+      "runtime_content_sha256": "645d3969d84c020f4bc1d306882dba497e34960e2448c836ccf724791340327d"
+    },
+    {
+      "comment": "地点:香港战区",
+      "source": "worldbook/locations/LOC-B19_香港战区.md",
+      "runtime_content_sha256": "6ef99b446f7a79983159c8b1f449f0a6118961861fa376208f0f150085b0c846"
+    },
+    {
+      "comment": "地点:牛津·维维安学术活动区",
+      "source": "worldbook/locations/LOC-B20_牛津·维维安学术活动区.md",
+      "runtime_content_sha256": "44d76ff9109c8685eb84b3c432d77b261830747f381daf1f55ddeaa2a29d2fcc"
+    },
+    {
+      "comment": "地点:巨石阵",
+      "source": "worldbook/locations/LOC-B21_巨石阵.md",
+      "runtime_content_sha256": "01870dd890a93608c80d63aeb1a3b0edf14aa6ddd7c5fba9f408086babf4e12f"
+    },
+    {
+      "comment": "地点:赛博坦点火室",
+      "source": "worldbook/locations/LOC-B22_赛博坦点火室.md",
+      "runtime_content_sha256": "ec671ef671732407f0ca909a468a872c47a0f8ccfb21f66681a8e24d4858f039"
+    },
+    {
+      "comment": "地点:方舟号",
+      "source": "worldbook/locations/LOC-C01_方舟号.md",
+      "runtime_content_sha256": "bf899b49a814a49c5362aca5ce0bca7f1c4bfbc37494e7c507eda751860fe2f1"
+    },
+    {
+      "comment": "地点:KSI Transformium实验区",
+      "source": "worldbook/locations/LOC-C02_KSI-Transformium实验区.md",
+      "runtime_content_sha256": "996935284d6c22d608aea04c8675ed36b01d896963788a6df3c0cd11617593d0"
+    },
+    {
+      "comment": "地点:骑士舰囚禁区·恐龙金刚收容舱",
+      "source": "worldbook/locations/LOC-C03_骑士舰囚禁区·恐龙金刚收容舱.md",
+      "runtime_content_sha256": "25cfd78e9737372cd03240d47cb64a8cfe399989a0066465acdcdcc34138ca51"
+    },
+    {
+      "comment": "地点:HMS Alliance潜艇",
+      "source": "worldbook/locations/LOC-C04_HMS-Alliance潜艇.md",
+      "runtime_content_sha256": "99243e636fdeba88ed58c892b0083a627ce2e2c5f21b5ac3e5d160ac2f52f43b"
+    },
+    {
+      "comment": "地点:维维安家族旧宅",
+      "source": "worldbook/locations/LOC-C05_维维安家族旧宅.md",
+      "runtime_content_sha256": "df172acbfa8f565c3b6acee15bc85831ef9cf25930ef07329203e2da6561727f"
+    },
+    {
+      "comment": "地点:土星卫星·梅格萝娜隐匿基地",
+      "source": "worldbook/locations/LOC-C06_土星卫星·梅格萝娜隐匿基地.md",
+      "runtime_content_sha256": "fad60a71fe76d0a75634e117cac31be1d4f3284f049ddb000b836b9b16b7ae92"
+    },
+    {
+      "comment": "地点:古巴·西蒙斯隐居点",
+      "source": "worldbook/locations/LOC-C07_古巴·西蒙斯隐居点.md",
+      "runtime_content_sha256": "30b330586780fd2cbcfc4ac559e65c5d06e0f694cd5be3172346bc174539aabd"
+    },
+    {
+      "comment": "地点:尤尼克隆巨角研究区",
+      "source": "worldbook/locations/LOC-C08_尤尼克隆巨角研究区.md",
+      "runtime_content_sha256": "cedf986aaf914db99c0ecf76ca1952f4aa2fcaeaf9ce4e40c34afc71c454aee4"
+    }
+  ],
+  "qa": {
+    "pass": true,
+    "failures": []
+  }
+}
