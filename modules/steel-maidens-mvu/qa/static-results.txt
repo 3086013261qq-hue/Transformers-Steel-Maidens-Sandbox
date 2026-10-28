@@ -1,0 +1,1 @@
+Static: four native entries, schema passthrough/idempotence, core import, provenance and isolation PASS

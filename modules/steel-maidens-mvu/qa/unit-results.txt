@@ -1,0 +1,18 @@
+✔ latest complete block and missing-role compatibility; user/system/tool excluded (1.535003ms)
+✔ invalid whole blocks fall back together, never inherit half (0.936351ms)
+✔ last block within message, active native swipe, edit, deletion and no legal history (0.214553ms)
+✔ all stage boundaries and extremes (0.189185ms)
+✔ gesture starts theme, reentry preserves source/time and selected track (0.732153ms)
+✔ autoplay rejection contained, user retry, no rebuild (5.298796ms)
+✔ six-track loop in both directions and ended auto-next (0.472202ms)
+✔ error is isolated; manual retry and next selection remain usable (0.279011ms)
+✔ stale play rejection cannot overwrite new song or pause; destroy removes listeners (1.153468ms)
+✔ manifest identity, order, titles and frozen URL mapping (0.307424ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 95.399295

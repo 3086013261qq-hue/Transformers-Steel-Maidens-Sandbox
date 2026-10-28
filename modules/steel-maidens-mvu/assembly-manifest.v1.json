@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "baseline_head": "34ef5280bfe875bff0a8ad0e60353cf6134a3689",
+  "runtime_commit": "77d446740a49a95ef0d6a493b88a6bf7153cb58c",
+  "runtime_url": "https://testingcf.jsdelivr.net/gh/3086013261qq-hue/Transformers-Steel-Maidens-Sandbox@77d446740a49a95ef0d6a493b88a6bf7153cb58c/modules/steel-maidens-mvu/dist/steel-maidens-mvu.js",
+  "runtime_sha256": "35ae645e8c3eca22688884b938f866d6797a86bbbb22b22aa976b87c350dd982",
+  "scripts": [
+    {
+      "type": "script",
+      "enabled": true,
+      "name": "MVU",
+      "id": "mvu-core",
+      "content": "import 'https://testingcf.jsdelivr.net/gh/MagicalAstrogy/MagVarUpdate/artifact/bundle.js';\n",
+      "info": "MagVarUpdate 变量表（变量系统的底座，勿删）",
+      "button": {
+        "enabled": false,
+        "buttons": []
+      },
+      "data": {},
+      "export_with": {
+        "data": true,
+        "button": false
+      }
+    },
+    {
+      "type": "script",
+      "enabled": true,
+      "name": "MVU ZOD",
+      "id": "mvu-zod-schema",
+      "content": "// Fullstack registerMvuSchema entry, Zod 4 loose object = passthrough semantics.\n// z is supplied by Tavern Helper. No faction or music slots.\nimport { registerMvuSchema } from 'https://testingcf.jsdelivr.net/gh/StageDog/tavern_resource/dist/util/mvu_zod.js';\nexport const Schema = z.object({}).loose().prefault({});\n$(() => { registerMvuSchema(Schema); });\n",
+      "info": "变量结构：在这里定义变量",
+      "button": {
+        "enabled": false,
+        "buttons": []
+      },
+      "data": {},
+      "export_with": {
+        "data": true,
+        "button": false
+      }
+    },
+    {
+      "type": "script",
+      "enabled": true,
+      "name": "变形钢姬 · 独立MVU",
+      "id": "steel-maidens-mvu",
+      "content": "import 'https://testingcf.jsdelivr.net/gh/3086013261qq-hue/Transformers-Steel-Maidens-Sandbox@77d446740a49a95ef0d6a493b88a6bf7153cb58c/modules/steel-maidens-mvu/dist/steel-maidens-mvu.js';",
+      "info": "docs/007-009 独立MVU，仅展示与音乐",
+      "button": {
+        "enabled": false,
+        "buttons": []
+      },
+      "data": {},
+      "export_with": {
+        "data": true,
+        "button": false
+      }
+    }
+  ],
+  "technical_worldbook_fragment": "mvu/technical-worldbook-fragment.json",
+  "music_manifest": "mvu/music-manifest.v1.json",
+  "display_regex": "modules/steel-maidens-mvu/display-regex.json",
+  "card_level_output_insurance": "modules/steel-maidens-mvu/card-output-insurance.txt",
+  "assembly_note": "Independent assembly inputs only. Merge later; reassign worldbook IDs if needed. No character card generated."
+}

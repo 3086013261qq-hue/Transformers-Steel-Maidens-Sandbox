@@ -1,0 +1,50 @@
+[
+  {
+    "id": "crystal-heart",
+    "status": 200,
+    "bytes": 8964126,
+    "sha256": "e58a8dcf8a03eed77f45ebe029d9a352b2d11f6672ac69e88b4ea54dc3e0d89c",
+    "codec": "mp3",
+    "duration_seconds": 222.72
+  },
+  {
+    "id": "soft-universe",
+    "status": 200,
+    "bytes": 9618813,
+    "sha256": "496dd10c99c692dc1e775382d1f14c605d7b9c3f2e42356286ca80b902494b9d",
+    "codec": "mp3",
+    "duration_seconds": 239.568
+  },
+  {
+    "id": "new-divide",
+    "status": 200,
+    "bytes": 10800895,
+    "sha256": "99fb48e034bf20983a4ec8d6eea78bdad8ca01587c57c70c49fd52497b372397",
+    "codec": "mp3",
+    "duration_seconds": 268.643265
+  },
+  {
+    "id": "what-ive-done",
+    "status": 200,
+    "bytes": 8268153,
+    "sha256": "f576908076265bc31b1c3a4c9e6db6685d79a468bcc355866ffd5a3b27eb73e3",
+    "codec": "mp3",
+    "duration_seconds": 205.662041
+  },
+  {
+    "id": "villain",
+    "status": 200,
+    "bytes": 7661986,
+    "sha256": "3b8bfe7dacf53e8a123a0d7d1350b756302ad22142ef858ac523208633464440",
+    "codec": "mp3",
+    "duration_seconds": 191.04
+  },
+  {
+    "id": "vem-meu-amor-slowed",
+    "status": 200,
+    "bytes": 5008071,
+    "sha256": "4367e94bc3c173b680bf5959b9f8c4614d2007c922fdc30f270bf2025751188f",
+    "codec": "mp3",
+    "duration_seconds": 123.428571
+  }
+]

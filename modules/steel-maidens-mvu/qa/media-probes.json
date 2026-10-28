@@ -1,0 +1,38 @@
+[
+  {
+    "id": "crystal-heart",
+    "status": 200,
+    "bytes": "8964126",
+    "content_type": "audio/mpeg"
+  },
+  {
+    "id": "soft-universe",
+    "status": 200,
+    "bytes": "9618813",
+    "content_type": "audio/mpeg"
+  },
+  {
+    "id": "new-divide",
+    "status": 200,
+    "bytes": "10800895",
+    "content_type": "application/octet-stream"
+  },
+  {
+    "id": "what-ive-done",
+    "status": 200,
+    "bytes": "8268153",
+    "content_type": "audio/mpeg"
+  },
+  {
+    "id": "villain",
+    "status": 200,
+    "bytes": "7661986",
+    "content_type": "audio/mpeg"
+  },
+  {
+    "id": "vem-meu-amor-slowed",
+    "status": 200,
+    "bytes": "5008071",
+    "content_type": "audio/mpeg"
+  }
+]

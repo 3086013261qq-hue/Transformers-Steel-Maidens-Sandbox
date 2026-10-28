@@ -1,0 +1,56 @@
+{
+  "environment": "Headless Chromium native HTMLAudioElement, frozen MP3 bytes via local interception; no speaker listening or Android test",
+  "requests": [
+    "crystal-heart",
+    "soft-universe",
+    "new-divide",
+    "what-ive-done",
+    "villain",
+    "vem-meu-amor-slowed",
+    "crystal-heart"
+  ],
+  "checks": [
+    {
+      "name": "native gesture play advances Crystal Heart time; only current MP3 requested",
+      "status": "PASS"
+    },
+    {
+      "name": "native audio survives lock/details/numeric render with advancing time",
+      "status": "PASS"
+    },
+    {
+      "name": "native decode/play crystal-heart",
+      "status": "PASS",
+      "duration_seconds": 222.680396
+    },
+    {
+      "name": "native decode/play soft-universe",
+      "status": "PASS",
+      "duration_seconds": 239.533333
+    },
+    {
+      "name": "native decode/play new-divide",
+      "status": "PASS",
+      "duration_seconds": 268.613333
+    },
+    {
+      "name": "native decode/play what-ive-done",
+      "status": "PASS",
+      "duration_seconds": 205.613333
+    },
+    {
+      "name": "native decode/play villain",
+      "status": "PASS",
+      "duration_seconds": 191
+    },
+    {
+      "name": "native decode/play vem-meu-amor-slowed",
+      "status": "PASS",
+      "duration_seconds": 123.380952
+    },
+    {
+      "name": "native last track ended event loops to theme",
+      "status": "PASS"
+    }
+  ]
+}

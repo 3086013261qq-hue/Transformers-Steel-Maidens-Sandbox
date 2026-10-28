@@ -1,0 +1,1178 @@
+{
+  "baseline_head": "34ef5280bfe875bff0a8ad0e60353cf6134a3689",
+  "method": "Git blob SHA equality for every protected path after commit; no checkout/rewrite of frozen bytes",
+  "files": [
+    {
+      "path": "build/worldbook/变形钢姬_worldbook_v1.0.0.json",
+      "sha": "b550362963559a6ac974a39799086051db93faf7"
+    },
+    {
+      "path": "manifest/worldbook-assembly.v1.json",
+      "sha": "6e7ba40a72ed0f321d30258801dd4d0c714024f7"
+    },
+    {
+      "path": "media/.gitkeep",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "media/music/AURORA - Soft Universe.mp3",
+      "sha": "58d271308e57d4b4bdfc43f16b2b5846214247a6"
+    },
+    {
+      "path": "media/music/Linkin Park - New Divide.mp3",
+      "sha": "9c9f870bab96df89bea71e32bcc7073f087400b9"
+    },
+    {
+      "path": "media/music/Linkin Park - What I've Done.mp3",
+      "sha": "9c8539b222d2244c10213ea8b456fb22d68dde85"
+    },
+    {
+      "path": "media/music/SXYGX - VEM MEU AMOR (Slowed).mp3",
+      "sha": "cf555941ad36af480663f1e47cb48abcd65e31d5"
+    },
+    {
+      "path": "media/music/Stella Jang - 빌런 (Villain).mp3",
+      "sha": "5b770417924376ac8dbe14cb66eb7273611f6d92"
+    },
+    {
+      "path": "media/music/啃书 - Crystal Heart（水晶心）.mp3",
+      "sha": "5de0b1accab3108a7a3b0e198e83decaaf1bbd03"
+    },
+    {
+      "path": "media/变形钢姬_MVU内页背景_何博玟_vs_薇震天_最终版.png",
+      "sha": "e68ab790615baf91d0e1420db6df33e825b2847d"
+    },
+    {
+      "path": "media/变形钢姬_MVU锁屏封面_最终版.png",
+      "sha": "440f882260b5a5ac4cb0af32f9b9d2e0b85b4ef5"
+    },
+    {
+      "path": "timeline/.gitkeep",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "timeline/fullstack/MAIN01_movie-01_Transformers-2007.md",
+      "sha": "58c55e50934a179bd174c2964b366c6a9debec3e"
+    },
+    {
+      "path": "timeline/fullstack/MAIN02A_movie-02_Revenge-of-the-Fallen-2009_upper.md",
+      "sha": "e0347670ee2f7867aef8e738ab976d4d97170001"
+    },
+    {
+      "path": "timeline/fullstack/MAIN02B_movie-02_Revenge-of-the-Fallen-2009_lower.md",
+      "sha": "278f81ca5b0c63cffe1ad0de34c58e6f341d4c43"
+    },
+    {
+      "path": "timeline/fullstack/MAIN03A_movie-03_Dark-of-the-Moon-2012_upper.md",
+      "sha": "24920f46127b1475288c36a10bf1f03f2e23b9f7"
+    },
+    {
+      "path": "timeline/fullstack/MAIN03B_movie-03_Dark-of-the-Moon-2012_lower.md",
+      "sha": "a939ed690b0226990355493ac15da4a0c60af42c"
+    },
+    {
+      "path": "timeline/fullstack/MAIN04A_movie-04_Age-of-Extinction-2017_upper.md",
+      "sha": "4ecbdfc7c50692a77288d69b951520e912fab183"
+    },
+    {
+      "path": "timeline/fullstack/MAIN04B_movie-04_Age-of-Extinction-2017_lower.md",
+      "sha": "a3efe37462a751852ab9de8cc557070ce3e1299e"
+    },
+    {
+      "path": "timeline/fullstack/MAIN05A_movie-05_The-Last-Knight-2022_upper.md",
+      "sha": "c4b622b1248eca531cb6fe1a39abea24293ebd44"
+    },
+    {
+      "path": "timeline/fullstack/MAIN05B_movie-05_The-Last-Knight-2022_lower.md",
+      "sha": "d6e03745659ee8f4bec5b86b75b7f244b5ec1a71"
+    },
+    {
+      "path": "timeline/fullstack/README.md",
+      "sha": "86617381b8a518c540104474b74c69ea3d454fd3"
+    },
+    {
+      "path": "timeline/fullstack/master/MAIN02_movie-02_Revenge-of-the-Fallen-2009_MASTER.md",
+      "sha": "091fc0d992fbb39a1bce8c4ef412b4b00173e21b"
+    },
+    {
+      "path": "timeline/fullstack/master/MAIN03_movie-03_Dark-of-the-Moon-2012_MASTER.md",
+      "sha": "508e43d7097c57e6353a7670ee5fc0fc31d247a0"
+    },
+    {
+      "path": "timeline/fullstack/master/MAIN04_movie-04_Age-of-Extinction-2017_MASTER.md",
+      "sha": "315b01789eb469a47a2016c5d9059086bb1630cf"
+    },
+    {
+      "path": "timeline/fullstack/master/MAIN05_movie-05_The-Last-Knight-2022_MASTER.md",
+      "sha": "fcbe370e97cc31406085658b130198b258016295"
+    },
+    {
+      "path": "timeline/fullstack/master/README.md",
+      "sha": "f9e241e9156b3025c4f2af746e598f8c484f621e"
+    },
+    {
+      "path": "worldbook/abilities/.gitkeep",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "worldbook/abilities/A01_何博玟_能力.md",
+      "sha": "b18566c4456d1ccd9ff4c2dbf24706711ec49e04"
+    },
+    {
+      "path": "worldbook/abilities/A02_碧娅_能力.md",
+      "sha": "ca20ed3739d0d0170cc0979860ca89a17bc8de67"
+    },
+    {
+      "path": "worldbook/abilities/A03_嘉芝琳_能力.md",
+      "sha": "2b62d6696b97b6269d54d278357c222f17399f88"
+    },
+    {
+      "path": "worldbook/abilities/A04_艾琳铠_能力.md",
+      "sha": "d1f5302eb97751b67dabcedc834b1811c0a7445c"
+    },
+    {
+      "path": "worldbook/abilities/A05_芮雪_能力.md",
+      "sha": "9ef701ec5968c461944fa7dfdf464ab75e87ee5a"
+    },
+    {
+      "path": "worldbook/abilities/A06_赛薇_能力.md",
+      "sha": "58c26ae1c894c030960f80e6cf7c119eb90719f5"
+    },
+    {
+      "path": "worldbook/abilities/A07_阿尔茜_能力.md",
+      "sha": "d5eeadc0cb66383ce29be3d3977017b5d5d41bb9"
+    },
+    {
+      "path": "worldbook/abilities/A08_捷菲雅_能力.md",
+      "sha": "17f6979dc80b63c5cb712ce2d47bdfb8a1d29652"
+    },
+    {
+      "path": "worldbook/abilities/A09_森缇雅_能力.md",
+      "sha": "1072866d37a378f3e90101087bd2e37a8219c32f"
+    },
+    {
+      "path": "worldbook/abilities/A10_米拉琪_能力.md",
+      "sha": "b6bfee2ef4a6c3500c859fed3157be40b278d639"
+    },
+    {
+      "path": "worldbook/abilities/A11_薇尔嘉_能力.md",
+      "sha": "2fe72da3344d8c0cdc4fab214a163789922e3d19"
+    },
+    {
+      "path": "worldbook/abilities/A12_豪妲_能力.md",
+      "sha": "e0c8a0fe382c43cf537b30e4de21f50690f5dc4c"
+    },
+    {
+      "path": "worldbook/abilities/A13_德莉芙_能力.md",
+      "sha": "0ef280eb478653d303bb77a3c8022b81fa5b57f6"
+    },
+    {
+      "path": "worldbook/abilities/A14_克洛希娅_能力.md",
+      "sha": "d2ec052ba225aaf962c6158b76bd0f8d82bd2cbb"
+    },
+    {
+      "path": "worldbook/abilities/A15_萝蒂_能力.md",
+      "sha": "ed427589cc6b7269d483ec89273ca01043e5a81c"
+    },
+    {
+      "path": "worldbook/abilities/A16_格琳洛珂_能力.md",
+      "sha": "dfb22ff89ffa2752f43ec17e853d8b43754ce272"
+    },
+    {
+      "path": "worldbook/abilities/A17_薇震天_能力.md",
+      "sha": "c4aa238778e511ea5883f18a0b22f4e6847d9d80"
+    },
+    {
+      "path": "worldbook/abilities/A18_星啸娅_能力.md",
+      "sha": "194bc669a53457a980cebd7065468a1ff8b02126"
+    },
+    {
+      "path": "worldbook/abilities/A19_芭莉凯_能力.md",
+      "sha": "d594645ced54946f67d7ee24290b1df3d03afa51"
+    },
+    {
+      "path": "worldbook/abilities/A20_桑德薇_能力.md",
+      "sha": "62fa6ec3aec45ab96f90fe0611ba742eabcb62fe"
+    },
+    {
+      "path": "worldbook/abilities/A21_朔珂薇_能力.md",
+      "sha": "0681e0ab29daa56323cf331f41a29e63529fe5a6"
+    },
+    {
+      "path": "worldbook/abilities/A22_梅格萝娜_能力.md",
+      "sha": "411e05e743f4d94b50cca38b95468647433db198"
+    },
+    {
+      "path": "worldbook/abilities/A23_洛黛恩_能力.md",
+      "sha": "0be3961c40c6d7089e8cba6157743fc65159fe59"
+    },
+    {
+      "path": "worldbook/abilities/A24_昆塔莎_能力.md",
+      "sha": "b3a1321e73953c026163c8c60424eaf2cc4f884c"
+    },
+    {
+      "path": "worldbook/abilities/B01_克罗米娅_能力.md",
+      "sha": "457573af219a91cb7030f4a854922f5965d117e3"
+    },
+    {
+      "path": "worldbook/abilities/B02_艾丽塔-1_能力.md",
+      "sha": "0efac4e78a23a55205c17c018a7ea2c97ba44893"
+    },
+    {
+      "path": "worldbook/abilities/B03_乔缇_能力.md",
+      "sha": "8f3cbc14a8327a7500f6ab103e5b057769d92454"
+    },
+    {
+      "path": "worldbook/abilities/B04_斯琪_能力.md",
+      "sha": "b49cb6e02761fa86eeb92b57e7f70ba432afaf92"
+    },
+    {
+      "path": "worldbook/abilities/B05_玛芙_能力.md",
+      "sha": "21dce293b8e79367c052e65e2529791cc7e86345"
+    },
+    {
+      "path": "worldbook/abilities/B06_薇莉_能力.md",
+      "sha": "e4121484a7ced468fc2416485a00426b28100d33"
+    },
+    {
+      "path": "worldbook/abilities/B07_布蕾茵_能力.md",
+      "sha": "ee044466eada21ae441d38852bbb5ef7d8e238e9"
+    },
+    {
+      "path": "worldbook/abilities/B08_莉德芙_能力.md",
+      "sha": "dd69e35885a67f337c7c8b36e6f67482d4c1e5b2"
+    },
+    {
+      "path": "worldbook/abilities/B09_路芭_能力.md",
+      "sha": "2ed35ce2829f5d0cd19c3ecfcaeb2632136cd1c7"
+    },
+    {
+      "path": "worldbook/abilities/B10_托璇_能力.md",
+      "sha": "6fd32904db0abb9f7fce3dbebef5238ab4949ff0"
+    },
+    {
+      "path": "worldbook/abilities/B11_斯奎琪_能力.md",
+      "sha": "2a5619e62a9cda0a402bbc02d9733bf768d49c29"
+    },
+    {
+      "path": "worldbook/abilities/B12_柯曼妮_能力.md",
+      "sha": "9b23e795f1e7b3b6d780eaf1fb385c56e9c343cb"
+    },
+    {
+      "path": "worldbook/abilities/B13_卡诺霏_能力.md",
+      "sha": "308659164bf76a607876dbe676cfb642b1961527"
+    },
+    {
+      "path": "worldbook/abilities/B14_黛翠_能力.md",
+      "sha": "8ad1cfcbedcde83d078d13362ce4a536937c1c4a"
+    },
+    {
+      "path": "worldbook/abilities/B15_特伦茜_能力.md",
+      "sha": "99c06de624d8e0c5740f0de23cbfe614213e12d7"
+    },
+    {
+      "path": "worldbook/abilities/B16_布尔妲_能力.md",
+      "sha": "03728a0db95cddf48c16131db17cf1f0bec41ec9"
+    },
+    {
+      "path": "worldbook/abilities/B17_莉妲_能力.md",
+      "sha": "dfc0490dfc756f2c4d501902f8dbfc21a15ba45d"
+    },
+    {
+      "path": "worldbook/abilities/B18_斯蕾芙_能力.md",
+      "sha": "3a74be80560dbd6707c588bd9cd15f585a9dfdda"
+    },
+    {
+      "path": "worldbook/abilities/B19_斯露琪_能力.md",
+      "sha": "ea638ceaa369742364f24d556e11e2cf033bc986"
+    },
+    {
+      "path": "worldbook/abilities/B20_斯蔻恩_能力.md",
+      "sha": "ad90ee8e0a778fb8c8982357a3c0c2de5139acd8"
+    },
+    {
+      "path": "worldbook/abilities/B21_布莱蔻_能力.md",
+      "sha": "a4845df5d083ff7b9434f63604f0c9e770ab9e0d"
+    },
+    {
+      "path": "worldbook/abilities/B22_斯珂琶_能力.md",
+      "sha": "240609b103d84a67c83bf0caf48135f441f7cf52"
+    },
+    {
+      "path": "worldbook/abilities/B23_布萝尔_能力.md",
+      "sha": "2f8a974feeaa9533a3835f90d927055b5b137fe6"
+    },
+    {
+      "path": "worldbook/abilities/B24_博妮珂_能力.md",
+      "sha": "3a451134141358c4a936b3ae9b1cd99dfcc802a6"
+    },
+    {
+      "path": "worldbook/abilities/B25_芙蕾茜_能力.md",
+      "sha": "1ec48c179372799e031ff76cb25e49f9229a7ea7"
+    },
+    {
+      "path": "worldbook/abilities/B26_拉薇琪_能力.md",
+      "sha": "6a23d5ff11e2d842d8359b073cd5b74e60005cf1"
+    },
+    {
+      "path": "worldbook/abilities/B27_蕾瑟碧_能力.md",
+      "sha": "9cde7ffcd5aa64c1c88873b0aed7817accc61a9d"
+    },
+    {
+      "path": "worldbook/abilities/B28_赛德薇_能力.md",
+      "sha": "6ed87b91b66d8fd0a77c95fc526386952409d957"
+    },
+    {
+      "path": "worldbook/abilities/B29_斯卡佩拉_能力.md",
+      "sha": "42d3bc24e01ba1cee2c5947cd22c18b658223668"
+    },
+    {
+      "path": "worldbook/abilities/B30_格琳朵_能力.md",
+      "sha": "5532d5c0351b79e640f475b023cfdb90b05b9a8d"
+    },
+    {
+      "path": "worldbook/abilities/B31_黛莫莉莎_能力.md",
+      "sha": "97294c90ad3146d0bd83aa4bbd8e4e94e7abb65f"
+    },
+    {
+      "path": "worldbook/abilities/C01_兰佩琪_能力.md",
+      "sha": "c256a2425bfa9a97aa64824d025dcd199e850058"
+    },
+    {
+      "path": "worldbook/abilities/C02_米克茜_能力.md",
+      "sha": "1e1b882ce01bda65f7aa0bbba74960072bdbbf5c"
+    },
+    {
+      "path": "worldbook/abilities/C03_珑荷_能力.md",
+      "sha": "68faf61197b5611fdc612edf93447322ed51f912"
+    },
+    {
+      "path": "worldbook/abilities/C04_斯嘉佩_能力.md",
+      "sha": "6fbad401531a4cc885b1bf33775d89924bae665a"
+    },
+    {
+      "path": "worldbook/abilities/C05_克兰茜_能力.md",
+      "sha": "ebe94e02c1eee614632b443ac588acffc5a0579d"
+    },
+    {
+      "path": "worldbook/abilities/C06_克萝芭_能力.md",
+      "sha": "c4cbf2bf842661fa18af4db24bc7e577e4ba5cb6"
+    },
+    {
+      "path": "worldbook/abilities/C07_哈琪特_能力.md",
+      "sha": "d56ad876ecb7d6549ba9364fb9d375fb5bcff3ba"
+    },
+    {
+      "path": "worldbook/abilities/C08_斯汀嘉_能力.md",
+      "sha": "eb72ffc1e9480fc7fde585d20b9b3068acc3618b"
+    },
+    {
+      "path": "worldbook/abilities/C09_琼希普_能力.md",
+      "sha": "e1997d2d1b3fad91f3bc160a11552ce4fee85cf7"
+    },
+    {
+      "path": "worldbook/abilities/C10_莫霍卡_能力.md",
+      "sha": "ae35c3354ac5ed1eeea5f52386610b77aea31acc"
+    },
+    {
+      "path": "worldbook/abilities/C11_德蕾德_能力.md",
+      "sha": "90e081e4912dd1121fcfdd8a6aa7fe9d40f7703b"
+    },
+    {
+      "path": "worldbook/abilities/C12_妮特萝·宙丝_能力.md",
+      "sha": "8341367f309967c2157dcd00c799a8eff362f371"
+    },
+    {
+      "path": "worldbook/abilities/C13_昂斯萝特_能力.md",
+      "sha": "d28a310b666f37856b437fed899b3bc3e9c41422"
+    },
+    {
+      "path": "worldbook/abilities/C14_贝瑟琪_能力.md",
+      "sha": "603411db1c91aea07dc7e8b9302d0ab24ee4ddf0"
+    },
+    {
+      "path": "worldbook/characters/human/H01_山姆·维特维奇.md",
+      "sha": "5d52050b32d2a6f9be8353a1a8eb46ee95b0faf3"
+    },
+    {
+      "path": "worldbook/characters/human/H02_米凯拉·贝恩斯.md",
+      "sha": "3724649192666de74a2f420501d0dd50620a656b"
+    },
+    {
+      "path": "worldbook/characters/human/H03_威廉·伦诺克斯.md",
+      "sha": "0715026083b41679982871d6fa7781f875320106"
+    },
+    {
+      "path": "worldbook/characters/human/H04_罗伯特·埃普斯.md",
+      "sha": "1e712c482e56a96d915c6497efabe859b8bc3d2c"
+    },
+    {
+      "path": "worldbook/characters/human/H05_西摩·西蒙斯.md",
+      "sha": "907793d03da991423873b8a14772529d2271ab4b"
+    },
+    {
+      "path": "worldbook/characters/human/H06_罗恩·维特维奇.md",
+      "sha": "8dbcd31339a08d5555a0f28c9c5824441ce3b49d"
+    },
+    {
+      "path": "worldbook/characters/human/H07_朱迪·维特维奇.md",
+      "sha": "ac36a543bc57f40ca5c8b29874f512f6ef1e25ff"
+    },
+    {
+      "path": "worldbook/characters/human/H08_玛吉·麦德森.md",
+      "sha": "8846d4ec067aaf0741abea21235929ae0fff3c3d"
+    },
+    {
+      "path": "worldbook/characters/human/H09_格伦·惠特曼.md",
+      "sha": "04012f7d5505e00fc74e63977185ae7de596d3d1"
+    },
+    {
+      "path": "worldbook/characters/human/H10_约翰·凯勒.md",
+      "sha": "daa85a75e35cc98210167509e659a34db766974f"
+    },
+    {
+      "path": "worldbook/characters/human/H11_里奥·斯皮茨.md",
+      "sha": "f649ad64f3b825d9b46af70215761dcc454f8164"
+    },
+    {
+      "path": "worldbook/characters/human/H12_西奥多·加洛韦.md",
+      "sha": "2dbe7fa23094b133712750fcc96d2267d4c6d9bb"
+    },
+    {
+      "path": "worldbook/characters/human/H13_莫肖尔将军.md",
+      "sha": "11f944bd83c7955b932746c01addb8996d5baba9"
+    },
+    {
+      "path": "worldbook/characters/human/H14_卡莉·斯宾塞.md",
+      "sha": "dd30feeaf0e94916db14dde41812e155a62e1e02"
+    },
+    {
+      "path": "worldbook/characters/human/H15_迪伦·古尔德.md",
+      "sha": "6224fc5c382f13645d1120e6350cce56be97e178"
+    },
+    {
+      "path": "worldbook/characters/human/H16_夏洛特·米琳.md",
+      "sha": "cd40b6b7129ba1d45eaccc2dbb532a528d138642"
+    },
+    {
+      "path": "worldbook/characters/human/H17_凯德·伊格尔.md",
+      "sha": "133d3f89b4ac7c73b03d5064e88c04fc6b6757b8"
+    },
+    {
+      "path": "worldbook/characters/human/H18_泰莎·伊格尔.md",
+      "sha": "907b848b6c84326b7109c8f1354a8982edfb4190"
+    },
+    {
+      "path": "worldbook/characters/human/H19_谢恩·戴森.md",
+      "sha": "2f253870461097635476b10bdebedfefc8400ccc"
+    },
+    {
+      "path": "worldbook/characters/human/H20_约书亚·乔伊斯.md",
+      "sha": "cd484c706a3e6b73d6e51085458ea9d8cece904d"
+    },
+    {
+      "path": "worldbook/characters/human/H21_哈罗德·阿汀格.md",
+      "sha": "cce8d5f9bb5e53d004597c3476ce8b71800f7b93"
+    },
+    {
+      "path": "worldbook/characters/human/H22_詹姆斯·萨沃伊.md",
+      "sha": "4435566a313708850afded250dc41d2fbdf5346b"
+    },
+    {
+      "path": "worldbook/characters/human/H23_达茜·蒂里尔.md",
+      "sha": "8ccf39cdc95db0fd619513d022cf22f6258d0618"
+    },
+    {
+      "path": "worldbook/characters/human/H24_苏月明.md",
+      "sha": "fd94729b7f5c1a34dc273e5ed2835da2f3d9ec78"
+    },
+    {
+      "path": "worldbook/characters/human/H25_埃德蒙·伯顿爵士.md",
+      "sha": "ff82b945ee9bf801b9c32d10652bcb55895b146f"
+    },
+    {
+      "path": "worldbook/characters/human/H26_维维安·温布利.md",
+      "sha": "22ceba0375650080a374690e3542bfcab7b08a6b"
+    },
+    {
+      "path": "worldbook/characters/human/H27_伊莎贝拉.md",
+      "sha": "747c5d6d3eb3eac1700474125eca28755eebd73a"
+    },
+    {
+      "path": "worldbook/characters/human/H28_桑托斯.md",
+      "sha": "1322ade01a0c78dfcdd896daeb95af7f78aaf34a"
+    },
+    {
+      "path": "worldbook/characters/main/.gitkeep",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "worldbook/characters/main/A01_何博玟.md",
+      "sha": "0c4c12ef6daad461eb4133b477432c0a23fadf08"
+    },
+    {
+      "path": "worldbook/characters/main/A02_碧娅.md",
+      "sha": "e7f1b4c3b0288c75d5c1cc3a18b601faad4f2962"
+    },
+    {
+      "path": "worldbook/characters/main/A03_嘉芝琳.md",
+      "sha": "816f3698aa7911e697d6d7195268360fe6ff4dfe"
+    },
+    {
+      "path": "worldbook/characters/main/A04_艾琳铠.md",
+      "sha": "42321f308c31e5c58a8df896143b01396b22b67d"
+    },
+    {
+      "path": "worldbook/characters/main/A05_芮雪.md",
+      "sha": "8f358bce1106a14f3812d07793526e131a36abb6"
+    },
+    {
+      "path": "worldbook/characters/main/A06_赛薇.md",
+      "sha": "73355d90ce8e69295e72e68090f60edd75b96268"
+    },
+    {
+      "path": "worldbook/characters/main/A07_阿尔茜.md",
+      "sha": "9606599414d1e913ebe0ae21cca369367beb8c00"
+    },
+    {
+      "path": "worldbook/characters/main/A08_捷菲雅.md",
+      "sha": "78d3ecb6ac5815b317a7eb8631340bc1efe3dd62"
+    },
+    {
+      "path": "worldbook/characters/main/A09_森缇雅.md",
+      "sha": "4e27b9c77d09bcaf75c1a605e253ec5dd03697e2"
+    },
+    {
+      "path": "worldbook/characters/main/A10_米拉琪.md",
+      "sha": "ba3a6cbceddc86d87f36c58a07f1afb0bf1ee9f4"
+    },
+    {
+      "path": "worldbook/characters/main/A11_薇尔嘉.md",
+      "sha": "43095e8d69c7a3835226b73462fba2a4aa9bd984"
+    },
+    {
+      "path": "worldbook/characters/main/A12_豪妲.md",
+      "sha": "67be3e5d8bed7fc42476b764c132f6595c0e3f37"
+    },
+    {
+      "path": "worldbook/characters/main/A13_德莉芙.md",
+      "sha": "8b6210088b2a5453ff5a5702ef150dbbe54eba6b"
+    },
+    {
+      "path": "worldbook/characters/main/A14_克洛希娅.md",
+      "sha": "3ed8eee38e8df0b5d6323bf8bc05adcbc765a7a7"
+    },
+    {
+      "path": "worldbook/characters/main/A15_萝蒂.md",
+      "sha": "17d002d799edf5cd4cffc988bc08719eef736a98"
+    },
+    {
+      "path": "worldbook/characters/main/A16_格琳洛珂.md",
+      "sha": "98cd160fb61cdba5cb8a22da7f27b87c3b68a44c"
+    },
+    {
+      "path": "worldbook/characters/main/A17_薇震天.md",
+      "sha": "d8991cea08706eb52510289833c1b177defde39a"
+    },
+    {
+      "path": "worldbook/characters/main/A18_星啸娅.md",
+      "sha": "fbd76ddd4c3ee05e7b137a12b92ca12f689cb1db"
+    },
+    {
+      "path": "worldbook/characters/main/A19_芭莉凯.md",
+      "sha": "c6abd08319fb476b504d0414ec1e07f7cbcbb424"
+    },
+    {
+      "path": "worldbook/characters/main/A20_桑德薇.md",
+      "sha": "333d0acb3b0140c8906e88046c8dcbe046e3e936"
+    },
+    {
+      "path": "worldbook/characters/main/A21_朔珂薇.md",
+      "sha": "11c189041101dd45ae539bb56ab85452e517e981"
+    },
+    {
+      "path": "worldbook/characters/main/A22_梅格萝娜.md",
+      "sha": "d4fd1030d73d4b07d0f5838520f93d3e7b23a416"
+    },
+    {
+      "path": "worldbook/characters/main/A23_洛黛恩.md",
+      "sha": "9759b5affaddb52a6a96a6cb3a5ae8e2b553faad"
+    },
+    {
+      "path": "worldbook/characters/main/A24_昆塔莎.md",
+      "sha": "f8466b7cd277ce4eb87d91e62fd13726e769c3d7"
+    },
+    {
+      "path": "worldbook/characters/other/.gitkeep",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "worldbook/characters/other/B01_克罗米娅.md",
+      "sha": "7faa77fbeb8f08b069bfef3535b1af97791f40b2"
+    },
+    {
+      "path": "worldbook/characters/other/B02_艾丽塔-1.md",
+      "sha": "eb2fd568764be22e1443f3a12ce1d393336fe419"
+    },
+    {
+      "path": "worldbook/characters/other/B03_乔缇.md",
+      "sha": "cbe98ab20380e51d65ae822ea445ad8f2928d384"
+    },
+    {
+      "path": "worldbook/characters/other/B04_斯琪.md",
+      "sha": "63c7619ba98fdca6afc44c324af754a2a636160f"
+    },
+    {
+      "path": "worldbook/characters/other/B05_玛芙.md",
+      "sha": "1acfc78a537f0d87be0db89650c0f17ddd866682"
+    },
+    {
+      "path": "worldbook/characters/other/B06_薇莉.md",
+      "sha": "f0a21ee5dba181683566beeef0bb0e08c4b07215"
+    },
+    {
+      "path": "worldbook/characters/other/B07_布蕾茵.md",
+      "sha": "1a988fbccb6123c3f89ce0bbd2dd32a85ff7132a"
+    },
+    {
+      "path": "worldbook/characters/other/B08_莉德芙.md",
+      "sha": "da3f59559609508163707cd14902fce786db9636"
+    },
+    {
+      "path": "worldbook/characters/other/B09_路芭.md",
+      "sha": "d097cc3c89b7d2daf47b91680ed5b87f65800b33"
+    },
+    {
+      "path": "worldbook/characters/other/B10_托璇.md",
+      "sha": "a3dc49b2f8c37d6ecda3e71a9ab28309fe7afa0c"
+    },
+    {
+      "path": "worldbook/characters/other/B11_斯奎琪.md",
+      "sha": "93b92365a4945516fa0220103dd4188c9b1f3595"
+    },
+    {
+      "path": "worldbook/characters/other/B12_柯曼妮.md",
+      "sha": "67ee73c405b2a4ef6eabf6a56d7bc1f2f6a0aeb0"
+    },
+    {
+      "path": "worldbook/characters/other/B13_卡诺霏.md",
+      "sha": "6cb881480f254f3d05a73277edf294afd1ba05b2"
+    },
+    {
+      "path": "worldbook/characters/other/B14_黛翠.md",
+      "sha": "fef28eb281c56987ada54489f0e24353ee4e7639"
+    },
+    {
+      "path": "worldbook/characters/other/B15_特伦茜.md",
+      "sha": "53eb79b357925f1ac9fbf2955abec04d502f7c16"
+    },
+    {
+      "path": "worldbook/characters/other/B16_布尔妲.md",
+      "sha": "a491b76169dbb20d17d86833d4b70a0f5bdd3563"
+    },
+    {
+      "path": "worldbook/characters/other/B17_莉妲.md",
+      "sha": "fbcd134521f348bbdb00f8c0eed4c7d3a8849875"
+    },
+    {
+      "path": "worldbook/characters/other/B18_斯蕾芙.md",
+      "sha": "e2d7bcf2aed2480f3dcc08cf51a6575d3ef29e79"
+    },
+    {
+      "path": "worldbook/characters/other/B19_斯露琪.md",
+      "sha": "36593378c41ae9fa2e6db7c96f628d9fe96e110f"
+    },
+    {
+      "path": "worldbook/characters/other/B20_斯蔻恩.md",
+      "sha": "dec4a2bcdea4a72df2ed5ac748f96c1935c38025"
+    },
+    {
+      "path": "worldbook/characters/other/B21_布莱蔻.md",
+      "sha": "e5392644159c206e96bf9a6bc9daf855f21293bc"
+    },
+    {
+      "path": "worldbook/characters/other/B22_斯珂琶.md",
+      "sha": "facf3a36af99a18c684a43b434542b124df39ad6"
+    },
+    {
+      "path": "worldbook/characters/other/B23_布萝尔.md",
+      "sha": "03469fe9c72f9e8c25e38984180f6113ac5e142e"
+    },
+    {
+      "path": "worldbook/characters/other/B24_博妮珂.md",
+      "sha": "77561c751fcef8d1109ea780de0c364c4b5bb8be"
+    },
+    {
+      "path": "worldbook/characters/other/B25_芙蕾茜.md",
+      "sha": "b6634178efd3f37ba2334e7018096bd9b7bb23e7"
+    },
+    {
+      "path": "worldbook/characters/other/B26_拉薇琪.md",
+      "sha": "5ebab82f61624afbd3e133614c6c7b4db57fd1b1"
+    },
+    {
+      "path": "worldbook/characters/other/B27_蕾瑟碧.md",
+      "sha": "2411077261a72a7cf8618c629ae361ea5f749bd6"
+    },
+    {
+      "path": "worldbook/characters/other/B28_赛德薇.md",
+      "sha": "ee47a58ff32179c2a112a81c4557eac05f94dfdf"
+    },
+    {
+      "path": "worldbook/characters/other/B29_斯卡佩拉.md",
+      "sha": "d58a3927635df5dee329c4783f7f33c62f426173"
+    },
+    {
+      "path": "worldbook/characters/other/B30_格琳朵.md",
+      "sha": "303d4befa0b589d5c0cc9eb7983c3cdbacbd667d"
+    },
+    {
+      "path": "worldbook/characters/other/B31_黛莫莉莎.md",
+      "sha": "15108f37c8afc9f7db016f1b76f64557bae3b2c6"
+    },
+    {
+      "path": "worldbook/characters/other/C01_兰佩琪.md",
+      "sha": "0f2fc103cc1f4b75f03ed0b3cc9c2ea56f51454d"
+    },
+    {
+      "path": "worldbook/characters/other/C02_米克茜.md",
+      "sha": "6cbc03fd8fce07999c58e4c5c579aab1a41224f2"
+    },
+    {
+      "path": "worldbook/characters/other/C03_珑荷.md",
+      "sha": "54facf5751280b08dd436cfe8254054b904376f6"
+    },
+    {
+      "path": "worldbook/characters/other/C04_斯嘉佩.md",
+      "sha": "e9808dc2da655e17cdb3e6b730616097c366b7c9"
+    },
+    {
+      "path": "worldbook/characters/other/C05_克兰茜.md",
+      "sha": "62ddfa648e67efde3936568af972ef8e5133796f"
+    },
+    {
+      "path": "worldbook/characters/other/C06_克萝芭.md",
+      "sha": "2ce0cc175762b17e40a960b2fe6a85fdff1bd609"
+    },
+    {
+      "path": "worldbook/characters/other/C07_哈琪特.md",
+      "sha": "bc9a8e54080d2818d313014756433fcd80de0268"
+    },
+    {
+      "path": "worldbook/characters/other/C08_斯汀嘉.md",
+      "sha": "377c54bbe166559e681fac64d26a92056251916e"
+    },
+    {
+      "path": "worldbook/characters/other/C09_琼希普.md",
+      "sha": "0d50d3361c25ef8a230521cad13cee1f48206eea"
+    },
+    {
+      "path": "worldbook/characters/other/C10_莫霍卡.md",
+      "sha": "02c7fea7b905279e7148f2111c1f54335baf19f7"
+    },
+    {
+      "path": "worldbook/characters/other/C11_德蕾德.md",
+      "sha": "37ff6665f6c16c73f399a1a345f778a31dae6ee3"
+    },
+    {
+      "path": "worldbook/characters/other/C12_妮特萝·宙丝.md",
+      "sha": "f106c6263f5ec2bf7b5b69ce2a274a3a1301b43d"
+    },
+    {
+      "path": "worldbook/characters/other/C13_昂斯萝特.md",
+      "sha": "2a709ce6cbfe8fc81147469eb8741f22d342706c"
+    },
+    {
+      "path": "worldbook/characters/other/C14_贝瑟琪.md",
+      "sha": "0c979339a33001cdc0635a98c59cc21af79e7170"
+    },
+    {
+      "path": "worldbook/locations/.gitkeep",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "worldbook/locations/LOC-A01_赛博坦.md",
+      "sha": "44c71b8a7d20bf8b222b3fd357cb3fc29b8660ca"
+    },
+    {
+      "path": "worldbook/locations/LOC-A02_芝加哥.md",
+      "sha": "2e430d5bb1b625e9d613c7dc07e4604d70111936"
+    },
+    {
+      "path": "worldbook/locations/LOC-A03_胡佛水坝·Sector7地下设施.md",
+      "sha": "ea5b931977073d3c13f362d2d4fdaca3e0fe3791"
+    },
+    {
+      "path": "worldbook/locations/LOC-A04_Diego-Garcia-NEST基地.md",
+      "sha": "0010a151a8afe7d1cf63afc6c11e45ce00778b21"
+    },
+    {
+      "path": "worldbook/locations/LOC-A05_KSI芝加哥总部.md",
+      "sha": "b794cafb5764170370c978e652a2c691563038da"
+    },
+    {
+      "path": "worldbook/locations/LOC-A06_凯德废料场·赛博坦避难场.md",
+      "sha": "63189eb018ff4475c47b433017bee4b4e4ac8789"
+    },
+    {
+      "path": "worldbook/locations/LOC-A07_伯顿庄园·维特维坎秩序核心.md",
+      "sha": "f163cc66af7ab0d4b9380e4baafbf0096a811fa4"
+    },
+    {
+      "path": "worldbook/locations/LOC-A08_洛黛恩骑士舰.md",
+      "sha": "ee335152854f20b28614fe77cf2155fc27242882"
+    },
+    {
+      "path": "worldbook/locations/LOC-A09_海底赛博坦骑士舰.md",
+      "sha": "be8695456fc3efb9da0e8ea0fd70b8b6a7a1d235"
+    },
+    {
+      "path": "worldbook/locations/LOC-B01_北极冰层·薇震天发现区.md",
+      "sha": "4a9e6735cf24c2ed808a28b2a34950a1f8189c75"
+    },
+    {
+      "path": "worldbook/locations/LOC-B02_卡塔尔SOCCENT前进基地.md",
+      "sha": "964f59da9d71a35ba31ba48de7f9b6683595fc88"
+    },
+    {
+      "path": "worldbook/locations/LOC-B03_维特维奇家.md",
+      "sha": "41e2d5ec9c88a0227ec3adf58389b22fd34288f2"
+    },
+    {
+      "path": "worldbook/locations/LOC-B04_Mission-City.md",
+      "sha": "213c336ef7436d86423b77974eaa58f67cae2fac"
+    },
+    {
+      "path": "worldbook/locations/LOC-B05_劳伦森深渊.md",
+      "sha": "c273de254808f398af64406d83101a9d5a979dc5"
+    },
+    {
+      "path": "worldbook/locations/LOC-B06_上海工业区.md",
+      "sha": "5df3dffb34752f7dedb093ec0dbbab1a9d566967"
+    },
+    {
+      "path": "worldbook/locations/LOC-B07_山姆大学校园.md",
+      "sha": "6f5f70dbaf0d007db7e398ad878e621fd6a01fa5"
+    },
+    {
+      "path": "worldbook/locations/LOC-B08_森林战场.md",
+      "sha": "021abf5bf27dd8ec01e3c931577e6a80c8b56610"
+    },
+    {
+      "path": "worldbook/locations/LOC-B09_Smithsonian馆藏区.md",
+      "sha": "ae4029b6e8128baaac682344a8834aaaa858e8e3"
+    },
+    {
+      "path": "worldbook/locations/LOC-B10_Petra至尊之墓.md",
+      "sha": "fb7c84932588ada9682d08c5af49cd56d89afe85"
+    },
+    {
+      "path": "worldbook/locations/LOC-B11_吉萨金字塔群·太阳收割器战区.md",
+      "sha": "e5a146e4083fe1afab919689519188026f3d86cc"
+    },
+    {
+      "path": "worldbook/locations/LOC-B12_切尔诺贝利核事故区.md",
+      "sha": "7ddf3efee44835fc7618647259e99a33a73609de"
+    },
+    {
+      "path": "worldbook/locations/LOC-B13_月球背面·方舟坠毁区.md",
+      "sha": "ab9447f62300be975a2c52a290f0923a9bb496f2"
+    },
+    {
+      "path": "worldbook/locations/LOC-B14_NEST美国本土指挥基地.md",
+      "sha": "e47f43bc7133e9712c6099738962ab50b06dfb39"
+    },
+    {
+      "path": "worldbook/locations/LOC-B15_华盛顿特区·空间桥启动区.md",
+      "sha": "2a1300433df5f983a7c50bda4fa8a52d08a3761f"
+    },
+    {
+      "path": "worldbook/locations/LOC-B16_Xantium撤离节点.md",
+      "sha": "14980e7a252492c1132cbde528a1de6682da76ca"
+    },
+    {
+      "path": "worldbook/locations/LOC-B17_伊格尔农场.md",
+      "sha": "e7d5446f2af6affa3afe6834abc1afa3992522e4"
+    },
+    {
+      "path": "worldbook/locations/LOC-B18_中国KSI生产设施.md",
+      "sha": "f6f44b9661aeed68bd9f3716430bddaeb6138d7d"
+    },
+    {
+      "path": "worldbook/locations/LOC-B19_香港战区.md",
+      "sha": "22001bba6ad90a28bfb2578c80e1596c53e3183b"
+    },
+    {
+      "path": "worldbook/locations/LOC-B20_牛津·维维安学术活动区.md",
+      "sha": "66cc239b8584e39b48cd70f6e399447272ed938f"
+    },
+    {
+      "path": "worldbook/locations/LOC-B21_巨石阵.md",
+      "sha": "2d6faded4473589240fba99c495b29afb6180740"
+    },
+    {
+      "path": "worldbook/locations/LOC-B22_赛博坦点火室.md",
+      "sha": "65ef1ef775729072b6526183ad8dfce6da7a8df1"
+    },
+    {
+      "path": "worldbook/locations/LOC-C01_方舟号.md",
+      "sha": "0e6e4e39a67e46a31f10e9f3876b2d170f7085cb"
+    },
+    {
+      "path": "worldbook/locations/LOC-C02_KSI-Transformium实验区.md",
+      "sha": "a30bbc9494e98465cbc05d436e16e5d1a479f954"
+    },
+    {
+      "path": "worldbook/locations/LOC-C03_骑士舰囚禁区·恐龙金刚收容舱.md",
+      "sha": "11494e6f2d2d0f8b3e7dd45efea55aa86cf33a27"
+    },
+    {
+      "path": "worldbook/locations/LOC-C04_HMS-Alliance潜艇.md",
+      "sha": "40fb0ce71e45e4ebaed8f2c4093c36f57c1e8f45"
+    },
+    {
+      "path": "worldbook/locations/LOC-C05_维维安家族旧宅.md",
+      "sha": "bf035b0a2aa6e4234eb564fa2a29d99077b45dd8"
+    },
+    {
+      "path": "worldbook/locations/LOC-C06_土星卫星·梅格萝娜隐匿基地.md",
+      "sha": "ad1b9ce5b1ba4cd9ffc85b7d6034f42d71e95e8c"
+    },
+    {
+      "path": "worldbook/locations/LOC-C07_古巴·西蒙斯隐居点.md",
+      "sha": "f3ea57d3f6a2cff3b178fa81a3082fc696f262cf"
+    },
+    {
+      "path": "worldbook/locations/LOC-C08_尤尼克隆巨角研究区.md",
+      "sha": "5055599845daf006fa5adc65e4bf468dc02a02cc"
+    },
+    {
+      "path": "worldbook/locations/README.md",
+      "sha": "84995000361c1a14efc618414773413ba1003001"
+    },
+    {
+      "path": "worldbook/settings/.gitkeep",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "worldbook/settings/BLUE01_世界基调.md",
+      "sha": "28f7d4934a1d049c2c92119ba484e5467d9e5469"
+    },
+    {
+      "path": "worldbook/settings/BLUE02_赛博坦机械生命本质.md",
+      "sha": "470153e577bab09aa2c2c1892e307b480ed8e725"
+    },
+    {
+      "path": "worldbook/settings/BLUE03_全女性赛博坦文明与双重性征.md",
+      "sha": "e0b032e2285b68c15b2570e1a42ed2e3c579e9c9"
+    },
+    {
+      "path": "worldbook/settings/BLUE04_火种能量与专属武装系统.md",
+      "sha": "d9bbe03578291d3f566d2c6888bad23975f7cb6d"
+    },
+    {
+      "path": "worldbook/settings/BLUE05_变形扫描与载具拟态.md",
+      "sha": "9381008219bf1bcf130ffc6647452a88478081d2"
+    },
+    {
+      "path": "worldbook/settings/BLUE06_战力与机体强弱基准.md",
+      "sha": "9d354f2bf0994755597d773aff2ec92c0e62f098"
+    },
+    {
+      "path": "worldbook/settings/BLUE07_汽车人霸天虎与赛博坦内战.md",
+      "sha": "056b71ea52cf1f6301f9a770b32b6cbee00e03e7"
+    },
+    {
+      "path": "worldbook/settings/BLUE08_地球赛博坦与古代宇宙遗产.md",
+      "sha": "ef7c734f17ccd01ac74867f810606840fbeced84"
+    },
+    {
+      "path": "worldbook/settings/BLUE09_赛博坦角色视觉与载具锚点.md",
+      "sha": "f82a8037f5734c9a86d99011a603eb2018f04e2c"
+    },
+    {
+      "path": "worldbook/settings/GREEN01_现代地球社会与现实秩序.md",
+      "sha": "d4d5544fb9e926f17449f37afbe8ee713d8de40e"
+    },
+    {
+      "path": "worldbook/settings/GREEN02_政府军方与赛博坦接触机制.md",
+      "sha": "92a7cc4ae566448a6da0fce81473f88d352afc9b"
+    },
+    {
+      "path": "worldbook/settings/GREEN03_公众认知保密与媒体信息.md",
+      "sha": "c458a08746d58b17fcb16f83596eb26c5a1cd52c"
+    },
+    {
+      "path": "worldbook/settings/GREEN04_城市战损疏散与灾后响应.md",
+      "sha": "4ebfae20d19ff90648dcdde1add997abb1c91f24"
+    },
+    {
+      "path": "worldbook/settings/GREEN05_人类与赛博坦个体共处边界.md",
+      "sha": "5c5f9074ed3e8b63e60e18f13e3cd63208c23afa"
+    },
+    {
+      "path": "worldbook/settings/GREEN06_火种与个体自我连续性.md",
+      "sha": "eba2fda1a6345e994c11e97c159b8d135cdbc0d3"
+    },
+    {
+      "path": "worldbook/settings/GREEN07_Energon与生命代谢循环.md",
+      "sha": "8ccfee3b881b55528bd566664391386a137c1338"
+    },
+    {
+      "path": "worldbook/settings/GREEN08_活体机械组织与机体器官.md",
+      "sha": "8659c76656a49a14b531831306406bc34dd21e3b"
+    },
+    {
+      "path": "worldbook/settings/GREEN09_维修医疗与机体重构.md",
+      "sha": "18825d98ad4727d266933513f5adeb2e53a314fb"
+    },
+    {
+      "path": "worldbook/settings/GREEN10_重伤维生休眠与死亡判定.md",
+      "sha": "5619ce2187b93243e85359cc3bd19258f1b9a658"
+    },
+    {
+      "path": "worldbook/settings/GREEN11_女性体态与机体外观.md",
+      "sha": "7a221c993b5290c5d2d1bd131ec7f5da06f70dd5"
+    },
+    {
+      "path": "worldbook/settings/GREEN12_双重性征结构与感知系统.md",
+      "sha": "a55df8b5f805732be3bcd8d2aee5a902079b2d7d"
+    },
+    {
+      "path": "worldbook/settings/GREEN13_身体隐私医疗检查与自主权.md",
+      "sha": "d5b056609ed68a7ffa9855fd0f8c43bb889b6a7d"
+    },
+    {
+      "path": "worldbook/settings/GREEN14_性征武装器官的生理属性.md",
+      "sha": "dbee8370760bd8ebef68ed56c84ef32c592ad354"
+    },
+    {
+      "path": "worldbook/settings/GREEN15_赛博坦性别观与身体文化.md",
+      "sha": "d39e4a4cb82c396d6cc19603a305a0f3eed1a7c9"
+    },
+    {
+      "path": "worldbook/settings/GREEN16_武装器官展开与战斗形态.md",
+      "sha": "b1752271d2405eca5b5c18b57330f3ef5c8cee1d"
+    },
+    {
+      "path": "worldbook/settings/GREEN17_专属武器谱系与战术定位.md",
+      "sha": "fec6fbc4c5cd2b9171ef4ddcf362ff7192befa32"
+    },
+    {
+      "path": "worldbook/settings/GREEN18_能量供给与控制链接.md",
+      "sha": "b30d8efccc54552689b321e8d217cf8e9e156a2b"
+    },
+    {
+      "path": "worldbook/settings/GREEN19_有限拆离回收与失落后果.md",
+      "sha": "e554c660b22859b6ba6e196312e2b87908e6fed2"
+    },
+    {
+      "path": "worldbook/settings/GREEN20_冷却过载与武装损毁.md",
+      "sha": "6320084dd667fa4a0654dd597972bc211cd9a587"
+    },
+    {
+      "path": "worldbook/settings/GREEN21_扫描模板获取与兼容边界.md",
+      "sha": "11d321ec0a55e7703c837f57b15e1888212dc8ba"
+    },
+    {
+      "path": "worldbook/settings/GREEN22_结构映射与形态连续性.md",
+      "sha": "7419a08db15ce9d33cfb045d5371516ff966b137"
+    },
+    {
+      "path": "worldbook/settings/GREEN23_质量体积与拟态尺度边界.md",
+      "sha": "1af0710cac7c7fd4fbe2725da8f4bc65a41ae1e0"
+    },
+    {
+      "path": "worldbook/settings/GREEN24_载具功能乘员与伪装表现.md",
+      "sha": "9e354846e5501acf797da886cc1c9f7b435fdc9f"
+    },
+    {
+      "path": "worldbook/settings/GREEN25_战斗变形受损变形与重新扫描.md",
+      "sha": "95919bc695eeb98f9809451b52e8bccd0a941808"
+    },
+    {
+      "path": "worldbook/settings/GREEN26_机体规格与结构上限.md",
+      "sha": "b349348fdb073e871e7ed84c046cf34e3621befb"
+    },
+    {
+      "path": "worldbook/settings/GREEN27_体型质量与正面优势.md",
+      "sha": "bbf34b4d4815f0ddb458d28df552e724385fc977"
+    },
+    {
+      "path": "worldbook/settings/GREEN28_火种稳定与持续输出.md",
+      "sha": "5ce64dd128cc60bc5c489e1e48c0504b43bebcd4"
+    },
+    {
+      "path": "worldbook/settings/GREEN29_经验技术伤势与临场状态.md",
+      "sha": "1a86e3f0e673434baa05f347288122f212cbd83a"
+    },
+    {
+      "path": "worldbook/settings/GREEN30_环境克制协同与越级胜负.md",
+      "sha": "9541e0bf4648d13ed076db6b8ab12ad140f0a9e1"
+    },
+    {
+      "path": "worldbook/settings/GREEN31_阵营核心价值与政治路线.md",
+      "sha": "ae62c1bdb787724e5b6eba6182d845fda16902c0"
+    },
+    {
+      "path": "worldbook/settings/GREEN32_加入动机阵营归属与成员身份.md",
+      "sha": "274256261a8aa5b00ff1155aa8b0bd1cfd3b6b81"
+    },
+    {
+      "path": "worldbook/settings/GREEN33_指挥链军纪与命令边界.md",
+      "sha": "9f3e415971d47d8230c0250794bc4f1e8afde773"
+    },
+    {
+      "path": "worldbook/settings/GREEN34_叛离转阵营投降与赎罪.md",
+      "sha": "cb690dd7c83917002e097d466715553613bcb4d7"
+    },
+    {
+      "path": "worldbook/settings/GREEN35_战争伦理平民与占领边界.md",
+      "sha": "eb741e930d073ee64ca4df5d3eaa8d8d884126de"
+    },
+    {
+      "path": "worldbook/settings/GREEN36_AllSpark火种源的生命激活与边界.md",
+      "sha": "eba609497c0608a409ce821625eb6b3b3f7880fc"
+    },
+    {
+      "path": "worldbook/settings/GREEN37_至尊体系领袖矩阵与恒星级遗产.md",
+      "sha": "bb276dfd1097d3a90c736735ece216063f6a9a0f"
+    },
+    {
+      "path": "worldbook/settings/GREEN38_创造者系遗产物质塑造与行星工程.md",
+      "sha": "0e5d93ec71c7afc2ae4958bd3ca52b09ecec6182"
+    },
+    {
+      "path": "worldbook/settings/GREEN39_Unicron地球本体与行星苏醒风险.md",
+      "sha": "f06a0405abbd1f714fccce6911f888799c17861b"
+    },
+    {
+      "path": "worldbook/settings/GREEN40_古代遗产权限组合与代价.md",
+      "sha": "893c3c7329a61b4821abdd438fc0139759ba7469"
+    },
+    {
+      "path": "worldbook/settings/GREEN41_赛博坦社会职业与非战争日常.md",
+      "sha": "b7a446bee2fbd905a1f255867fc554f565fac7c9"
+    },
+    {
+      "path": "worldbook/settings/GREEN42_语言通讯翻译与数据接口边界.md",
+      "sha": "5a360e934cf6a7783d23829b199e8b7a8f2f4ebd"
+    },
+    {
+      "path": "worldbook/settings/GREEN43_寿命成长阶段与时间尺度.md",
+      "sha": "a92f54a4859b5ae77ef7128adbfa342be77bfb83"
+    },
+    {
+      "path": "worldbook/settings/GREEN44_伴侣家庭与亲密关系文化.md",
+      "sha": "7b5c741fc48b0fb444f5723ee4ad88a118a734e6"
+    },
+    {
+      "path": "worldbook/settings/GREEN45_繁衍新生与亲代关系.md",
+      "sha": "0ecbc0d451c1b540307c7fd70a8060d043f4d85e"
+    },
+    {
+      "path": "worldbook/settings/GREEN46_星际航行真空环境与跨行星部署.md",
+      "sha": "9db437ebf585e2c4216939410055c58482695541"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "environment": "Headless Chromium, emulated mobile/touch, fixture host APIs and media events",
+  "real_android_sillytavern_tested": false,
+  "checks": [
+    {
+      "name": "official images load or failure leaves gradient and operable controls",
+      "status": "PASS"
+    },
+    {
+      "name": "first-floor mount, single root/audio, zero state, no startup media preload",
+      "status": "PASS"
+    },
+    {
+      "name": "unlock theme, denied play remains usable, manual retry",
+      "status": "PASS"
+    },
+    {
+      "name": "new message and role missing, two gauges from complete block",
+      "status": "PASS"
+    },
+    {
+      "name": "return/reenter, details and redraw preserve audio identity/time/play state",
+      "status": "PASS"
+    },
+    {
+      "name": "malformed/latest fallback, edit/swipe/delete, extremes",
+      "status": "PASS"
+    },
+    {
+      "name": "library scroll, select/highlight, cyclic prev/next, ended and network error",
+      "status": "PASS"
+    },
+    {
+      "name": "layout/touch/drawer no gauge overlap at 248px",
+      "status": "PASS"
+    },
+    {
+      "name": "layout/touch/drawer no gauge overlap at 278px",
+      "status": "PASS"
+    },
+    {
+      "name": "layout/touch/drawer no gauge overlap at 320px",
+      "status": "PASS"
+    },
+    {
+      "name": "layout/touch/drawer no gauge overlap at 360px",
+      "status": "PASS"
+    },
+    {
+      "name": "layout/touch/drawer no gauge overlap at 390px",
+      "status": "PASS"
+    },
+    {
+      "name": "layout/touch/drawer no gauge overlap at 412px",
+      "status": "PASS"
+    },
+    {
+      "name": "layout/touch/drawer no gauge overlap at 430px",
+      "status": "PASS"
+    },
+    {
+      "name": "layout/touch/drawer no gauge overlap at 560px",
+      "status": "PASS"
+    },
+    {
+      "name": "layout/touch/drawer no gauge overlap at 690px",
+      "status": "PASS"
+    },
+    {
+      "name": "layout/touch/drawer no gauge overlap at 860px",
+      "status": "PASS"
+    },
+    {
+      "name": "observer only fallback refreshes edited native data, singleton after many redraws",
+      "status": "PASS"
+    },
+    {
+      "name": "chat change disposes old audio, resets context, retains one subscription set",
+      "status": "PASS"
+    },
+    {
+      "name": "script reload replaces singleton/listeners; pagehide clears all owned resources",
+      "status": "PASS"
+    },
+    {
+      "name": "no unhandled page errors",
+      "status": "PASS"
+    }
+  ]
+}

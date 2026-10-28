@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "scripts": {
+    "test:unit": "node --test unit.test.mjs",
+    "test:static": "node static.cjs",
+    "test:browser": "node browser.cjs",
+    "test:native": "node native-audio.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1",
+    "zod": "4.6.7"
+  }
+}
