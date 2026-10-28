@@ -1,7 +1,8 @@
 {
   "schema": "transformers-steel-maidens.character-sample-pair.v1",
   "status": "approved",
-  "production_spec": "docs/002_变形钢姬_咩咩全栈人物条目与能力条目生产规范_v1.2.md",
+  "production_spec": "docs/002_变形钢姬_咩咩全栈人物条目与能力条目生产规范_v1.3.md",
+  "roster": "docs/001_变形钢姬_人物总名册_v0.3.md",
   "samples": [
     {
       "id": "A01",
@@ -16,9 +17,12 @@
       "ability": "worldbook/abilities/A17_薇震天_能力.md"
     }
   ],
-  "qa": "qa/人物能力样板_何博玟_薇震天_v1.0_QA.md",
+  "qa": "qa/人物能力样板_何博玟_薇震天_v1.1_QA.md",
   "psychology_model": ["Trauma", "Defense", "Trigger", "Need"],
-  "appearance_profile": "cybertronian-native-v1.2",
-  "sample_status": "SAMPLE_PAIR_APPROVED",
+  "appearance_profile": "cybertronian-native-roster-anchored-v1.3",
+  "roster_inherited_fields": ["阵营", "定位", "变形载具", "外貌锚点", "性征武装模块"],
+  "appearance_anchor_verbatim": true,
+  "preview_readable_source_format": true,
+  "sample_status": "SAMPLE_PAIR_APPROVED_ROSTER_ANCHORED",
   "next_stage": "A_GROUP_CHARACTER_PRODUCTION"
 }
