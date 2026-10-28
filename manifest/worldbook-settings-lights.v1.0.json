@@ -1,0 +1,39 @@
+{
+  "schema": "transformers-steel-maidens.worldbook-lights.v1.0",
+  "status": "blue_layer_audit_passed_green_ready",
+  "policy": {
+    "blue": "always_on",
+    "green": "keyword_triggered",
+    "precedence": "blue_over_green",
+    "notes": [
+      "BLUE01-BLUE08 已完成首次全量拉通审计与职责边界统一，可作为当前正式蓝灯基线。",
+      "蓝灯只定义全世界持续成立的上位事实；机制细节、分类、流程、案例、社会习俗与角色专属内容必须向 GREEN 或角色条目下沉。",
+      "BLUE01 与 BLUE02 已统一远古起源口径：创造、改造或引导的可能性不影响赛博坦人作为独立机械生命的地位，也不与创造者谜团冲突。",
+      "BLUE03 只锁定全员女性、双重性征与武装器官的种族事实；具体供能、展开、拆离、过载与武器类型统一由 BLUE04 负责。",
+      "BLUE04 已锁定双重性征武装器官为全体赛博坦人的天然机体组成，但拥有武装器官不等于拥有同等军事训练或同等战斗能力。",
+      "BLUE05 已补充扫描能力边界：扫描外形不等于复制目标独有武器、材料、能源核心、算法或超出自身机体承载能力的技术；扫描和变形也不能自动修复伤势。",
+      "BLUE06 经审计保持不变：战力由火种、机体、武装、经验、状态、环境与战术共同决定，允许有因果支撑的弱胜强，不允许剧情无条件翻盘。",
+      "BLUE07 经审计保持不变：汽车人与霸天虎同源但路线存在真实道德差异，个体复杂性不能抹平阵营行为的后果。",
+      "BLUE08 已与 BLUE02 的死亡规则对齐：领袖矩阵等宇宙级遗物可以在自身明确条件下形成极少数复苏特例，但不构成常规或无限复活体系。",
+      "正式世界书正文采用内生世界观语言，不再以电影、原作、娘化或改编等外部元叙事描述世界事实。",
+      "当前不新增 BLUE09/BLUE10；Energon、维修医疗、社会礼仪、繁衍与亲密关系、人类认知/保密、阵营组织、神器细节与远古历史均应在后续 GREEN 层展开。"
+    ]
+  },
+  "blue_entries": [
+    {"id":"BLUE01","path":"worldbook/settings/BLUE01_世界基调.md","enabled":true,"constant":true,"priority":1000,"keywords":[]},
+    {"id":"BLUE02","path":"worldbook/settings/BLUE02_赛博坦机械生命本质.md","enabled":true,"constant":true,"priority":990,"keywords":[]},
+    {"id":"BLUE03","path":"worldbook/settings/BLUE03_全女性赛博坦文明与双重性征.md","enabled":true,"constant":true,"priority":980,"keywords":[]},
+    {"id":"BLUE04","path":"worldbook/settings/BLUE04_火种能量与专属武装系统.md","enabled":true,"constant":true,"priority":970,"keywords":[]},
+    {"id":"BLUE05","path":"worldbook/settings/BLUE05_变形扫描与载具拟态.md","enabled":true,"constant":true,"priority":960,"keywords":[]},
+    {"id":"BLUE06","path":"worldbook/settings/BLUE06_战力与机体强弱基准.md","enabled":true,"constant":true,"priority":950,"keywords":[]},
+    {"id":"BLUE07","path":"worldbook/settings/BLUE07_汽车人霸天虎与赛博坦内战.md","enabled":true,"constant":true,"priority":940,"keywords":[]},
+    {"id":"BLUE08","path":"worldbook/settings/BLUE08_地球赛博坦与古代宇宙遗产.md","enabled":true,"constant":true,"priority":930,"keywords":[]}
+  ],
+  "active_green_entries": [],
+  "audit": {
+    "report": "qa/BLUE01-BLUE08_拉通审计_v1.0.md",
+    "passed": true,
+    "optimized_entries": ["BLUE01","BLUE02","BLUE03","BLUE04","BLUE05","BLUE08"],
+    "unchanged_entries": ["BLUE06","BLUE07"]
+  }
+}
