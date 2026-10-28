@@ -1,0 +1,24 @@
+{
+  "schema": "transformers-steel-maidens.character-sample-pair.v1",
+  "status": "approved",
+  "production_spec": "docs/002_变形钢姬_咩咩全栈人物条目与能力条目生产规范_v1.2.md",
+  "samples": [
+    {
+      "id": "A01",
+      "name": "何博玟",
+      "character": "worldbook/characters/main/A01_何博玟.md",
+      "ability": "worldbook/abilities/A01_何博玟_能力.md"
+    },
+    {
+      "id": "A17",
+      "name": "薇震天",
+      "character": "worldbook/characters/main/A17_薇震天.md",
+      "ability": "worldbook/abilities/A17_薇震天_能力.md"
+    }
+  ],
+  "qa": "qa/人物能力样板_何博玟_薇震天_v1.0_QA.md",
+  "psychology_model": ["Trauma", "Defense", "Trigger", "Need"],
+  "appearance_profile": "cybertronian-native-v1.2",
+  "sample_status": "SAMPLE_PAIR_APPROVED",
+  "next_stage": "A_GROUP_CHARACTER_PRODUCTION"
+}
