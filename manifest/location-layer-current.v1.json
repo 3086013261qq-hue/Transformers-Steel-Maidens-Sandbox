@@ -1,0 +1,29 @@
+{
+  "schema": "transformers-steel-maidens.location-layer-current.v1",
+  "version": "1.0",
+  "status": "FINAL_QA_PASS",
+  "total_locations": 39,
+  "tiers": {"A":9,"B":22,"C":8},
+  "batches": [
+    {"name":"batch01","count":5,"status":"PASS"},
+    {"name":"batch02","count":20,"status":"PASS"},
+    {"name":"batch03","count":14,"status":"PASS"}
+  ],
+  "formal_source_dir": "worldbook/locations/",
+  "roster": "docs/005_变形钢姬_地点总名册_v0.1.md",
+  "qa": "qa/locations/location-layer-full-audit_v1_QA.md",
+  "runtime": {
+    "light": "green",
+    "always_on": false,
+    "keyword_triggered": true,
+    "prevent_recursion": true,
+    "exclude_recursion": true,
+    "trigger_scope": "<status>中的当前位置:"
+  },
+  "hard_rules": [
+    "地点条目不推进剧情",
+    "时代状态只读取当前已发生时间线事实",
+    "普通正文提及地点不得独立触发",
+    "电影未确认地理与连续性空白不得擅自补完"
+  ]
+}

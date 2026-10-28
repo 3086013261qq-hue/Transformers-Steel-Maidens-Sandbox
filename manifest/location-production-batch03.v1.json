@@ -1,0 +1,28 @@
+{
+  "schema": "transformers-steel-maidens.location-production-batch03.v1",
+  "version": "1.0",
+  "formal_source_dir": "worldbook/locations/",
+  "light": "green",
+  "always_on": false,
+  "keyword_triggered": true,
+  "prevent_recursion": true,
+  "exclude_recursion": true,
+  "trigger_scope": "<status>中的当前位置:",
+  "regex_template": "/<status>[\\s\\S]*?当前位置:[^\\n<]*(?:ALIASES)[\\s\\S]*?<\\/status>/s",
+  "entries": [
+    {"id":"LOC-B17","name":"伊格尔农场","file":"worldbook/locations/LOC-B17_伊格尔农场.md","aliases":["伊格尔农场","凯德农场","Yeager farm","德州农场"]},
+    {"id":"LOC-B18","name":"中国KSI生产设施","file":"worldbook/locations/LOC-B18_中国KSI生产设施.md","aliases":["中国KSI设施","KSI中国工厂","KSI生产设施"]},
+    {"id":"LOC-B19","name":"香港战区","file":"worldbook/locations/LOC-B19_香港战区.md","aliases":["香港","Hong Kong","香港战区"]},
+    {"id":"LOC-B20","name":"牛津·维维安学术活动区","file":"worldbook/locations/LOC-B20_牛津·维维安学术活动区.md","aliases":["牛津","Oxford","牛津大学","维维安大学"]},
+    {"id":"LOC-B21","name":"巨石阵","file":"worldbook/locations/LOC-B21_巨石阵.md","aliases":["巨石阵","Stonehenge","权杖能量节点"]},
+    {"id":"LOC-B22","name":"赛博坦点火室","file":"worldbook/locations/LOC-B22_赛博坦点火室.md","aliases":["点火室","赛博坦点火室","ignition chamber"]},
+    {"id":"LOC-C01","name":"方舟号","file":"worldbook/locations/LOC-C01_方舟号.md","aliases":["方舟号","Ark","Ark ship"]},
+    {"id":"LOC-C02","name":"KSI Transformium实验区","file":"worldbook/locations/LOC-C02_KSI-Transformium实验区.md","aliases":["Transformium实验区","KSI实验区","可编程金属实验区"]},
+    {"id":"LOC-C03","name":"骑士舰囚禁区·恐龙金刚收容舱","file":"worldbook/locations/LOC-C03_骑士舰囚禁区·恐龙金刚收容舱.md","aliases":["恐龙金刚收容舱","骑士舰囚禁区","Dinobot hold"]},
+    {"id":"LOC-C04","name":"HMS Alliance潜艇","file":"worldbook/locations/LOC-C04_HMS-Alliance潜艇.md","aliases":["HMS Alliance","联盟号潜艇","潜艇入口"]},
+    {"id":"LOC-C05","name":"维维安家族旧宅","file":"worldbook/locations/LOC-C05_维维安家族旧宅.md","aliases":["维维安旧宅","维维安家","家族旧宅"]},
+    {"id":"LOC-C06","name":"土星卫星·梅格萝娜隐匿基地","file":"worldbook/locations/LOC-C06_土星卫星·梅格萝娜隐匿基地.md","aliases":["土星卫星","梅格萝娜基地","The Fallen base"]},
+    {"id":"LOC-C07","name":"古巴·西蒙斯隐居点","file":"worldbook/locations/LOC-C07_古巴·西蒙斯隐居点.md","aliases":["古巴","西蒙斯隐居地","Simmons Cuba"]},
+    {"id":"LOC-C08","name":"尤尼克隆巨角研究区","file":"worldbook/locations/LOC-C08_尤尼克隆巨角研究区.md","aliases":["尤尼克隆巨角","金属巨角研究区","Unicron horn"]}
+  ]
+}
