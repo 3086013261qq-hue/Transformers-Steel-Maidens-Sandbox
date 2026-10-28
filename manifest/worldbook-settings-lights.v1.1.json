@@ -1,0 +1,44 @@
+{
+  "schema": "transformers-steel-maidens.worldbook-lights.v1.1",
+  "status": "green_layer_drafting",
+  "policy": {
+    "blue": "always_on",
+    "green": "keyword_triggered",
+    "precedence": "blue_over_green",
+    "notes": [
+      "BLUE01-BLUE08 继续作为正式常驻世界骨架。",
+      "GREEN01-GREEN05 为 BLUE01 的首批正式下位展开条目；绿灯不得覆盖、改写或削弱上位蓝灯。",
+      "GREEN01 只展开现代地球社会与时代科技基线，禁止无理由提前引入后期现实技术，也禁止把赛博坦技术视作即时完成产业化的捷径。",
+      "GREEN02 只展开政府、军方与赛博坦接触合作机制；具体组织、机构名称与历史阶段状态仍由后续时间线或专项条目决定。",
+      "GREEN03 规定公众认知必须随事件累积，重大公开战斗不能被万能保密机制完全抹除；保密政策会从否认存在逐步转向控制细节。",
+      "GREEN04 规定城市战损、伤亡、疏散、救援与灾后恢复均有真实成本；重大事件必须留下社会与物理痕迹。",
+      "GREEN05 规定赛博坦载具形态仍是本人身体，人类与赛博坦人的私人关系必须尊重双方意愿、身体边界与真实尺度差异。",
+      "当前仅 BLUE01 已完成第一轮绿灯展开；BLUE02-BLUE08 仍待后续逐组展开。",
+      "active_green_entries.keywords 是正式装配时唯一有效的触发词来源；Markdown 中不另设宽泛裸词，避免多条绿灯同时误触。"
+    ]
+  },
+  "blue_entries": [
+    {"id":"BLUE01","path":"worldbook/settings/BLUE01_世界基调.md","enabled":true,"constant":true,"priority":1000,"keywords":[]},
+    {"id":"BLUE02","path":"worldbook/settings/BLUE02_赛博坦机械生命本质.md","enabled":true,"constant":true,"priority":990,"keywords":[]},
+    {"id":"BLUE03","path":"worldbook/settings/BLUE03_全女性赛博坦文明与双重性征.md","enabled":true,"constant":true,"priority":980,"keywords":[]},
+    {"id":"BLUE04","path":"worldbook/settings/BLUE04_火种能量与专属武装系统.md","enabled":true,"constant":true,"priority":970,"keywords":[]},
+    {"id":"BLUE05","path":"worldbook/settings/BLUE05_变形扫描与载具拟态.md","enabled":true,"constant":true,"priority":960,"keywords":[]},
+    {"id":"BLUE06","path":"worldbook/settings/BLUE06_战力与机体强弱基准.md","enabled":true,"constant":true,"priority":950,"keywords":[]},
+    {"id":"BLUE07","path":"worldbook/settings/BLUE07_汽车人霸天虎与赛博坦内战.md","enabled":true,"constant":true,"priority":940,"keywords":[]},
+    {"id":"BLUE08","path":"worldbook/settings/BLUE08_地球赛博坦与古代宇宙遗产.md","enabled":true,"constant":true,"priority":930,"keywords":[]}
+  ],
+  "active_green_entries": [
+    {"id":"GREEN01","parent_blue":"BLUE01","path":"worldbook/settings/GREEN01_现代地球社会与现实秩序.md","enabled":true,"constant":false,"priority":620,"keywords":["现代地球社会","人类文明基线","地球时代科技","当代城市生活","人类日常秩序"]},
+    {"id":"GREEN02","parent_blue":"BLUE01","path":"worldbook/settings/GREEN02_政府军方与赛博坦接触机制.md","enabled":true,"constant":false,"priority":615,"keywords":["政府与赛博坦接触","军方与汽车人合作","赛博坦联络","联合行动","政府秘密计划","军方赛博坦协议"]},
+    {"id":"GREEN03","parent_blue":"BLUE01","path":"worldbook/settings/GREEN03_公众认知保密与媒体信息.md","enabled":true,"constant":false,"priority":610,"keywords":["赛博坦曝光","公众知情","媒体报道赛博坦","外星机械生命保密","目击视频","信息封锁"]},
+    {"id":"GREEN04","parent_blue":"BLUE01","path":"worldbook/settings/GREEN04_城市战损疏散与灾后响应.md","enabled":true,"constant":false,"priority":605,"keywords":["城市战损","赛博坦袭击疏散","灾后重建","赛博坦战争伤亡","大规模撤离","战场救援"]},
+    {"id":"GREEN05","parent_blue":"BLUE01","path":"worldbook/settings/GREEN05_人类与赛博坦个体共处边界.md","enabled":true,"constant":false,"priority":600,"keywords":["人类赛博坦共处","赛博坦人与人类恋爱","乘坐赛博坦载具","人机信任","人类与汽车人生活","人类赛博坦私人关系"]}
+  ],
+  "audit": {
+    "blue_report": "qa/BLUE01-BLUE08_拉通审计_v1.0.md",
+    "green_report": "qa/BLUE01_GREEN01-GREEN05_展开审计_v1.0.md",
+    "blue_passed": true,
+    "green_batch_passed": true,
+    "expanded_blue_entries": ["BLUE01"]
+  }
+}
